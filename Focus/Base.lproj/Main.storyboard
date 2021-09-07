@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--ZigZagView-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Focus" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="ZigZagView" customClass="ViewController" customModule="Focus" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -32,10 +32,40 @@
             </objects>
             <point key="canvasLocation" x="30" y="73"/>
         </scene>
-        <!--View Controller-->
+        <!--SimonSaysView-->
+        <scene sceneID="e3X-fl-ApB">
+            <objects>
+                <viewController id="SQH-5Y-UqV" userLabel="SimonSaysView" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L5g-bE-0rf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="N3Z-GO-pzu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0HT-wO-bY9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="101" y="818"/>
+        </scene>
+        <!--CrazyNumbersView-->
+        <scene sceneID="Oj9-RZ-zDJ">
+            <objects>
+                <viewController id="MM3-E2-fjK" userLabel="CrazyNumbersView" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g6a-7V-C4A">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="IR7-SB-kiV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eoc-Li-Hkb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="954" y="812"/>
+        </scene>
+        <!--ReadingView-->
         <scene sceneID="qcL-GA-tTB">
             <objects>
-                <viewController id="Rht-1V-pGY" sceneMemberID="viewController">
+                <viewController id="Rht-1V-pGY" userLabel="ReadingView" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5OA-gf-INi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
