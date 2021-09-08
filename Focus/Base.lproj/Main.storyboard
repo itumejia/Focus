@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MM3-E2-fjK">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -50,17 +50,57 @@
         <!--CrazyNumbersView-->
         <scene sceneID="Oj9-RZ-zDJ">
             <objects>
-                <viewController id="MM3-E2-fjK" userLabel="CrazyNumbersView" sceneMemberID="viewController">
+                <viewController id="MM3-E2-fjK" userLabel="CrazyNumbersView" customClass="CrazyNumbersViewController" customModule="Focus" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="g6a-7V-C4A">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Números Locos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hGT-7C-g5R">
+                                <rect key="frame" x="62.5" y="93" width="289" height="48"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Toca los números en orden de menor a mayor" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewP-hZ-ONo">
+                                <rect key="frame" x="83" y="171" width="248" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nivel 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zyw-Tq-KeV">
+                                <rect key="frame" x="167.5" y="803" width="79" height="32"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2TC-bV-wMs">
+                                <rect key="frame" x="10" y="234" width="394" height="549"/>
+                                <color key="backgroundColor" red="0.74901960784313726" green="0.54509803921568623" blue="0.52156862745098043" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="IR7-SB-kiV"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.74901960784313726" green="0.54509803921568623" blue="0.52156862745098043" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2TC-bV-wMs" firstAttribute="top" secondItem="ewP-hZ-ONo" secondAttribute="bottom" constant="20" id="6po-7D-L9E"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Zyw-Tq-KeV" secondAttribute="bottom" constant="27" id="9TN-0B-70x"/>
+                            <constraint firstItem="ewP-hZ-ONo" firstAttribute="width" secondItem="IR7-SB-kiV" secondAttribute="width" multiplier="0.6" id="A4k-rV-kLK"/>
+                            <constraint firstItem="2TC-bV-wMs" firstAttribute="leading" secondItem="IR7-SB-kiV" secondAttribute="leading" constant="10" id="EZB-aX-PeJ"/>
+                            <constraint firstItem="Zyw-Tq-KeV" firstAttribute="top" secondItem="2TC-bV-wMs" secondAttribute="bottom" constant="20" id="HaL-uh-ELw"/>
+                            <constraint firstItem="ewP-hZ-ONo" firstAttribute="centerX" secondItem="g6a-7V-C4A" secondAttribute="centerX" id="Iog-Ig-s8P"/>
+                            <constraint firstItem="hGT-7C-g5R" firstAttribute="top" secondItem="IR7-SB-kiV" secondAttribute="top" constant="49" id="Pkn-hi-Au5"/>
+                            <constraint firstItem="IR7-SB-kiV" firstAttribute="trailing" secondItem="2TC-bV-wMs" secondAttribute="trailing" constant="10" id="a13-qn-joc"/>
+                            <constraint firstItem="ewP-hZ-ONo" firstAttribute="top" secondItem="hGT-7C-g5R" secondAttribute="bottom" constant="30" id="bUq-yv-Uf9"/>
+                            <constraint firstItem="hGT-7C-g5R" firstAttribute="centerX" secondItem="g6a-7V-C4A" secondAttribute="centerX" id="oJb-FV-iUJ"/>
+                            <constraint firstItem="Zyw-Tq-KeV" firstAttribute="centerX" secondItem="g6a-7V-C4A" secondAttribute="centerX" id="rQq-yq-QvP"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="numbersContainer" destination="2TC-bV-wMs" id="SWK-K8-EZV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eoc-Li-Hkb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="954" y="812"/>
+            <point key="canvasLocation" x="953.62318840579712" y="811.60714285714278"/>
         </scene>
         <!--ReadingView-->
         <scene sceneID="qcL-GA-tTB">
