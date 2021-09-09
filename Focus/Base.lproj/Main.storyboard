@@ -22,8 +22,8 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Zigzag" translatesAutoresizingMaskIntoConstraints="NO" id="vjL-VM-5dZ">
-                                <rect key="frame" x="142" y="105" width="130" height="130"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zigzag" translatesAutoresizingMaskIntoConstraints="NO" id="vjL-VM-5dZ">
+                                <rect key="frame" x="142" y="94" width="130" height="152.5"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qNS-4h-78p">
                                 <rect key="frame" x="0.0" y="335" width="414" height="561"/>
@@ -85,6 +85,7 @@
                         <constraints>
                             <constraint firstItem="qNS-4h-78p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UoB-Ae-3n7"/>
                             <constraint firstItem="Ju0-3I-Qb2" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.227053" id="UsR-cW-GKz"/>
+                            <constraint firstItem="vjL-VM-5dZ" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.17" id="Vpo-wr-b8N"/>
                             <constraint firstItem="qNS-4h-78p" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="291" id="XcH-HQ-cuP"/>
                             <constraint firstItem="Ju0-3I-Qb2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mPd-Bv-A3z"/>
                             <constraint firstItem="vjL-VM-5dZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nON-0Y-Vyg"/>
@@ -92,7 +93,7 @@
                             <constraint firstItem="qNS-4h-78p" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="uVm-7F-njP"/>
                             <constraint firstItem="vjL-VM-5dZ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.31401" id="uYD-f9-hjc"/>
                             <constraint firstItem="qNS-4h-78p" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.626116" id="uzc-Ch-rrN"/>
-                            <constraint firstItem="vjL-VM-5dZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="61" id="vJZ-QT-mNd"/>
+                            <constraint firstItem="vjL-VM-5dZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="vJZ-QT-mNd"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -399,7 +400,7 @@
         <image name="InstructionsContainer" width="282" height="282"/>
         <image name="ListoLectura" width="211" height="56"/>
         <image name="PlayInstructions" width="250" height="49"/>
-        <image name="Zigzag" width="130" height="130"/>
+        <image name="zigzag" width="512" height="512"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
