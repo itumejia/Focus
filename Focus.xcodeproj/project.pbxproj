@@ -13,6 +13,9 @@
 		9D21994D26D695C600B38018 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D21994B26D695C600B38018 /* Main.storyboard */; };
 		9D21994F26D695C700B38018 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D21994E26D695C700B38018 /* Assets.xcassets */; };
 		9D21995226D695C700B38018 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D21995026D695C700B38018 /* LaunchScreen.storyboard */; };
+		9D624CBE26EAC4B300845C40 /* inter in Resources */ = {isa = PBXBuildFile; fileRef = 9D624CBD26EAC4B300845C40 /* inter */; };
+		9D624CC026EAC61100845C40 /* montserrat in Resources */ = {isa = PBXBuildFile; fileRef = 9D624CBF26EAC61100845C40 /* montserrat */; };
+		9D624CC426EAC82700845C40 /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9D624CC326EAC82700845C40 /* Pacifico-Regular.ttf */; };
 		9DA1258726E81AD400097DC5 /* CrazyNumbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA1258626E81AD400097DC5 /* CrazyNumbersViewController.swift */; };
 		9DA1258926E81B1F00097DC5 /* CrazyNumbersGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA1258826E81B1F00097DC5 /* CrazyNumbersGame.swift */; };
 /* End PBXBuildFile section */
@@ -26,6 +29,9 @@
 		9D21994E26D695C700B38018 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D21995126D695C700B38018 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D21995326D695C700B38018 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D624CBD26EAC4B300845C40 /* inter */ = {isa = PBXFileReference; lastKnownFileType = folder; path = inter; sourceTree = "<group>"; };
+		9D624CBF26EAC61100845C40 /* montserrat */ = {isa = PBXFileReference; lastKnownFileType = folder; path = montserrat; sourceTree = "<group>"; };
+		9D624CC326EAC82700845C40 /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pacifico-Regular.ttf"; sourceTree = "<group>"; };
 		9DA1258626E81AD400097DC5 /* CrazyNumbersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrazyNumbersViewController.swift; sourceTree = "<group>"; };
 		9DA1258826E81B1F00097DC5 /* CrazyNumbersGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrazyNumbersGame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -60,6 +66,7 @@
 		9D21994426D695C600B38018 /* Focus */ = {
 			isa = PBXGroup;
 			children = (
+				9D624CBA26EAC39700845C40 /* fonts */,
 				9D21994526D695C600B38018 /* AppDelegate.swift */,
 				9D21994726D695C600B38018 /* SceneDelegate.swift */,
 				9D21994926D695C600B38018 /* ViewController.swift */,
@@ -71,6 +78,16 @@
 				9DA1258826E81B1F00097DC5 /* CrazyNumbersGame.swift */,
 			);
 			path = Focus;
+			sourceTree = "<group>";
+		};
+		9D624CBA26EAC39700845C40 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				9D624CC326EAC82700845C40 /* Pacifico-Regular.ttf */,
+				9D624CBF26EAC61100845C40 /* montserrat */,
+				9D624CBD26EAC4B300845C40 /* inter */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,7 +149,10 @@
 			files = (
 				9D21995226D695C700B38018 /* LaunchScreen.storyboard in Resources */,
 				9D21994F26D695C700B38018 /* Assets.xcassets in Resources */,
+				9D624CC026EAC61100845C40 /* montserrat in Resources */,
+				9D624CC426EAC82700845C40 /* Pacifico-Regular.ttf in Resources */,
 				9D21994D26D695C600B38018 /* Main.storyboard in Resources */,
+				9D624CBE26EAC4B300845C40 /* inter in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
