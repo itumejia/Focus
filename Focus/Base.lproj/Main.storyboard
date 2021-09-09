@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,26 +11,94 @@
         <!--ZigZagView-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" userLabel="ZigZagView" customClass="ViewController" customModule="Focus" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="ZigZagView" customClass="HowToViewController" customModule="Focus" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pantalla de Itu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ju0-3I-Qb2">
-                                <rect key="frame" x="186" y="208" width="108" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zig Zag" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ju0-3I-Qb2">
+                                <rect key="frame" x="160" y="264" width="94" height="32.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="27"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Zigzag.png" translatesAutoresizingMaskIntoConstraints="NO" id="vjL-VM-5dZ">
+                                <rect key="frame" x="142" y="105" width="130" height="130"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qNS-4h-78p">
+                                <rect key="frame" x="0.0" y="335" width="414" height="561"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ASA" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gfv-GJ-qgL">
+                                        <rect key="frame" x="865" y="147" width="33" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instrucciones" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uz9-IF-q14">
+                                        <rect key="frame" x="132" y="42" width="150" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lxp-Gu-hv7">
+                                        <rect key="frame" x="70.5" y="423" width="273" height="55"/>
+                                        <state key="normal" title="JUGAR" backgroundImage="Rectangle 38.png">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cuadrado.png" translatesAutoresizingMaskIntoConstraints="NO" id="TOb-WP-6io">
+                                        <rect key="frame" x="28" y="92" width="358" height="312"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cNb-8a-iFE" userLabel="instructionsTxt">
+                                        <rect key="frame" x="92.5" y="147" width="229" height="183"/>
+                                        <string key="text">"Lorem ipsum dolor sit amet,  consectetur adipiscing elit,  sed do eiusmod tempor  incididunt ut labore et dolore  magna aliqua. Ut enim ad  minim veniam, quis nostrud  exercitation ullamco laboris  nisi ut aliquip ex ea commodo  consequat”</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="lxp-Gu-hv7" firstAttribute="centerX" secondItem="qNS-4h-78p" secondAttribute="centerX" id="2C9-kc-Os1"/>
+                                    <constraint firstItem="cNb-8a-iFE" firstAttribute="height" secondItem="qNS-4h-78p" secondAttribute="height" multiplier="0.326203" id="2G5-dp-sug"/>
+                                    <constraint firstItem="TOb-WP-6io" firstAttribute="top" secondItem="qNS-4h-78p" secondAttribute="top" constant="92" id="5kq-V4-jSY"/>
+                                    <constraint firstItem="lxp-Gu-hv7" firstAttribute="top" secondItem="qNS-4h-78p" secondAttribute="top" constant="423" id="FWV-zU-DJX"/>
+                                    <constraint firstItem="TOb-WP-6io" firstAttribute="width" secondItem="qNS-4h-78p" secondAttribute="width" multiplier="0.864734" id="L1I-px-wV6"/>
+                                    <constraint firstItem="uz9-IF-q14" firstAttribute="width" secondItem="qNS-4h-78p" secondAttribute="width" multiplier="0.362319" id="MIq-Tz-ct8"/>
+                                    <constraint firstItem="cNb-8a-iFE" firstAttribute="top" secondItem="qNS-4h-78p" secondAttribute="top" constant="147" id="Mct-C5-rUZ"/>
+                                    <constraint firstItem="lxp-Gu-hv7" firstAttribute="width" secondItem="qNS-4h-78p" secondAttribute="width" multiplier="0.65942" id="NVc-Gd-CnD"/>
+                                    <constraint firstItem="uz9-IF-q14" firstAttribute="top" secondItem="qNS-4h-78p" secondAttribute="top" constant="42" id="Uf2-i4-VR3"/>
+                                    <constraint firstItem="cNb-8a-iFE" firstAttribute="width" secondItem="qNS-4h-78p" secondAttribute="width" multiplier="0.55314" id="WKc-m5-FZg"/>
+                                    <constraint firstItem="TOb-WP-6io" firstAttribute="width" secondItem="uz9-IF-q14" secondAttribute="width" multiplier="2.38667" id="a4B-Wc-5Yp"/>
+                                    <constraint firstItem="uz9-IF-q14" firstAttribute="centerX" secondItem="qNS-4h-78p" secondAttribute="centerX" id="c3V-kq-DNc"/>
+                                    <constraint firstItem="TOb-WP-6io" firstAttribute="centerX" secondItem="qNS-4h-78p" secondAttribute="centerX" id="dhM-Qw-1bO"/>
+                                    <constraint firstItem="TOb-WP-6io" firstAttribute="height" secondItem="qNS-4h-78p" secondAttribute="height" multiplier="0.55615" id="feX-qs-I5Q"/>
+                                    <constraint firstItem="lxp-Gu-hv7" firstAttribute="height" secondItem="qNS-4h-78p" secondAttribute="height" multiplier="0.0980392" id="kLc-PO-HzP"/>
+                                    <constraint firstItem="uz9-IF-q14" firstAttribute="height" secondItem="qNS-4h-78p" secondAttribute="height" multiplier="0.0534759" id="lfV-RQ-xHD"/>
+                                    <constraint firstItem="cNb-8a-iFE" firstAttribute="centerX" secondItem="TOb-WP-6io" secondAttribute="centerX" id="uco-kB-GRl"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.23137254901960785" green="0.23921568627450979" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="qNS-4h-78p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UoB-Ae-3n7"/>
+                            <constraint firstItem="Ju0-3I-Qb2" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.227053" id="UsR-cW-GKz"/>
+                            <constraint firstItem="qNS-4h-78p" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="291" id="XcH-HQ-cuP"/>
+                            <constraint firstItem="Ju0-3I-Qb2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mPd-Bv-A3z"/>
+                            <constraint firstItem="vjL-VM-5dZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nON-0Y-Vyg"/>
+                            <constraint firstItem="Ju0-3I-Qb2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="220" id="tJb-o9-xrk"/>
+                            <constraint firstItem="qNS-4h-78p" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="uVm-7F-njP"/>
+                            <constraint firstItem="vjL-VM-5dZ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.31401" id="uYD-f9-hjc"/>
+                            <constraint firstItem="qNS-4h-78p" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.626116" id="uzc-Ch-rrN"/>
+                            <constraint firstItem="vjL-VM-5dZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="61" id="vJZ-QT-mNd"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="30" y="73"/>
+            <point key="canvasLocation" x="28.985507246376812" y="72.991071428571431"/>
         </scene>
         <!--SimonSaysView-->
         <scene sceneID="e3X-fl-ApB">
@@ -88,6 +156,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Cuadrado.png" width="272" height="272"/>
+        <image name="Rectangle 38.png" width="250" height="49"/>
+        <image name="Zigzag.png" width="130" height="130"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
