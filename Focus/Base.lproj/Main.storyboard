@@ -7,6 +7,17 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-Regular.ttf">
+            <string>Inter-Regular</string>
+        </array>
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="Pacifico-Regular.ttf">
+            <string>Pacifico-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--HowToView-->
         <scene sceneID="tne-QT-ifu">
@@ -309,14 +320,14 @@
         <!--ReadingView-->
         <scene sceneID="qcL-GA-tTB">
             <objects>
-                <viewController id="Rht-1V-pGY" userLabel="ReadingView" sceneMemberID="viewController">
+                <viewController id="Rht-1V-pGY" userLabel="ReadingView" customClass="ReadingViewController" customModule="Focus" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5OA-gf-INi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="La princesa arma un rompecabezas " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="7" baselineAdjustment="none" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kbD-dG-XQj">
-                                <rect key="frame" x="20" y="280" width="374" height="96.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <rect key="frame" x="20" y="285" width="374" height="86.5"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="35"/>
                                 <color key="textColor" systemColor="systemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" systemColor="labelColor"/>
@@ -326,8 +337,8 @@
                                 <rect key="frame" x="101.5" y="575" width="211" height="56"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VWL-1e-UaX">
-                                <rect key="frame" x="172.5" y="585" width="69" height="42"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                <rect key="frame" x="171.5" y="584" width="71" height="43"/>
+                                <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="25"/>
                                 <state key="normal" title="LISTO">
                                     <color key="titleColor" red="0.0" green="0.62352941179999999" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -345,6 +356,9 @@
                             <constraint firstItem="VWL-1e-UaX" firstAttribute="centerX" secondItem="5OA-gf-INi" secondAttribute="centerX" id="fTD-Pq-IQm"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="phrase" destination="kbD-dG-XQj" id="CY0-8W-rcf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Snr-GU-bLh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -357,13 +371,51 @@
                     <view key="view" contentMode="scaleToFill" id="AMN-6r-wkg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Historias divertidas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T0L-Me-FNo">
+                                <rect key="frame" x="27.5" y="93" width="359.5" height="48"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Qué imagen es la correcta?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3q2-Gw-TdB">
+                                <rect key="frame" x="93.5" y="154" width="227.5" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="lago" translatesAutoresizingMaskIntoConstraints="NO" id="Ovb-Vf-job">
+                                <rect key="frame" x="47" y="270" width="321" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="ajK-fC-OWJ"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="rompecabezas" translatesAutoresizingMaskIntoConstraints="NO" id="FxF-Uq-jfI">
+                                <rect key="frame" x="47" y="506" width="321" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="ICm-0t-cdx"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="aKH-od-CtZ"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.0" green="0.62352941179999999" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3q2-Gw-TdB" firstAttribute="centerX" secondItem="AMN-6r-wkg" secondAttribute="centerX" id="Ac1-5t-c02"/>
+                            <constraint firstItem="3q2-Gw-TdB" firstAttribute="top" secondItem="aKH-od-CtZ" secondAttribute="top" constant="110" id="AuB-mu-U1Z"/>
+                            <constraint firstItem="FxF-Uq-jfI" firstAttribute="top" secondItem="Ovb-Vf-job" secondAttribute="bottom" constant="56" id="DJE-LQ-5QR"/>
+                            <constraint firstItem="Ovb-Vf-job" firstAttribute="top" secondItem="3q2-Gw-TdB" secondAttribute="bottom" constant="94.5" id="L98-io-JRJ"/>
+                            <constraint firstItem="T0L-Me-FNo" firstAttribute="centerX" secondItem="AMN-6r-wkg" secondAttribute="centerX" id="QmW-N9-yRD"/>
+                            <constraint firstItem="Ovb-Vf-job" firstAttribute="trailing" secondItem="FxF-Uq-jfI" secondAttribute="trailing" id="fIb-zh-bGy"/>
+                            <constraint firstItem="Ovb-Vf-job" firstAttribute="centerX" secondItem="3q2-Gw-TdB" secondAttribute="centerX" id="gFS-W0-OTY"/>
+                            <constraint firstItem="T0L-Me-FNo" firstAttribute="top" secondItem="aKH-od-CtZ" secondAttribute="top" constant="49" id="gvg-my-878"/>
+                            <constraint firstItem="Ovb-Vf-job" firstAttribute="leading" secondItem="aKH-od-CtZ" secondAttribute="leading" constant="47" id="ue7-94-LN8"/>
+                            <constraint firstItem="Ovb-Vf-job" firstAttribute="leading" secondItem="FxF-Uq-jfI" secondAttribute="leading" id="wxt-Sb-85p"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="172-ia-lwb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1800" y="73"/>
+            <point key="canvasLocation" x="1800.0000000000002" y="72.991071428571431"/>
         </scene>
         <!--HomeView-->
         <scene sceneID="hBW-9w-5px">
@@ -387,8 +439,27 @@
                     <view key="view" contentMode="scaleToFill" id="F1J-0b-ltL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Focus" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rOa-Gx-nqB">
+                                <rect key="frame" x="121" y="295" width="172" height="127"/>
+                                <fontDescription key="fontDescription" name="Pacifico-Regular" family="Pacifico" pointSize="72"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bulb" translatesAutoresizingMaskIntoConstraints="NO" id="w7S-hH-cQ5">
+                                <rect key="frame" x="87" y="415" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Qbt-rC-zFj"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.066666666666666666" green="0.54117647058823526" blue="0.69803921568627447" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="w7S-hH-cQ5" firstAttribute="top" secondItem="Qbt-rC-zFj" secondAttribute="top" constant="371" id="C8I-ux-Cnz"/>
+                            <constraint firstItem="w7S-hH-cQ5" firstAttribute="leading" secondItem="Qbt-rC-zFj" secondAttribute="leading" constant="87" id="ELV-wv-rZT"/>
+                            <constraint firstItem="w7S-hH-cQ5" firstAttribute="centerX" secondItem="Qbt-rC-zFj" secondAttribute="centerX" id="dna-N0-5cP"/>
+                            <constraint firstItem="rOa-Gx-nqB" firstAttribute="centerX" secondItem="F1J-0b-ltL" secondAttribute="centerX" id="itA-Pb-cWG"/>
+                            <constraint firstItem="rOa-Gx-nqB" firstAttribute="top" secondItem="Qbt-rC-zFj" secondAttribute="top" constant="251" id="nKE-hm-gY1"/>
+                            <constraint firstItem="Qbt-rC-zFj" firstAttribute="bottom" secondItem="w7S-hH-cQ5" secondAttribute="bottom" constant="319" id="ucD-pN-2Go"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C8p-3x-xMd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -400,6 +471,9 @@
         <image name="InstructionsContainer" width="282" height="282"/>
         <image name="ListoLectura" width="211" height="56"/>
         <image name="PlayInstructions" width="250" height="49"/>
+        <image name="bulb" width="100" height="100"/>
+        <image name="lago" width="290" height="181"/>
+        <image name="rompecabezas" width="793" height="446"/>
         <image name="zigzag" width="512" height="512"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
