@@ -1,30 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="be2-qm-gZY">
-
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-
         <array key="Montserrat-SemiBold.ttf">
             <string>Montserrat-SemiBold</string>
         </array>
-
         <array key="Inter-Regular.ttf">
             <string>Inter-Regular</string>
         </array>
         <array key="Montserrat-Bold.ttf">
             <string>Montserrat-Bold</string>
         </array>
-        <array key="Pacifico-Regular.ttf">
-            <string>Pacifico-Regular</string>
-        </array>
         <array key="Montserrat-Regular.ttf">
             <string>Montserrat-Regular</string>
+        </array>
+        <array key="Pacifico-Regular.ttf">
+            <string>Pacifico-Regular</string>
         </array>
     </customFonts>
     <scenes>
@@ -121,7 +119,7 @@
             </objects>
             <point key="canvasLocation" x="1139" y="-636"/>
         </scene>
-        <!--Item 2-->
+        <!--Progreso-->
         <scene sceneID="3jB-ym-jpl">
             <objects>
                 <viewController id="kGs-Fu-tDU" sceneMemberID="viewController">
@@ -129,29 +127,78 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="PzX-Vz-o0H"/>
-                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="nZa-jF-evY"/>
+                    <tabBarItem key="tabBarItem" title="Progreso" image="line_chart_up" id="nZa-jF-evY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ssn-lE-Obs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1377" y="366"/>
         </scene>
-        <!--Wow-->
+        <!--Inicio-->
         <scene sceneID="lBL-IH-zmd">
             <objects>
                 <viewController id="idr-05-vXL" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GLz-Gz-U62">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="kGf-rW-0sO">
+                                <rect key="frame" x="29" y="44" width="194.5" height="71.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bulb" translatesAutoresizingMaskIntoConstraints="NO" id="QDM-k2-IAt">
+                                        <rect key="frame" x="0.0" y="7" width="48.5" height="57.5"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Focus" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BXX-Q4-zR1">
+                                        <rect key="frame" x="63.5" y="0.0" width="131" height="71.5"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Pacifico-Regular" family="Pacifico" pointSize="50"/>
+                                        <color key="textColor" red="0.066666666666666666" green="0.54117647058823526" blue="0.69803921568627447" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="QDM-k2-IAt" firstAttribute="height" secondItem="kGf-rW-0sO" secondAttribute="height" multiplier="0.8" id="e5j-37-BMa"/>
+                                    <constraint firstItem="QDM-k2-IAt" firstAttribute="width" secondItem="kGf-rW-0sO" secondAttribute="width" multiplier="0.25" id="luE-lI-PEQ"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Jugar Ahora" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ThS-Cy-WPh">
+                                <rect key="frame" x="142" y="157" width="131" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="play_circle_filled" translatesAutoresizingMaskIntoConstraints="NO" id="AcN-2A-b9W">
+                                <rect key="frame" x="117.5" y="226" width="179" height="168"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="AcN-2A-b9W" secondAttribute="height" multiplier="1:1" id="Qct-sG-pXt"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="O escoge un juego" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tf7-JY-1VN">
+                                <rect key="frame" x="107" y="433" width="201" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="74Z-i7-aCX"/>
-                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kGf-rW-0sO" firstAttribute="width" secondItem="GLz-Gz-U62" secondAttribute="width" multiplier="0.469807" id="7yf-n2-9eq"/>
+                            <constraint firstItem="kGf-rW-0sO" firstAttribute="top" secondItem="74Z-i7-aCX" secondAttribute="top" id="8rl-w5-m2L"/>
+                            <constraint firstItem="kGf-rW-0sO" firstAttribute="height" secondItem="GLz-Gz-U62" secondAttribute="height" multiplier="0.08" id="JMV-jw-N5U"/>
+                            <constraint firstItem="AcN-2A-b9W" firstAttribute="height" secondItem="GLz-Gz-U62" secondAttribute="height" multiplier="0.2" id="YAr-6d-9X1"/>
+                            <constraint firstItem="AcN-2A-b9W" firstAttribute="centerX" secondItem="GLz-Gz-U62" secondAttribute="centerX" id="eRA-tf-L7S"/>
+                            <constraint firstItem="kGf-rW-0sO" firstAttribute="leading" secondItem="74Z-i7-aCX" secondAttribute="leading" constant="29" id="o42-ZU-kcC"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Wow" image="bulb" selectedImage="bulb" id="eNX-5z-PtQ"/>
+                    <tabBarItem key="tabBarItem" title="Inicio" image="bulb" selectedImage="home_alt_outline" id="eNX-5z-PtQ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wfj-bB-HUQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1376" y="-308"/>
+            <point key="canvasLocation" x="-1376.8115942028987" y="-308.03571428571428"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yhQ-5f-J3x">
@@ -569,7 +616,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="yOg-Pl-Wcm">
                                 <rect key="frame" x="47" y="264" width="320" height="445"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ndA-V8-T3K">
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ndA-V8-T3K">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="impostor" translatesAutoresizingMaskIntoConstraints="NO" id="ubb-BR-UhA">
@@ -595,7 +642,7 @@
                                             </imageView>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="FDP-uK-R7M">
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="FDP-uK-R7M">
                                         <rect key="frame" x="0.0" y="115" width="320" height="100"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="impostor" translatesAutoresizingMaskIntoConstraints="NO" id="V4Y-nk-nsr">
@@ -621,7 +668,7 @@
                                             </imageView>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bRC-Qv-Onb">
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bRC-Qv-Onb">
                                         <rect key="frame" x="0.0" y="230" width="320" height="100"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="impostor" translatesAutoresizingMaskIntoConstraints="NO" id="IfI-5V-mU5">
@@ -647,7 +694,7 @@
                                             </imageView>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="aSt-m6-e0w">
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="aSt-m6-e0w">
                                         <rect key="frame" x="0.0" y="345" width="320" height="100"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="impostor" translatesAutoresizingMaskIntoConstraints="NO" id="xxE-MX-Ubf">
@@ -862,13 +909,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Historias divertidas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T0L-Me-FNo">
-                                <rect key="frame" x="27.5" y="93" width="359.5" height="48"/>
+                                <rect key="frame" x="27.5" y="93" width="359" height="48"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Qué imagen es la correcta?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3q2-Gw-TdB">
-                                <rect key="frame" x="93.5" y="154" width="227.5" height="21.5"/>
+                                <rect key="frame" x="93" y="154" width="228" height="21.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -1114,7 +1161,12 @@
         <image name="rompecabezas" width="793" height="446"/>
         <image name="bulb-1" width="30" height="30"/>
         <image name="crown" width="512" height="512"/>
+        <image name="home_alt_outline" width="28" height="28"/>
         <image name="impostor" width="512" height="512"/>
+        <image name="lago" width="290" height="181"/>
+        <image name="line_chart_up" width="24" height="24"/>
+        <image name="play_circle_filled" width="135" height="135"/>
+        <image name="rompecabezas" width="793" height="446"/>
         <image name="zigzag" width="512" height="512"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1122,14 +1174,8 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemBrownColor">
-            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
