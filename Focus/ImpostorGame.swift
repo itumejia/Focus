@@ -10,5 +10,11 @@ import UIKit
 
 
 class ImpostorGame{
+//    var target
+//    
+//    func initializeGame(){
+//         
+//    }
+    
     
 }

@@ -8,9 +8,12 @@
 import UIKit
 
 class ImpostorViewController: UIViewController {
-
+    var target = 0
+    var plantButtons = [0,1,2,3,4,5,6,7,8,9,10,11]
+    var plantImages = [1,2,3,4,5,6,7]
     @IBAction func selectImpostor(_ sender: UIButton) {
     }
+    
     @IBOutlet var plants: [UIButton]!
     
     override func viewDidLoad() {
@@ -18,21 +21,25 @@ class ImpostorViewController: UIViewController {
         loadImages()
         
     }
-    func loadImages(){
-        for plant in plants {
-            plant.setImage(UIImage(named: "Plant4"), for: .normal)
+    
+    func loadImages() {
+        var repeated = 0
+        while(plantButtons.count > 2){
+            var randomButton = Int.random(in: 0...(plantButtons.count-1))
+            let randomImage = Int.random(in: 0...(plantImages.count-1))
+            plants[plantButtons[randomButton]].setImage(UIImage(named: "Plant\(plantImages[randomImage])"), for: .normal)
+            plantButtons.remove(at: randomButton)
+            randomButton = Int.random(in: 0...(plantButtons.count-1))
+            plants[plantButtons[randomButton]].setImage(UIImage(named: "Plant\(plantImages[randomImage])"), for: .normal)
+            plantButtons.remove(at: randomButton)
+            plantImages.remove(at: randomImage)
+            repeated = randomImage
         }
-
+        plants[plantButtons[0]].setImage(UIImage(named: "Plant\(plantImages[repeated])"), for: .normal)
+        
+        
     }
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
