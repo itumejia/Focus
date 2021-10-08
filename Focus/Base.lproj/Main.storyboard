@@ -922,14 +922,14 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="Rv4-fk-WLk">
                                 <rect key="frame" x="47" y="217" width="320" height="535"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lago" translatesAutoresizingMaskIntoConstraints="NO" id="smc-PH-pOL">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="Img1" image="lago" translatesAutoresizingMaskIntoConstraints="NO" id="smc-PH-pOL">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="240" id="NWF-sk-To1"/>
                                             <constraint firstAttribute="width" constant="320" id="Nlb-1g-rVT"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rompecabezas" translatesAutoresizingMaskIntoConstraints="NO" id="pO7-sc-jHb">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="Img2" image="rompecabezas" translatesAutoresizingMaskIntoConstraints="NO" id="pO7-sc-jHb">
                                         <rect key="frame" x="0.0" y="285" width="320" height="250"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="250" id="6DO-CD-5UB"/>
