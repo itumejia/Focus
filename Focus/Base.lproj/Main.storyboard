@@ -993,7 +993,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Impostor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="yy9-gt-AiU">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Impostor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="yy9-gt-AiU">
                                 <rect key="frame" x="112" y="107" width="190.5" height="49"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="40"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1128,7 +1128,6 @@
                         <constraints>
                             <constraint firstItem="v9Q-gF-pBQ" firstAttribute="height" secondItem="tpf-0r-eyG" secondAttribute="height" multiplier="0.111607" id="5lc-xv-RPP"/>
                             <constraint firstItem="v9Q-gF-pBQ" firstAttribute="width" secondItem="tpf-0r-eyG" secondAttribute="width" multiplier="0.241546" id="7O3-nb-dgI"/>
-                            <constraint firstItem="zSz-UW-3kV" firstAttribute="top" secondItem="yy9-gt-AiU" secondAttribute="bottom" constant="30" id="7cm-zb-iJb"/>
                             <constraint firstItem="1rk-wA-thu" firstAttribute="height" secondItem="tpf-0r-eyG" secondAttribute="height" multiplier="0.111607" id="8zJ-7Z-ZlU"/>
                             <constraint firstItem="u3m-6L-bFS" firstAttribute="width" secondItem="tpf-0r-eyG" secondAttribute="width" multiplier="0.241546" id="9aK-iU-wWZ"/>
                             <constraint firstItem="Uh7-JL-Q6k" firstAttribute="width" secondItem="tpf-0r-eyG" secondAttribute="width" multiplier="0.241546" id="9y3-Si-7ct"/>
@@ -1140,6 +1139,7 @@
                             <constraint firstItem="3Fw-qh-jCi" firstAttribute="width" secondItem="tpf-0r-eyG" secondAttribute="width" multiplier="0.241546" id="NCE-C6-aqd"/>
                             <constraint firstItem="50s-yT-1u4" firstAttribute="height" secondItem="tpf-0r-eyG" secondAttribute="height" multiplier="0.0340402" id="NWc-3k-YQ4"/>
                             <constraint firstItem="fBW-m5-x68" firstAttribute="height" secondItem="tpf-0r-eyG" secondAttribute="height" multiplier="0.111607" id="Nwc-1T-coU"/>
+                            <constraint firstItem="yy9-gt-AiU" firstAttribute="height" secondItem="tpf-0r-eyG" secondAttribute="height" multiplier="0.0546875" id="P0F-Q1-Tdl"/>
                             <constraint firstItem="Uh7-JL-Q6k" firstAttribute="height" secondItem="tpf-0r-eyG" secondAttribute="height" multiplier="0.111607" id="Pri-KJ-9Tp"/>
                             <constraint firstItem="w1u-d3-LpO" firstAttribute="height" secondItem="tpf-0r-eyG" secondAttribute="height" multiplier="0.111607" id="Ry3-hb-9Gh"/>
                             <constraint firstItem="yy9-gt-AiU" firstAttribute="width" secondItem="tpf-0r-eyG" secondAttribute="width" multiplier="0.460145" id="Sdn-hE-9Zu"/>
@@ -1154,7 +1154,6 @@
                             <constraint firstItem="3Fw-qh-jCi" firstAttribute="height" secondItem="tpf-0r-eyG" secondAttribute="height" multiplier="0.111607" id="dwN-f5-2TY"/>
                             <constraint firstItem="2su-sP-jEw" firstAttribute="width" secondItem="tpf-0r-eyG" secondAttribute="width" multiplier="0.241546" id="gA8-oN-M56"/>
                             <constraint firstItem="Qki-So-RbY" firstAttribute="width" secondItem="tpf-0r-eyG" secondAttribute="width" multiplier="0.241546" id="i83-4Q-BbB"/>
-                            <constraint firstItem="50s-yT-1u4" firstAttribute="top" secondItem="7nz-0s-kWq" secondAttribute="top" constant="728" id="j4f-bM-WXJ"/>
                             <constraint firstItem="yy9-gt-AiU" firstAttribute="centerX" secondItem="tpf-0r-eyG" secondAttribute="centerX" id="mIk-pE-y7f"/>
                             <constraint firstItem="mRN-sI-0nU" firstAttribute="height" secondItem="tpf-0r-eyG" secondAttribute="height" multiplier="0.111607" id="nsP-qa-OX7"/>
                             <constraint firstItem="zSz-UW-3kV" firstAttribute="centerX" secondItem="tpf-0r-eyG" secondAttribute="centerX" id="omi-gP-Ai1"/>
@@ -1163,10 +1162,12 @@
                             <constraint firstItem="zSz-UW-3kV" firstAttribute="width" secondItem="tpf-0r-eyG" secondAttribute="width" multiplier="0.472222" id="sho-DD-SJT"/>
                             <constraint firstItem="u3m-6L-bFS" firstAttribute="height" secondItem="tpf-0r-eyG" secondAttribute="height" multiplier="0.111607" id="siC-vW-nud"/>
                             <constraint firstItem="yy9-gt-AiU" firstAttribute="top" secondItem="7nz-0s-kWq" secondAttribute="top" constant="63" id="xtt-P7-lmg"/>
+                            <constraint firstItem="50s-yT-1u4" firstAttribute="top" secondItem="7nz-0s-kWq" secondAttribute="top" constant="728" id="yvG-YT-9FG"/>
                             <constraint firstItem="Fgr-Xx-FDI" firstAttribute="width" secondItem="tpf-0r-eyG" secondAttribute="width" multiplier="0.241546" id="zEh-us-vqc"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="levelTxt" destination="50s-yT-1u4" id="aet-27-TL2"/>
                         <outletCollection property="plants" destination="mRN-sI-0nU" collectionClass="NSMutableArray" id="Rh7-wp-ZeL"/>
                         <outletCollection property="plants" destination="Uh7-JL-Q6k" collectionClass="NSMutableArray" id="n74-I7-WIL"/>
                         <outletCollection property="plants" destination="u3m-6L-bFS" collectionClass="NSMutableArray" id="WfF-Ji-PcB"/>
@@ -1590,7 +1591,7 @@
         <image name="bulb-azul" width="40" height="40"/>
         <image name="crazynumbers" width="142" height="138"/>
         <image name="crown" width="512" height="512"/>
-        <image name="home_alt_outline" width="30" height="30"/>
+        <image name="home_alt_outline" width="28" height="28"/>
         <image name="impostor" width="512" height="512"/>
         <image name="lago" width="290" height="181"/>
         <image name="lecture" width="154" height="157"/>

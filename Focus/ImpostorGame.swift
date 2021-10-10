@@ -10,11 +10,11 @@ import UIKit
 
 
 class ImpostorGame{
-//    var target
-//    
-//    func initializeGame(){
-//         
-//    }
+    var level = 1
+    
+    func nextLevel(){
+        level = level + 1
+    }
     
     
 }
