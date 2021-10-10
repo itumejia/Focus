@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9UV-Sz-k98">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Rht-1V-pGY">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -855,7 +855,7 @@
         <!--ReadingView-->
         <scene sceneID="qcL-GA-tTB">
             <objects>
-                <viewController id="Rht-1V-pGY" userLabel="ReadingView" customClass="ReadingViewController" customModule="Focus" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="reading" id="Rht-1V-pGY" userLabel="ReadingView" customClass="ReadingViewController" customModule="Focus" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5OA-gf-INi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -877,6 +877,9 @@
                                 <state key="normal" title="LISTO">
                                     <color key="titleColor" red="0.0" green="0.62352941179999999" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="startPlaying:" destination="Rht-1V-pGY" eventType="touchUpInside" id="DbZ-d6-NBJ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Mrh-Ja-aJO"/>
@@ -894,7 +897,6 @@
                     </view>
                     <connections>
                         <outlet property="phrase" destination="kbD-dG-XQj" id="CY0-8W-rcf"/>
-                        <outlet property="startGame" destination="VWL-1e-UaX" id="dCm-ke-ve1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Snr-GU-bLh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -904,7 +906,7 @@
         <!--Reading2View-->
         <scene sceneID="eYn-M3-q3G">
             <objects>
-                <viewController id="9UV-Sz-k98" userLabel="Reading2View" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="other" id="9UV-Sz-k98" userLabel="Reading2View" customClass="Reading2ControllerView" customModule="Focus" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AMN-6r-wkg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -924,7 +926,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="Rv4-fk-WLk">
                                 <rect key="frame" x="47" y="217" width="320" height="535"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lago" translatesAutoresizingMaskIntoConstraints="NO" id="smc-PH-pOL">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="img1" translatesAutoresizingMaskIntoConstraints="NO" id="smc-PH-pOL">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
                                         <gestureRecognizers/>
                                         <constraints>
@@ -932,15 +934,19 @@
                                             <constraint firstAttribute="width" constant="320" id="Nlb-1g-rVT"/>
                                         </constraints>
                                         <connections>
-                                            <outletCollection property="gestureRecognizers" destination="V8N-or-jBq" appends="YES" id="EIS-yq-7AR"/>
+                                            <outletCollection property="gestureRecognizers" destination="RBl-ur-Gvk" appends="YES" id="kdQ-wm-Mlt"/>
                                         </connections>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rompecabezas" translatesAutoresizingMaskIntoConstraints="NO" id="pO7-sc-jHb">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="img2" translatesAutoresizingMaskIntoConstraints="NO" id="pO7-sc-jHb">
                                         <rect key="frame" x="0.0" y="285" width="320" height="250"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="250" id="6DO-CD-5UB"/>
                                             <constraint firstAttribute="width" constant="320" id="szZ-eP-nqm"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="DrO-XY-Q1Y" appends="YES" id="KFr-Qv-9Uv"/>
+                                        </connections>
                                     </imageView>
                                 </subviews>
                                 <gestureRecognizers/>
@@ -948,9 +954,6 @@
                                     <constraint firstItem="smc-PH-pOL" firstAttribute="centerX" secondItem="Rv4-fk-WLk" secondAttribute="centerX" id="VZt-Gs-g5p"/>
                                     <constraint firstItem="pO7-sc-jHb" firstAttribute="centerX" secondItem="Rv4-fk-WLk" secondAttribute="centerX" id="ugV-TU-h4k"/>
                                 </constraints>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="qD6-Aq-vSo" appends="YES" id="tbV-h0-l0r"/>
-                                </connections>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Nivel 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j9n-Es-Mtt">
                                 <rect key="frame" x="173" y="798" width="69.5" height="26"/>
@@ -977,10 +980,23 @@
                             <constraint firstItem="3q2-Gw-TdB" firstAttribute="top" secondItem="T0L-Me-FNo" secondAttribute="bottom" constant="17" id="z9x-jo-dAQ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="img1" destination="smc-PH-pOL" id="E0J-W1-GmF"/>
+                        <outlet property="img2" destination="pO7-sc-jHb" id="KtW-Rb-t0b"/>
+                        <outlet property="nivel" destination="j9n-Es-Mtt" id="pDT-H9-tMg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="172-ia-lwb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="V8N-or-jBq"/>
-                <tapGestureRecognizer id="qD6-Aq-vSo"/>
+                <tapGestureRecognizer id="RBl-ur-Gvk">
+                    <connections>
+                        <action selector="onTap:" destination="9UV-Sz-k98" id="4OU-rM-vXg"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="DrO-XY-Q1Y">
+                    <connections>
+                        <action selector="onTap:" destination="9UV-Sz-k98" id="RqS-en-ifH"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1800.0000000000002" y="72.991071428571431"/>
         </scene>
@@ -1189,10 +1205,8 @@
         <image name="crown" width="512" height="512"/>
         <image name="home_alt_outline" width="28" height="28"/>
         <image name="impostor" width="512" height="512"/>
-        <image name="lago" width="290" height="181"/>
         <image name="line_chart_up" width="24" height="24"/>
         <image name="play_circle_filled" width="135" height="135"/>
-        <image name="rompecabezas" width="793" height="446"/>
         <image name="zigzag" width="512" height="512"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
