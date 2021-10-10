@@ -52,25 +52,19 @@ class Reading2ControllerView: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        nivel?.text = frase
-
-        //let vc = storyboard? .instantiateViewController(identifier: "reading") as! ReadingViewController
-//        self.nivel.text = vc.letras
-        
-//        vc.phraseToPass = { text in
-//            self.nivel.text = text
-//        }
+        //nivel?.text = frase
         
         
-        if nivel.text == "El pequeño león Simba baila con Timón y Pumba"{
+        if frase == "El pequeño león Simba baila con Timón y Pumba"{
             reyLeon()
-        } else if nivel.text == "Marlin el pez naranja y Dory el pez azul nadan con la tortugas"{
+        } else if frase == "Marlin el pez naranja y Dory el pez azul nadan con la tortugas"{
             nemo()
         }else{
             enredados()
         }
         
     }
+    
     
     func enredados(){
         img1.image = images[0]
@@ -90,9 +84,11 @@ class Reading2ControllerView: UIViewController {
 
     @IBAction func onTap(_ sender: UITapGestureRecognizer) {
     
-        self.nivel.text = "Nivel 2"
         //Para pasar de una pantalla a otra
-        //if (sender.view as! UIImageView).image ==
+        if (frase == "El pequeño león Simba baila con Timón y Pumba" && (sender.view as! UIImageView).image == UIImage(named: "leon2")){
+            //let viewlev = readingLevel()
+            nivel.text = "Nivel 2"
+        }
         let vc = storyboard? .instantiateViewController(identifier: "reading") as! ReadingViewController
         vc.modalPresentationStyle = .fullScreen
         present(vc, animated: true)

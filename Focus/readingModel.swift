@@ -6,12 +6,13 @@
 //
 
 import Foundation
+import UIKit
 
-class readingModel{
-    var letras = "Holaaaaaaaa mUndooo"
+class readingLevel{
+    var lev = 1
     
-    func cambioLetras(){
-        letras = "Adioss mundo cruel :/"
+    func changeLevel(){
+        lev = lev + 1
     }
 }
 
