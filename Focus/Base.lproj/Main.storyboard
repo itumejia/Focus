@@ -878,7 +878,7 @@
                                     <color key="titleColor" red="0.0" green="0.62352941179999999" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="startPlaying:" destination="Rht-1V-pGY" eventType="touchUpInside" id="DbZ-d6-NBJ"/>
+                                    <segue destination="9UV-Sz-k98" kind="show" id="Jng-eP-Nd5"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -908,25 +908,25 @@
             <objects>
                 <viewController storyboardIdentifier="other" id="9UV-Sz-k98" userLabel="Reading2View" customClass="Reading2ControllerView" customModule="Focus" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AMN-6r-wkg">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Historias divertidas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T0L-Me-FNo">
-                                <rect key="frame" x="40" y="94" width="334" height="44.5"/>
+                                <rect key="frame" x="40" y="50" width="334" height="44.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="37"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Qué imagen es la correcta?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3q2-Gw-TdB">
-                                <rect key="frame" x="93" y="155.5" width="228" height="21.5"/>
+                                <rect key="frame" x="93" y="111.5" width="228" height="21.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="Rv4-fk-WLk">
-                                <rect key="frame" x="47" y="217" width="320" height="535"/>
+                                <rect key="frame" x="47" y="173" width="320" height="535"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="img1" translatesAutoresizingMaskIntoConstraints="NO" id="smc-PH-pOL">
+                                    <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="img1" translatesAutoresizingMaskIntoConstraints="NO" id="smc-PH-pOL">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
                                         <gestureRecognizers/>
                                         <constraints>
@@ -937,7 +937,7 @@
                                             <outletCollection property="gestureRecognizers" destination="RBl-ur-Gvk" appends="YES" id="kdQ-wm-Mlt"/>
                                         </connections>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="img2" translatesAutoresizingMaskIntoConstraints="NO" id="pO7-sc-jHb">
+                                    <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="img2" translatesAutoresizingMaskIntoConstraints="NO" id="pO7-sc-jHb">
                                         <rect key="frame" x="0.0" y="285" width="320" height="250"/>
                                         <gestureRecognizers/>
                                         <constraints>
@@ -955,8 +955,8 @@
                                     <constraint firstItem="pO7-sc-jHb" firstAttribute="centerX" secondItem="Rv4-fk-WLk" secondAttribute="centerX" id="ugV-TU-h4k"/>
                                 </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Nivel 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j9n-Es-Mtt">
-                                <rect key="frame" x="173" y="798" width="69.5" height="26"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nivel 1" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j9n-Es-Mtt">
+                                <rect key="frame" x="47" y="754" width="320" height="26"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="21"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -967,19 +967,20 @@
                         <constraints>
                             <constraint firstItem="Rv4-fk-WLk" firstAttribute="centerX" secondItem="AMN-6r-wkg" secondAttribute="centerX" id="3ie-gX-Kg1"/>
                             <constraint firstItem="smc-PH-pOL" firstAttribute="top" secondItem="3q2-Gw-TdB" secondAttribute="bottom" constant="40" id="4XF-RD-dgj"/>
-                            <constraint firstItem="j9n-Es-Mtt" firstAttribute="leading" secondItem="aKH-od-CtZ" secondAttribute="leading" constant="173" id="AgG-OU-wbR"/>
                             <constraint firstItem="aKH-od-CtZ" firstAttribute="trailing" secondItem="3q2-Gw-TdB" secondAttribute="trailing" constant="93" id="CXO-PM-fAO"/>
                             <constraint firstItem="T0L-Me-FNo" firstAttribute="centerX" secondItem="aKH-od-CtZ" secondAttribute="centerX" id="Epu-yy-VXX"/>
                             <constraint firstItem="aKH-od-CtZ" firstAttribute="trailing" secondItem="T0L-Me-FNo" secondAttribute="trailing" constant="40" id="Grv-7k-NS4"/>
                             <constraint firstItem="T0L-Me-FNo" firstAttribute="top" secondItem="aKH-od-CtZ" secondAttribute="top" constant="50" id="NBO-NW-Bsy"/>
-                            <constraint firstItem="j9n-Es-Mtt" firstAttribute="top" secondItem="Rv4-fk-WLk" secondAttribute="bottom" constant="46" id="PVX-jh-WAW"/>
                             <constraint firstItem="T0L-Me-FNo" firstAttribute="leading" secondItem="aKH-od-CtZ" secondAttribute="leading" constant="40" id="YBF-UM-Zza"/>
-                            <constraint firstItem="j9n-Es-Mtt" firstAttribute="centerX" secondItem="Rv4-fk-WLk" secondAttribute="centerX" id="brT-LL-UYh"/>
                             <constraint firstItem="3q2-Gw-TdB" firstAttribute="leading" secondItem="aKH-od-CtZ" secondAttribute="leading" constant="93" id="fAo-V0-vWg"/>
                             <constraint firstItem="3q2-Gw-TdB" firstAttribute="centerX" secondItem="aKH-od-CtZ" secondAttribute="centerX" id="g2F-g3-YOw"/>
+                            <constraint firstItem="j9n-Es-Mtt" firstAttribute="leading" secondItem="Rv4-fk-WLk" secondAttribute="leading" id="r74-z9-3v8"/>
+                            <constraint firstItem="j9n-Es-Mtt" firstAttribute="top" secondItem="Rv4-fk-WLk" secondAttribute="bottom" constant="46" id="vHk-Mb-05c"/>
                             <constraint firstItem="3q2-Gw-TdB" firstAttribute="top" secondItem="T0L-Me-FNo" secondAttribute="bottom" constant="17" id="z9x-jo-dAQ"/>
+                            <constraint firstItem="j9n-Es-Mtt" firstAttribute="centerX" secondItem="AMN-6r-wkg" secondAttribute="centerX" id="zCa-Ty-66H"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="4MM-Pf-93q"/>
                     <connections>
                         <outlet property="img1" destination="smc-PH-pOL" id="E0J-W1-GmF"/>
                         <outlet property="img2" destination="pO7-sc-jHb" id="KtW-Rb-t0b"/>
@@ -1203,7 +1204,7 @@
         <image name="bulb" width="100" height="100"/>
         <image name="bulb-1" width="30" height="30"/>
         <image name="crown" width="512" height="512"/>
-        <image name="home_alt_outline" width="28" height="28"/>
+        <image name="home_alt_outline" width="30" height="30"/>
         <image name="impostor" width="512" height="512"/>
         <image name="line_chart_up" width="24" height="24"/>
         <image name="play_circle_filled" width="135" height="135"/>

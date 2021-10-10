@@ -9,6 +9,8 @@ import UIKit
 
 class ReadingViewController: UIViewController {
     
+//    public var letras = "La princesa arma un rompecabezas"
+    
     @IBOutlet weak var phrase: UILabel!
     
     
@@ -16,29 +18,22 @@ class ReadingViewController: UIViewController {
     
     let phrasesHardLevels = ["El pequeño león Simba baila con Timón y Pumba", "Marlin el pez naranja y Dory el pez azul nadan con la tortugas"]
     
-    public var phraseToPass: ((String?)->Void)?
+    var randomNumber = 0
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        phrase.text = phrases.randomElement()! //Elige una frase al azar
+        self.randomNumber = Int.random(in: 0...phrasesHardLevels.count-1)
+        phrase.text = phrasesHardLevels[randomNumber]
         
     }
-    
-
-    @IBAction func startPlaying(_ sender: Any) {
-        //Para pasar de una pantalla a otra
-        let vc = storyboard? .instantiateViewController(identifier: "other") as! Reading2ControllerView
-        vc.modalPresentationStyle = .fullScreen
-        present(vc, animated: true)
-        
-        //para pasar la frase de una pantalla a otra
-        phraseToPass?(phrase.text)
+    //Asignaciones a la siguiente pantalla después de usar segue
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.destination is Reading2ControllerView {
+                let vc = segue.destination as? Reading2ControllerView
+            vc?.frase = phrase.text!
+            }
     }
-    
-    
-    
-    
 
 }
 

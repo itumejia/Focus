@@ -15,6 +15,8 @@ class Reading2ControllerView: UIViewController {
     @IBOutlet weak var img2: UIImageView!
     @IBOutlet weak var nivel: UILabel!
     
+    var frase = ""
+    
     
     let images = [
         UIImage(named: "enredados"), //Enredados
@@ -41,7 +43,7 @@ class Reading2ControllerView: UIViewController {
         
     ]
      let imagesHighLevels = [
-        UIImage(named: "leon"), //El rey león
+        UIImage(named: "leon"), // reyLeon
         UIImage(named: "leon2"),
         UIImage(named: "nemo"), //Nemo
         UIImage(named: "nemo2"),
@@ -50,20 +52,53 @@ class Reading2ControllerView: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        enredados()
+        nivel?.text = frase
+
+        //let vc = storyboard? .instantiateViewController(identifier: "reading") as! ReadingViewController
+//        self.nivel.text = vc.letras
+        
+//        vc.phraseToPass = { text in
+//            self.nivel.text = text
+//        }
+        
+        
+        if nivel.text == "El pequeño león Simba baila con Timón y Pumba"{
+            reyLeon()
+        } else if nivel.text == "Marlin el pez naranja y Dory el pez azul nadan con la tortugas"{
+            nemo()
+        }else{
+            enredados()
+        }
         
     }
     
     func enredados(){
         img1.image = images[0]
         img2.image = images[1]
-        
     }
     
+    func reyLeon(){
+        img1.image = imagesHighLevels[0]
+        img2.image = imagesHighLevels[1]
+    }
+    
+    func nemo(){
+        img1.image = imagesHighLevels[2]
+        img2.image = imagesHighLevels[3]
+    }
     
 
     @IBAction func onTap(_ sender: UITapGestureRecognizer) {
-        nivel.text = "Nooo jalaaaa"
+    
+        self.nivel.text = "Nivel 2"
+        //Para pasar de una pantalla a otra
+        //if (sender.view as! UIImageView).image ==
+        let vc = storyboard? .instantiateViewController(identifier: "reading") as! ReadingViewController
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true)
+        
+               //vc.modalPresentationStyle = .fullScreen
+               //spresent(vc, animated: true)
     }
     
     
