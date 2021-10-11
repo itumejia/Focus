@@ -13,6 +13,7 @@ class ReadingViewController: UIViewController {
     
     @IBOutlet weak var phrase: UILabel!
     
+
     
     let phrases = ["La princesa arma un rompecabezas", "El Rayo McQueen corre en una carrera", "Remi el ratón de Ratatouille, cocina una quesadilla", "Mohana está hablando con su abuela", "Luca está comiendo", "Buzz y Woody se abrazan", "La pequeña niña Boo espanta al monstruo Sulli", "Valiente practica tiro que con arco", "Ralph el demoledor y Vanellope aprenden a manejar el auto", "Anna y Elsa se dan un abrazo en la nieve"]
     
@@ -21,7 +22,6 @@ class ReadingViewController: UIViewController {
     var randomNumber = 0
     
     override func viewDidLoad() {
-        
         super.viewDidLoad()
         self.randomNumber = Int.random(in: 0...phrasesHardLevels.count-1)
         phrase.text = phrasesHardLevels[randomNumber]

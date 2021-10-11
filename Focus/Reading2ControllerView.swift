@@ -16,6 +16,10 @@ class Reading2ControllerView: UIViewController {
     @IBOutlet weak var nivel: UILabel!
     
     var frase = ""
+    static var cont = 1
+    //var cont2 = cont
+    //var myString = String(cont)
+    
     
     
     let images = [
@@ -53,8 +57,11 @@ class Reading2ControllerView: UIViewController {
         
         super.viewDidLoad()
         //nivel?.text = frase
-        
-        
+        //nivel!.text = String(cont)
+        //let newValue = cont
+        var contador2 = Reading2ControllerView.cont
+        nivel.text = (nivel.text ?? "") + "\(contador2)"
+        //cambiar por arreglos
         if frase == "El pequeño león Simba baila con Timón y Pumba"{
             reyLeon()
         } else if frase == "Marlin el pez naranja y Dory el pez azul nadan con la tortugas"{
@@ -62,10 +69,9 @@ class Reading2ControllerView: UIViewController {
         }else{
             enredados()
         }
-        
     }
     
-    
+    //add cases
     func enredados(){
         img1.image = images[0]
         img2.image = images[1]
@@ -87,7 +93,9 @@ class Reading2ControllerView: UIViewController {
         //Para pasar de una pantalla a otra
         if (frase == "El pequeño león Simba baila con Timón y Pumba" && (sender.view as! UIImageView).image == UIImage(named: "leon2")){
             //let viewlev = readingLevel()
-            nivel.text = "Nivel 2"
+            Reading2ControllerView.cont = Reading2ControllerView.cont + 1
+            //cont = cont + 1
+            //nivel.text = (nivel.text ?? "") + myString
         }
         let vc = storyboard? .instantiateViewController(identifier: "reading") as! ReadingViewController
         vc.modalPresentationStyle = .fullScreen
