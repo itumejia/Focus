@@ -866,6 +866,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="labelLevel" destination="Zyw-Tq-KeV" id="Hmy-C6-dgX"/>
                         <outlet property="numbersContainer" destination="2TC-bV-wMs" id="SWK-K8-EZV"/>
                     </connections>
                 </viewController>

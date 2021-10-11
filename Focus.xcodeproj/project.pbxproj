@@ -15,6 +15,7 @@
 		9D21994D26D695C600B38018 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D21994B26D695C600B38018 /* Main.storyboard */; };
 		9D21994F26D695C700B38018 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D21994E26D695C700B38018 /* Assets.xcassets */; };
 		9D21995226D695C700B38018 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D21995026D695C700B38018 /* LaunchScreen.storyboard */; };
+		9D2AA6BA2705499E007E6895 /* CrazyNumbersBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2AA6B92705499E007E6895 /* CrazyNumbersBoard.swift */; };
 		9D2D800A27139157001B7DC5 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2D800927139157001B7DC5 /* MainMenuViewController.swift */; };
 		9D2D800E2713943E001B7DC5 /* HowToViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2D800D2713943E001B7DC5 /* HowToViewController.swift */; };
 		9D2D8010271396F0001B7DC5 /* HowTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2D800F271396F0001B7DC5 /* HowTo.swift */; };
@@ -36,6 +37,7 @@
 		9D21994E26D695C700B38018 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D21995126D695C700B38018 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D21995326D695C700B38018 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D2AA6B92705499E007E6895 /* CrazyNumbersBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrazyNumbersBoard.swift; sourceTree = "<group>"; };
 		9D2D800927139157001B7DC5 /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
 		9D2D800D2713943E001B7DC5 /* HowToViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToViewController.swift; sourceTree = "<group>"; };
 		9D2D800F271396F0001B7DC5 /* HowTo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowTo.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				9D21995326D695C700B38018 /* Info.plist */,
 				9DA1258626E81AD400097DC5 /* CrazyNumbersViewController.swift */,
 				9DA1258826E81B1F00097DC5 /* CrazyNumbersGame.swift */,
+				9D2AA6B92705499E007E6895 /* CrazyNumbersBoard.swift */,
 				9D2D800927139157001B7DC5 /* MainMenuViewController.swift */,
 				9D2D800D2713943E001B7DC5 /* HowToViewController.swift */,
 				9D2D800F271396F0001B7DC5 /* HowTo.swift */,
@@ -188,6 +191,7 @@
 				9D2D8010271396F0001B7DC5 /* HowTo.swift in Sources */,
 				9D21994826D695C600B38018 /* SceneDelegate.swift in Sources */,
 				8A847B9B26EBF566005D7A2E /* ReadingViewController.swift in Sources */,
+				9D2AA6BA2705499E007E6895 /* CrazyNumbersBoard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
