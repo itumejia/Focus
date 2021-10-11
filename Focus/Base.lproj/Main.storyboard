@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Oxe-Cj-A6A">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TVU-zR-Z76">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -761,7 +760,7 @@
         <!--ZigzagView-->
         <scene sceneID="vCZ-87-H9L">
             <objects>
-                <viewController id="TVU-zR-Z76" userLabel="ZigzagView" sceneMemberID="viewController">
+                <viewController id="TVU-zR-Z76" userLabel="ZigzagView" customClass="ZigZagViewController" customModule="Focus" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bVJ-Ti-Ucr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -813,6 +812,9 @@
                                             <constraint firstAttribute="height" constant="82" id="25I-4A-2zF"/>
                                             <constraint firstAttribute="width" constant="82" id="a5N-UA-I7X"/>
                                         </constraints>
+                                        <connections>
+                                            <action selector="touchingTile:" destination="TVU-zR-Z76" eventType="touchUpInside" id="wqj-ry-72L"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ltX-cN-Yfq">
                                         <rect key="frame" x="174" y="0.0" width="82" height="82"/>
@@ -821,6 +823,9 @@
                                             <constraint firstAttribute="height" constant="82" id="48Y-v3-2rb"/>
                                             <constraint firstAttribute="width" constant="82" id="y5H-nU-Icw"/>
                                         </constraints>
+                                        <connections>
+                                            <action selector="touchingTile:" destination="TVU-zR-Z76" eventType="touchUpInside" id="onk-WQ-f1v"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OXu-Fl-xyr">
                                         <rect key="frame" x="261" y="0.0" width="82" height="82"/>
@@ -829,6 +834,9 @@
                                             <constraint firstAttribute="width" constant="82" id="7sq-jf-ppX"/>
                                             <constraint firstAttribute="height" constant="82" id="Yr7-T8-BF5"/>
                                         </constraints>
+                                        <connections>
+                                            <action selector="touchingTile:" destination="TVU-zR-Z76" eventType="touchUpInside" id="HH1-qI-ra6"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -842,6 +850,9 @@
                                             <constraint firstAttribute="height" constant="82" id="NTm-8g-cMa"/>
                                             <constraint firstAttribute="width" constant="82" id="tdU-Zs-bLD"/>
                                         </constraints>
+                                        <connections>
+                                            <action selector="touchingTile:" destination="TVU-zR-Z76" eventType="touchUpInside" id="gWD-zq-NO1"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XAs-hy-Jpi">
                                         <rect key="frame" x="87" y="0.0" width="82" height="82"/>
@@ -850,6 +861,9 @@
                                             <constraint firstAttribute="height" constant="82" id="7qF-rK-zmC"/>
                                             <constraint firstAttribute="width" constant="82" id="nCI-cv-tO7"/>
                                         </constraints>
+                                        <connections>
+                                            <action selector="touchingTile:" destination="TVU-zR-Z76" eventType="touchUpInside" id="NYz-rx-TML"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3P-32-908">
                                         <rect key="frame" x="174" y="0.0" width="82" height="82"/>
@@ -858,6 +872,9 @@
                                             <constraint firstAttribute="height" constant="82" id="4rb-pN-Wb3"/>
                                             <constraint firstAttribute="width" constant="82" id="QTo-1G-PYC"/>
                                         </constraints>
+                                        <connections>
+                                            <action selector="touchingTile:" destination="TVU-zR-Z76" eventType="touchUpInside" id="tvB-Gk-XYh"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dE8-CL-KXU">
                                         <rect key="frame" x="261" y="0.0" width="82" height="82"/>
@@ -866,6 +883,9 @@
                                             <constraint firstAttribute="height" constant="82" id="ewR-Z0-Qnu"/>
                                             <constraint firstAttribute="width" constant="82" id="ft2-h7-6Z8"/>
                                         </constraints>
+                                        <connections>
+                                            <action selector="touchingTile:" destination="TVU-zR-Z76" eventType="touchUpInside" id="D5R-Yc-tXl"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -879,6 +899,9 @@
                                             <constraint firstAttribute="height" constant="82" id="OgV-XP-M98"/>
                                             <constraint firstAttribute="width" constant="82" id="St7-fr-P88"/>
                                         </constraints>
+                                        <connections>
+                                            <action selector="touchingTile:" destination="TVU-zR-Z76" eventType="touchUpInside" id="fSO-0S-FWX"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lTA-b3-gPC">
                                         <rect key="frame" x="87" y="0.0" width="82" height="82"/>
@@ -887,6 +910,9 @@
                                             <constraint firstAttribute="height" constant="82" id="kqA-4P-6Hx"/>
                                             <constraint firstAttribute="width" constant="82" id="sJq-nG-bhG"/>
                                         </constraints>
+                                        <connections>
+                                            <action selector="touchingTile:" destination="TVU-zR-Z76" eventType="touchUpInside" id="DjH-3G-CYB"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oJl-uF-Z4n">
                                         <rect key="frame" x="174" y="0.0" width="82" height="82"/>
@@ -895,6 +921,9 @@
                                             <constraint firstAttribute="width" constant="82" id="9Jz-hL-tmS"/>
                                             <constraint firstAttribute="height" constant="82" id="Ldl-nL-MTt"/>
                                         </constraints>
+                                        <connections>
+                                            <action selector="touchingTile:" destination="TVU-zR-Z76" eventType="touchUpInside" id="GcB-gF-HbE"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LPU-bh-P95">
                                         <rect key="frame" x="261" y="0.0" width="82" height="82"/>
@@ -903,6 +932,9 @@
                                             <constraint firstAttribute="width" constant="82" id="V6m-Yi-EYe"/>
                                             <constraint firstAttribute="height" constant="82" id="WIP-1q-tld"/>
                                         </constraints>
+                                        <connections>
+                                            <action selector="touchingTile:" destination="TVU-zR-Z76" eventType="touchUpInside" id="cFz-Ew-fKc"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -916,6 +948,9 @@
                                             <constraint firstAttribute="width" constant="82" id="cmb-nd-LAb"/>
                                             <constraint firstAttribute="height" constant="82" id="dOw-fR-DWM"/>
                                         </constraints>
+                                        <connections>
+                                            <action selector="touchingTile:" destination="TVU-zR-Z76" eventType="touchUpInside" id="7aZ-W4-gKv"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wfq-nN-Mfq">
                                         <rect key="frame" x="87" y="0.0" width="82" height="82"/>
@@ -924,6 +959,9 @@
                                             <constraint firstAttribute="width" constant="82" id="6Yu-Y0-UKK"/>
                                             <constraint firstAttribute="height" constant="82" id="9Vw-Wc-fTR"/>
                                         </constraints>
+                                        <connections>
+                                            <action selector="touchingTile:" destination="TVU-zR-Z76" eventType="touchUpInside" id="ybR-du-m2l"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7S-kT-vcU">
                                         <rect key="frame" x="174" y="0.0" width="82" height="82"/>
@@ -932,6 +970,9 @@
                                             <constraint firstAttribute="height" constant="82" id="EDA-Yd-Rsj"/>
                                             <constraint firstAttribute="width" constant="82" id="Yhs-TZ-VxZ"/>
                                         </constraints>
+                                        <connections>
+                                            <action selector="touchingTile:" destination="TVU-zR-Z76" eventType="touchUpInside" id="vTk-cL-whr"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GFQ-FC-9xX">
                                         <rect key="frame" x="261" y="0.0" width="82" height="82"/>
@@ -981,6 +1022,23 @@
                             <constraint firstItem="Xi2-Ss-iCl" firstAttribute="top" secondItem="Iom-bh-lFr" secondAttribute="top" constant="688" id="vGk-NT-xxq"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outletCollection property="tiles" destination="Wks-cb-VyI" collectionClass="NSMutableArray" id="gdN-jn-her"/>
+                        <outletCollection property="tiles" destination="Wfq-nN-Mfq" collectionClass="NSMutableArray" id="Oci-Ny-WVf"/>
+                        <outletCollection property="tiles" destination="M7S-kT-vcU" collectionClass="NSMutableArray" id="xCr-jr-HLT"/>
+                        <outletCollection property="tiles" destination="NqF-ly-RO4" collectionClass="NSMutableArray" id="6zh-eK-r3c"/>
+                        <outletCollection property="tiles" destination="lTA-b3-gPC" collectionClass="NSMutableArray" id="tWa-xm-oPj"/>
+                        <outletCollection property="tiles" destination="oJl-uF-Z4n" collectionClass="NSMutableArray" id="vXd-yG-Egj"/>
+                        <outletCollection property="tiles" destination="LPU-bh-P95" collectionClass="NSMutableArray" id="mPc-hP-2KU"/>
+                        <outletCollection property="tiles" destination="KyS-Wx-jnn" collectionClass="NSMutableArray" id="mYt-xk-0Dl"/>
+                        <outletCollection property="tiles" destination="XAs-hy-Jpi" collectionClass="NSMutableArray" id="P3v-6s-CmM"/>
+                        <outletCollection property="tiles" destination="P3P-32-908" collectionClass="NSMutableArray" id="61n-7b-PaS"/>
+                        <outletCollection property="tiles" destination="dE8-CL-KXU" collectionClass="NSMutableArray" id="8ne-7z-1xW"/>
+                        <outletCollection property="tiles" destination="S86-ca-rvQ" collectionClass="NSMutableArray" id="Rnt-MU-iYP"/>
+                        <outletCollection property="tiles" destination="ltX-cN-Yfq" collectionClass="NSMutableArray" id="eVc-v8-fX7"/>
+                        <outletCollection property="tiles" destination="OXu-Fl-xyr" collectionClass="NSMutableArray" id="V0D-PX-hPS"/>
+                        <outletCollection property="tiles" destination="OXu-Fl-xyr" collectionClass="NSMutableArray" id="LrW-S8-UVr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dzy-9G-SdJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1310,7 +1368,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Qué imagen es la correcta?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3q2-Gw-TdB">
-                                <rect key="frame" x="93" y="154" width="228" height="21.5"/>
+                                <rect key="frame" x="93.5" y="154" width="227.5" height="21.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -1556,7 +1614,7 @@
         <image name="bulb-azul" width="40" height="40"/>
         <image name="crazynumbers" width="142" height="138"/>
         <image name="crown" width="512" height="512"/>
-        <image name="home_alt_outline" width="30" height="30"/>
+        <image name="home_alt_outline" width="28" height="28"/>
         <image name="impostor" width="512" height="512"/>
         <image name="lago" width="290" height="181"/>
         <image name="lecture" width="154" height="157"/>
