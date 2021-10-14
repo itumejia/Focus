@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="be2-qm-gZY">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -1202,7 +1201,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XAs-hy-Jpi">
                                         <rect key="frame" x="87" y="0.0" width="82" height="82"/>
-                                        <color key="backgroundColor" red="0.3437087834" green="0.35172796249999999" blue="0.47096866370000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.34509803921568627" green="0.3529411764705882" blue="0.47058823529411764" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="82" id="7qF-rK-zmC"/>
                                             <constraint firstAttribute="width" constant="82" id="nCI-cv-tO7"/>
@@ -2003,6 +2002,7 @@
                         <outlet property="currentScore" destination="6Bb-cP-ug6" id="EFe-Zq-mQ7"/>
                         <outlet property="gameIcon" destination="fXN-D7-rDE" id="bem-ZV-cNd"/>
                         <outlet property="gameName" destination="cV9-jV-KyB" id="MT9-Ht-xAc"/>
+                        <outlet property="highscore" destination="Kmh-XI-5yT" id="X27-db-qiP"/>
                         <outlet property="playButton" destination="7ox-RH-bFn" id="pHY-O6-hbX"/>
                         <segue destination="MM3-E2-fjK" kind="presentation" identifier="ResultsToNumbers" modalPresentationStyle="fullScreen" id="B7D-r0-HCK"/>
                         <segue destination="SQH-5Y-UqV" kind="presentation" identifier="ResultsToSimon" modalPresentationStyle="fullScreen" id="iFJ-W7-ggy"/>
@@ -2024,7 +2024,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="fDB-yl-EHd"/>
+        <segue reference="OMB-og-xKI"/>
         <segue reference="AMi-mX-kgG"/>
         <segue reference="RnA-jU-Tk6"/>
         <segue reference="PVe-pd-ctm"/>
@@ -2044,7 +2044,7 @@
         <image name="bulb-azul" width="40" height="40"/>
         <image name="crazynumbers" width="142" height="138"/>
         <image name="crown" width="512" height="512"/>
-        <image name="home_alt_outline" width="28" height="28"/>
+        <image name="home_alt_outline" width="30" height="30"/>
         <image name="impostor" width="512" height="512"/>
         <image name="lecture" width="154" height="157"/>
         <image name="line_chart_up" width="24" height="24"/>
