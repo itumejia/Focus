@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="be2-qm-gZY">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -201,7 +202,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="37" translatesAutoresizingMaskIntoConstraints="NO" id="kSP-XH-Hkr">
-                                <rect key="frame" x="40" y="204" width="78.5" height="593"/>
+                                <rect key="frame" x="40" y="203.5" width="78.5" height="593"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lda-m2-wL6">
                                         <rect key="frame" x="0.0" y="0.0" width="78.5" height="68"/>
@@ -1005,6 +1006,7 @@
                         <outlet property="lbl8" destination="QkG-Hf-n2p" id="cfn-Xo-iNh"/>
                         <outlet property="lbl9" destination="eog-gr-OyZ" id="r8u-i0-W79"/>
                         <outlet property="streakCount" destination="wJg-6f-Cc9" id="clp-si-IEX"/>
+                        <segue destination="VJi-rP-acz" kind="presentation" identifier="SimonToResults" modalPresentationStyle="fullScreen" id="SdN-zD-phu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0HT-wO-bY9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1106,6 +1108,7 @@
                     <connections>
                         <outlet property="labelLevel" destination="Zyw-Tq-KeV" id="Hmy-C6-dgX"/>
                         <outlet property="numbersContainer" destination="2TC-bV-wMs" id="SWK-K8-EZV"/>
+                        <segue destination="VJi-rP-acz" kind="presentation" identifier="NumbersToResults" modalPresentationStyle="fullScreen" id="fDB-yl-EHd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eoc-Li-Hkb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1335,6 +1338,9 @@
                             <constraint firstItem="Xi2-Ss-iCl" firstAttribute="top" secondItem="Iom-bh-lFr" secondAttribute="top" constant="688" id="vGk-NT-xxq"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="VJi-rP-acz" kind="presentation" identifier="ZigzagToResults" modalPresentationStyle="fullScreen" id="OMB-og-xKI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dzy-9G-SdJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1535,6 +1541,7 @@
                         <outletCollection property="plants" destination="2su-sP-jEw" collectionClass="NSMutableArray" id="4je-ZP-DEU"/>
                         <outletCollection property="plants" destination="1rk-wA-thu" collectionClass="NSMutableArray" id="XNq-h6-a6i"/>
                         <outletCollection property="plants" destination="fBW-m5-x68" collectionClass="NSMutableArray" id="8kw-CC-OYS"/>
+                        <segue destination="VJi-rP-acz" kind="presentation" identifier="ImpostorToResults" modalPresentationStyle="fullScreen" id="4WD-jt-P16"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZsW-lz-Qg9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1633,6 +1640,9 @@
                         <viewLayoutGuide key="safeArea" id="TDM-bT-GdU"/>
                         <color key="backgroundColor" red="0.31875684859999998" green="0.71047633889999995" blue="0.5312141776" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <segue destination="VJi-rP-acz" kind="presentation" identifier="PatternsToResult" modalPresentationStyle="fullScreen" id="P9w-M4-0pa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VTG-cZ-r0q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1771,6 +1781,7 @@
                         <outlet property="img1" destination="smc-PH-pOL" id="E0J-W1-GmF"/>
                         <outlet property="img2" destination="pO7-sc-jHb" id="KtW-Rb-t0b"/>
                         <outlet property="nivel" destination="j9n-Es-Mtt" id="pDT-H9-tMg"/>
+                        <segue destination="VJi-rP-acz" kind="presentation" identifier="ReadingToResults" modalPresentationStyle="fullScreen" id="kJH-xd-4BF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="172-ia-lwb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1836,7 +1847,7 @@
         <!--ResultadosView-->
         <scene sceneID="Sto-Qo-iCO">
             <objects>
-                <viewController id="VJi-rP-acz" userLabel="ResultadosView" customClass="HowToViewController" customModule="Focus" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="VJi-rP-acz" userLabel="ResultadosView" customClass="ResultsViewController" customModule="Focus" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" opaque="NO" contentMode="scaleToFill" id="CF9-R3-xfT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1973,13 +1984,17 @@
                             <constraint firstItem="Ojk-F5-exK" firstAttribute="top" secondItem="9ix-HQ-eQd" secondAttribute="bottom" constant="45" id="zU1-rd-rUr"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="currentScore" destination="6Bb-cP-ug6" id="EFe-Zq-mQ7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZTr-qx-nF2" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2179.7101449275365" y="-646.20535714285711"/>
+            <point key="canvasLocation" x="1030" y="1821"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="kJH-xd-4BF"/>
         <segue reference="icJ-Hw-KMk"/>
     </inferredMetricsTieBreakers>
     <resources>
