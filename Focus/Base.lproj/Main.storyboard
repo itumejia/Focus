@@ -796,18 +796,18 @@
                                                                     <action selector="touchingNormalTile:" destination="TVU-zR-Z76" eventType="touchUpInside" id="xbD-4h-sPA"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2YK-mn-bJr">
+                                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2YK-mn-bJr">
                                                                 <rect key="frame" x="87" y="0.0" width="82" height="82"/>
                                                                 <color key="backgroundColor" red="0.34371984" green="0.35563802719999998" blue="0.47489166259999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <connections>
                                                                     <action selector="touchingNormalTile:" destination="TVU-zR-Z76" eventType="touchUpInside" id="nBI-C3-vrf"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pGE-cl-p4l">
+                                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pGE-cl-p4l">
                                                                 <rect key="frame" x="174" y="0.0" width="82" height="82"/>
                                                                 <color key="backgroundColor" red="0.34371984" green="0.35563802719999998" blue="0.47489166259999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <connections>
-                                                                    <action selector="touchingNormalTile:" destination="TVU-zR-Z76" eventType="touchUpInside" id="8SF-qd-gPK"/>
+                                                                    <action selector="touchingNormalTile:" destination="TVU-zR-Z76" eventType="touchUpInside" id="UzV-nG-V29"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="whf-bY-Ofz">
@@ -817,34 +817,37 @@
                                                                 <state key="normal" title="B">
                                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <action selector="endGame:" destination="TVU-zR-Z76" eventType="touchUpInside" id="nQR-H7-xiW"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="cc2-tJ-lEn">
                                                         <rect key="frame" x="0.0" y="87" width="343" height="82"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tns-K4-oSO">
+                                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tns-K4-oSO">
                                                                 <rect key="frame" x="0.0" y="0.0" width="82" height="82"/>
                                                                 <color key="backgroundColor" red="0.34371984" green="0.35563802719999998" blue="0.47489166259999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <connections>
                                                                     <action selector="touchingNormalTile:" destination="TVU-zR-Z76" eventType="touchUpInside" id="vgd-AA-V3I"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tdg-ds-YVi">
+                                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tdg-ds-YVi">
                                                                 <rect key="frame" x="87" y="0.0" width="82" height="82"/>
                                                                 <color key="backgroundColor" red="0.34371984" green="0.35563802719999998" blue="0.47489166259999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <connections>
                                                                     <action selector="touchingNormalTile:" destination="TVU-zR-Z76" eventType="touchUpInside" id="dCJ-ou-kXU"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sKM-sa-Lle">
+                                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sKM-sa-Lle">
                                                                 <rect key="frame" x="174" y="0.0" width="82" height="82"/>
                                                                 <color key="backgroundColor" red="0.34371984" green="0.35563802719999998" blue="0.47489166259999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <connections>
                                                                     <action selector="touchingNormalTile:" destination="TVU-zR-Z76" eventType="touchUpInside" id="iys-j6-8Pm"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xi8-ck-8VY">
+                                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xi8-ck-8VY">
                                                                 <rect key="frame" x="261" y="0.0" width="82" height="82"/>
                                                                 <color key="backgroundColor" red="0.34371984" green="0.35563802719999998" blue="0.47489166259999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <connections>
@@ -856,28 +859,28 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="YIp-6K-cJ1">
                                                         <rect key="frame" x="0.0" y="174" width="343" height="82"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xig-LN-cU4">
+                                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xig-LN-cU4">
                                                                 <rect key="frame" x="0.0" y="0.0" width="82" height="82"/>
                                                                 <color key="backgroundColor" red="0.34371984" green="0.35563802719999998" blue="0.47489166259999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <connections>
                                                                     <action selector="touchingNormalTile:" destination="TVU-zR-Z76" eventType="touchUpInside" id="Kza-mp-red"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W8B-JI-ANT">
+                                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W8B-JI-ANT">
                                                                 <rect key="frame" x="87" y="0.0" width="82" height="82"/>
                                                                 <color key="backgroundColor" red="0.34371984" green="0.35563802719999998" blue="0.47489166259999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <connections>
                                                                     <action selector="touchingNormalTile:" destination="TVU-zR-Z76" eventType="touchUpInside" id="xpG-Lg-GVM"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GZV-zO-Tyz">
+                                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GZV-zO-Tyz">
                                                                 <rect key="frame" x="174" y="0.0" width="82" height="82"/>
                                                                 <color key="backgroundColor" red="0.34371984" green="0.35563802719999998" blue="0.47489166259999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <connections>
                                                                     <action selector="touchingNormalTile:" destination="TVU-zR-Z76" eventType="touchUpInside" id="RRB-vR-AiH"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hm8-uj-T5Z">
+                                                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hm8-uj-T5Z">
                                                                 <rect key="frame" x="261" y="0.0" width="82" height="82"/>
                                                                 <color key="backgroundColor" red="0.34371984" green="0.35563802719999998" blue="0.47489166259999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <connections>
@@ -896,22 +899,26 @@
                                                                 <state key="normal" title="A">
                                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <action selector="startingGame:" destination="TVU-zR-Z76" eventType="touchUpInside" id="ORH-Vi-Kv5"/>
+                                                                    <action selector="touchingNormalTile:" destination="TVU-zR-Z76" eventType="touchUpInside" id="gHA-rL-pe8"/>
+                                                                </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wm0-eb-Cqm">
+                                                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wm0-eb-Cqm">
                                                                 <rect key="frame" x="87" y="0.0" width="82" height="82"/>
                                                                 <color key="backgroundColor" red="0.34509803921568627" green="0.36078431372549019" blue="0.47843137254901957" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <connections>
                                                                     <action selector="touchingNormalTile:" destination="TVU-zR-Z76" eventType="touchUpInside" id="pkS-Sc-Qzx"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gWJ-kW-fsV">
+                                                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gWJ-kW-fsV">
                                                                 <rect key="frame" x="174" y="0.0" width="82" height="82"/>
                                                                 <color key="backgroundColor" red="0.34371984" green="0.35563802719999998" blue="0.47489166259999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <connections>
                                                                     <action selector="touchingNormalTile:" destination="TVU-zR-Z76" eventType="touchUpInside" id="0gi-wR-khY"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zob-ci-Dlf">
+                                                            <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zob-ci-Dlf">
                                                                 <rect key="frame" x="261" y="0.0" width="82" height="82"/>
                                                                 <color key="backgroundColor" red="0.34371984" green="0.35563802719999998" blue="0.47489166259999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <connections>
@@ -992,6 +999,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="endingTile" destination="whf-bY-Ofz" id="Nre-nF-tm2"/>
+                        <outlet property="levelLabel" destination="Xi2-Ss-iCl" id="CZa-0T-iy0"/>
+                        <outlet property="startingTile" destination="YG0-oV-Yag" id="bCV-F1-S8V"/>
                         <outletCollection property="normalTiles" destination="cBp-zf-KZM" collectionClass="NSMutableArray" id="yE5-HO-oiy"/>
                         <outletCollection property="normalTiles" destination="2YK-mn-bJr" collectionClass="NSMutableArray" id="8rO-eF-VTW"/>
                         <outletCollection property="normalTiles" destination="pGE-cl-p4l" collectionClass="NSMutableArray" id="JyC-WE-AEj"/>
@@ -1006,8 +1016,6 @@
                         <outletCollection property="normalTiles" destination="wm0-eb-Cqm" collectionClass="NSMutableArray" id="FDw-yM-GyE"/>
                         <outletCollection property="normalTiles" destination="gWJ-kW-fsV" collectionClass="NSMutableArray" id="qnU-lP-Ozg"/>
                         <outletCollection property="normalTiles" destination="zob-ci-Dlf" collectionClass="NSMutableArray" id="AGg-nr-fi4"/>
-                        <outletCollection property="checkpointTiles" destination="YG0-oV-Yag" collectionClass="NSMutableArray" id="GG0-DZ-FAE"/>
-                        <outletCollection property="checkpointTiles" destination="whf-bY-Ofz" collectionClass="NSMutableArray" id="Xok-B8-wMn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dzy-9G-SdJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
