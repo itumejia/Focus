@@ -301,7 +301,7 @@ class Reading2ControllerView: UIViewController {
 //            nextScreen() //Pasa de una pantalla a otra
             
         } else {
-            nivel.text = "Perdiste FF"
+            performSegue(withIdentifier: "ReadingToResults", sender: nil)
             
         }
         
@@ -312,6 +312,15 @@ class Reading2ControllerView: UIViewController {
         vc.modalPresentationStyle = .fullScreen
         present(vc, animated: true)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if let resultsScreen = segue.destination as? ResultsViewController {
+                resultsScreen.gamePlayed = 4
+                resultsScreen.score = Reading2ControllerView.cont
+                Reading2ControllerView.cont = 1
+            }
+        }
+
     
 
 }

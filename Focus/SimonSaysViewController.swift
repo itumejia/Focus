@@ -159,7 +159,7 @@ class SimonSaysViewController:UIViewController {
             print(number)
                         flashAndPlaySound(number: number)
                         if number != array[count] {
-                            streakCount.text = "YOU LOST!"
+                            performSegue(withIdentifier: "SimonToResults", sender: nil)
                             userTurn = false
                         }
                         else {
@@ -182,6 +182,13 @@ class SimonSaysViewController:UIViewController {
         streakCount.text =  "Puntos: 0"
         getNext()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if let resultsScreen = segue.destination as? ResultsViewController {
+                resultsScreen.gamePlayed = 0
+                resultsScreen.score = array.count
+            }
+        }
     
     
 }
