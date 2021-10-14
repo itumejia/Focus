@@ -1882,6 +1882,9 @@
                                                 <integer key="value" value="15"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="playAgain:" destination="VJi-rP-acz" eventType="touchUpInside" id="Mfj-Mc-KNm"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1997,6 +2000,12 @@
                     </view>
                     <connections>
                         <outlet property="currentScore" destination="6Bb-cP-ug6" id="EFe-Zq-mQ7"/>
+                        <segue destination="MM3-E2-fjK" kind="presentation" identifier="ResultsToNumbers" modalPresentationStyle="fullScreen" id="B7D-r0-HCK"/>
+                        <segue destination="SQH-5Y-UqV" kind="presentation" identifier="ResultsToSimon" modalPresentationStyle="fullScreen" id="iFJ-W7-ggy"/>
+                        <segue destination="TVU-zR-Z76" kind="presentation" identifier="ResultsToZigzag" modalPresentationStyle="fullScreen" id="hZ4-TY-omu"/>
+                        <segue destination="Oxe-Cj-A6A" kind="presentation" identifier="ResultsToImpostor" modalPresentationStyle="fullScreen" id="PVe-pd-ctm"/>
+                        <segue destination="qJg-AB-zlO" kind="presentation" identifier="ResultsToPatterns" modalPresentationStyle="fullScreen" id="RnA-jU-Tk6"/>
+                        <segue destination="Rht-1V-pGY" kind="presentation" identifier="ResultsToReading" modalPresentationStyle="fullScreen" id="AMi-mX-kgG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZTr-qx-nF2" sceneMemberID="firstResponder"/>
@@ -2007,11 +2016,17 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1030" y="1821"/>
+            <point key="canvasLocation" x="732" y="1876"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="kJH-xd-4BF"/>
+        <segue reference="fDB-yl-EHd"/>
+        <segue reference="AMi-mX-kgG"/>
+        <segue reference="RnA-jU-Tk6"/>
+        <segue reference="PVe-pd-ctm"/>
+        <segue reference="hZ4-TY-omu"/>
+        <segue reference="B7D-r0-HCK"/>
+        <segue reference="iFJ-W7-ggy"/>
         <segue reference="icJ-Hw-KMk"/>
     </inferredMetricsTieBreakers>
     <resources>
