@@ -1962,6 +1962,13 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_alt_outline" translatesAutoresizingMaskIntoConstraints="NO" id="U7C-In-ZKo">
+                                <rect key="frame" x="30" y="59" width="51" height="47"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="9Gu-94-sty" appends="YES" id="Ku1-Fc-xWo"/>
+                                </connections>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sNt-pE-aHz"/>
                         <color key="backgroundColor" red="0.231372565" green="0.23921570180000001" blue="0.33725491169999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1969,6 +1976,8 @@
                             <constraint firstItem="yi1-A5-BOF" firstAttribute="width" secondItem="CF9-R3-xfT" secondAttribute="width" id="2E1-r9-N0r"/>
                             <constraint firstItem="fXN-D7-rDE" firstAttribute="centerX" secondItem="CF9-R3-xfT" secondAttribute="centerX" id="5hk-6i-AVm"/>
                             <constraint firstItem="Ojk-F5-exK" firstAttribute="height" secondItem="yi1-A5-BOF" secondAttribute="height" multiplier="0.35" id="6ee-sb-9Ib"/>
+                            <constraint firstItem="U7C-In-ZKo" firstAttribute="leading" secondItem="sNt-pE-aHz" secondAttribute="leading" constant="30" id="Iu3-mm-go6"/>
+                            <constraint firstItem="U7C-In-ZKo" firstAttribute="top" secondItem="sNt-pE-aHz" secondAttribute="top" constant="15" id="NcD-O1-pDB"/>
                             <constraint firstItem="fXN-D7-rDE" firstAttribute="height" secondItem="CF9-R3-xfT" secondAttribute="height" multiplier="0.17" id="Sas-PO-SuU"/>
                             <constraint firstItem="yi1-A5-BOF" firstAttribute="top" secondItem="cV9-jV-KyB" secondAttribute="bottom" constant="35" id="Zwt-dc-Z88"/>
                             <constraint firstItem="Ojk-F5-exK" firstAttribute="centerX" secondItem="CF9-R3-xfT" secondAttribute="centerX" id="aL0-n0-a8g"/>
@@ -1980,7 +1989,9 @@
                             <constraint firstItem="7ox-RH-bFn" firstAttribute="top" secondItem="Ojk-F5-exK" secondAttribute="bottom" constant="60" id="ndF-ha-z14"/>
                             <constraint firstItem="fXN-D7-rDE" firstAttribute="top" secondItem="sNt-pE-aHz" secondAttribute="top" constant="35" id="nl6-Ye-aYj"/>
                             <constraint firstItem="cV9-jV-KyB" firstAttribute="width" secondItem="CF9-R3-xfT" secondAttribute="width" multiplier="0.227053" id="nxn-cv-opd"/>
+                            <constraint firstItem="U7C-In-ZKo" firstAttribute="width" secondItem="CF9-R3-xfT" secondAttribute="width" multiplier="0.123188" id="sUb-DK-etx"/>
                             <constraint firstItem="yi1-A5-BOF" firstAttribute="height" secondItem="CF9-R3-xfT" secondAttribute="height" multiplier="0.7" id="tX1-cu-hlm"/>
+                            <constraint firstItem="U7C-In-ZKo" firstAttribute="height" secondItem="CF9-R3-xfT" secondAttribute="height" multiplier="0.0524554" id="vAp-AN-AyF"/>
                             <constraint firstItem="Ojk-F5-exK" firstAttribute="top" secondItem="9ix-HQ-eQd" secondAttribute="bottom" constant="45" id="zU1-rd-rUr"/>
                         </constraints>
                     </view>
@@ -1989,6 +2000,12 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZTr-qx-nF2" sceneMemberID="firstResponder"/>
+                <exit id="FzU-gw-FiQ" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="9Gu-94-sty">
+                    <connections>
+                        <segue destination="FzU-gw-FiQ" kind="unwind" unwindAction="unwindToFirstViewController:" id="xPw-h0-hxQ"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1030" y="1821"/>
         </scene>
