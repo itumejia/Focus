@@ -29,6 +29,7 @@ class CrazyNumbersViewController: UIViewController {
     
     func newLevel() {
         randomNumbers = game.getRandomNumbers() //Get list of random numbers to populate the board
+        board.randomNumbersCount = 0
         populateBoard()
         boardLimitX = 0
         boardLimitY = 0
