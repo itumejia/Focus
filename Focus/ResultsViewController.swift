@@ -10,6 +10,12 @@ import UIKit
 class ResultsViewController: UIViewController {
     
     @IBOutlet weak var currentScore: UILabel!
+    @IBOutlet weak var gameName: UILabel!
+    @IBOutlet weak var gameIcon: UIImageView!
+    @IBOutlet var backgroundView: UIView!
+    @IBOutlet weak var playButton: UIButton!
+    
+    let model = Results()
     
     var gamePlayed = 0
     var score = 0
@@ -18,6 +24,12 @@ class ResultsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         currentScore.text = String(score)
+        
+        gameName.text = model.getGameName(index: gamePlayed)
+        backgroundView.backgroundColor = model.getGameColor(index: gamePlayed)
+        playButton.backgroundColor = model.getGameColor(index: gamePlayed)
+        gameIcon.image = model.getGameIcon(index: gamePlayed)
+        
     }
 
     @IBAction func playAgain(_ sender: Any) {

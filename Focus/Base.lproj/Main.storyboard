@@ -1852,8 +1852,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zig Zag" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="cV9-jV-KyB">
-                                <rect key="frame" x="160" y="251.5" width="94" height="32.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zig Zag" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="cV9-jV-KyB">
+                                <rect key="frame" x="41.5" y="251.5" width="331" height="32.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="27"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1991,7 +1991,7 @@
                             <constraint firstItem="cV9-jV-KyB" firstAttribute="centerX" secondItem="CF9-R3-xfT" secondAttribute="centerX" id="lc9-Rd-FxC"/>
                             <constraint firstItem="7ox-RH-bFn" firstAttribute="top" secondItem="Ojk-F5-exK" secondAttribute="bottom" constant="60" id="ndF-ha-z14"/>
                             <constraint firstItem="fXN-D7-rDE" firstAttribute="top" secondItem="sNt-pE-aHz" secondAttribute="top" constant="35" id="nl6-Ye-aYj"/>
-                            <constraint firstItem="cV9-jV-KyB" firstAttribute="width" secondItem="CF9-R3-xfT" secondAttribute="width" multiplier="0.227053" id="nxn-cv-opd"/>
+                            <constraint firstItem="cV9-jV-KyB" firstAttribute="width" secondItem="CF9-R3-xfT" secondAttribute="width" multiplier="0.8" id="nxn-cv-opd"/>
                             <constraint firstItem="U7C-In-ZKo" firstAttribute="width" secondItem="CF9-R3-xfT" secondAttribute="width" multiplier="0.123188" id="sUb-DK-etx"/>
                             <constraint firstItem="yi1-A5-BOF" firstAttribute="height" secondItem="CF9-R3-xfT" secondAttribute="height" multiplier="0.7" id="tX1-cu-hlm"/>
                             <constraint firstItem="U7C-In-ZKo" firstAttribute="height" secondItem="CF9-R3-xfT" secondAttribute="height" multiplier="0.0524554" id="vAp-AN-AyF"/>
@@ -1999,7 +1999,11 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backgroundView" destination="CF9-R3-xfT" id="qDF-Pg-fad"/>
                         <outlet property="currentScore" destination="6Bb-cP-ug6" id="EFe-Zq-mQ7"/>
+                        <outlet property="gameIcon" destination="fXN-D7-rDE" id="bem-ZV-cNd"/>
+                        <outlet property="gameName" destination="cV9-jV-KyB" id="MT9-Ht-xAc"/>
+                        <outlet property="playButton" destination="7ox-RH-bFn" id="pHY-O6-hbX"/>
                         <segue destination="MM3-E2-fjK" kind="presentation" identifier="ResultsToNumbers" modalPresentationStyle="fullScreen" id="B7D-r0-HCK"/>
                         <segue destination="SQH-5Y-UqV" kind="presentation" identifier="ResultsToSimon" modalPresentationStyle="fullScreen" id="iFJ-W7-ggy"/>
                         <segue destination="TVU-zR-Z76" kind="presentation" identifier="ResultsToZigzag" modalPresentationStyle="fullScreen" id="hZ4-TY-omu"/>

@@ -32,6 +32,7 @@
 		9DA1258726E81AD400097DC5 /* CrazyNumbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA1258626E81AD400097DC5 /* CrazyNumbersViewController.swift */; };
 		9DA1258926E81B1F00097DC5 /* CrazyNumbersGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA1258826E81B1F00097DC5 /* CrazyNumbersGame.swift */; };
 		9DCA0A4F27189820000B3D42 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCA0A4E27189820000B3D42 /* ResultsViewController.swift */; };
+		9DCA0A512718A2D6000B3D42 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCA0A502718A2D6000B3D42 /* Results.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		9DA1258626E81AD400097DC5 /* CrazyNumbersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrazyNumbersViewController.swift; sourceTree = "<group>"; };
 		9DA1258826E81B1F00097DC5 /* CrazyNumbersGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrazyNumbersGame.swift; sourceTree = "<group>"; };
 		9DCA0A4E27189820000B3D42 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		9DCA0A502718A2D6000B3D42 /* Results.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 				9D2D800D2713943E001B7DC5 /* HowToViewController.swift */,
 				9D2D800F271396F0001B7DC5 /* HowTo.swift */,
 				9DCA0A4E27189820000B3D42 /* ResultsViewController.swift */,
+				9DCA0A502718A2D6000B3D42 /* Results.swift */,
 			);
 			path = Focus;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 				1218B912270A7F530061BBAF /* ImpostorViewController.swift in Sources */,
 				9DCA0A4F27189820000B3D42 /* ResultsViewController.swift in Sources */,
 				125E40B9270A57B9008A1C1E /* ImpostorGame.swift in Sources */,
+				9DCA0A512718A2D6000B3D42 /* Results.swift in Sources */,
 				9DA1258726E81AD400097DC5 /* CrazyNumbersViewController.swift in Sources */,
 				9D2D8010271396F0001B7DC5 /* HowTo.swift in Sources */,
 				9D21994826D695C600B38018 /* SceneDelegate.swift in Sources */,
