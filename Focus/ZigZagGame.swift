@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+
+class ZigZagGame{
+    var level = 1
+    
+    func nextLevel(){
+        level = level + 1
+    }
+    
+}
