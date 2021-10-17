@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-
+//Class Int type to controll the counter for level
 class PatternsGame{
     var level = 1
     

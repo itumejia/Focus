@@ -10,18 +10,16 @@ import UIKit
 
 class Reading2ControllerView: UIViewController {
     
-
+    //Definition of components
     @IBOutlet weak var img1: UIImageView!
     @IBOutlet weak var img2: UIImageView!
     @IBOutlet weak var nivel: UILabel!
     
     var frase = ""
     static var cont = 1
-    //var cont2 = cont
-    //var myString = String(cont)
+
     
-    
-    
+    //Images to use for the game
     let images = [
         UIImage(named: "enredados"), //Enredados 0
         UIImage(named: "enredados2"),
@@ -72,12 +70,14 @@ class Reading2ControllerView: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        //level controller
         var contador2 = Reading2ControllerView.cont
         nivel.text = (nivel.text ?? "") + "\(contador2)"
         linkImages()
     }
-    
+    //loads the images linked to the choosen phrase
     func linkImages(){
+        //instance of the first view controller
         let vc = storyboard? .instantiateViewController(identifier: "reading") as! ReadingViewController
         
         if frase == vc.phrases[35] { //LionKing
@@ -144,19 +144,11 @@ class Reading2ControllerView: UIViewController {
         
     }
     
-    //19 y 20 hiro
-    //21 y 22 tiana
-    //23 y 24 intensa
-    //25 y 26 zoo
-    //27 y 28 UP
-    //29 y 30 Increibles
-    //31 y 32 Walle
-    //33 y 34 Dragon
-    
+    //Validates the answer
     @IBAction func onTap(_ sender: UITapGestureRecognizer) {
-        
+        //instance of the first view controller
         let vc = storyboard? .instantiateViewController(identifier: "reading") as! ReadingViewController
-        
+        //Validation of the user answer
         if (frase == vc.phrases[35] && (sender.view as! UIImageView).image == UIImage(named: "leon2")){
             Reading2ControllerView.cont = Reading2ControllerView.cont + 1
             nextScreen() //Pasa de una pantalla a otra
@@ -293,29 +285,25 @@ class Reading2ControllerView: UIViewController {
             Reading2ControllerView.cont = Reading2ControllerView.cont + 1
             nextScreen() //Pasa de una pantalla a otra
             
-//        } else if (frase == vc.phrases[32] && (sender.view as! UIImageView).image == UIImage(named: "train")){
-//            Reading2ControllerView.cont = Reading2ControllerView.cont + 1
-//            nextScreen() //Pasa de una pantalla a otra
-//        } else if (frase == vc.phrases[36] && (sender.view as! UIImageView).image == UIImage(named: "train2")){
-//            Reading2ControllerView.cont = Reading2ControllerView.cont + 1
-//            nextScreen() //Pasa de una pantalla a otra
-            
         } else {
+            //If the answer is not correct it sends you to the results screen
             performSegue(withIdentifier: "ReadingToResults", sender: nil)
             
         }
         
     }
-    
+    //Function that helps to jump between the two screens involved in this game
     func nextScreen(){
         let vc = storyboard? .instantiateViewController(identifier: "reading") as! ReadingViewController
         vc.modalPresentationStyle = .fullScreen
         present(vc, animated: true)
     }
-    
+    //Segue for saving the score for results screen
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
             if let resultsScreen = segue.destination as? ResultsViewController {
+                //assignation to the corresponding game over screen
                 resultsScreen.gamePlayed = 4
+                //For maximum an actual score
                 resultsScreen.score = Reading2ControllerView.cont
                 Reading2ControllerView.cont = 1
             }
