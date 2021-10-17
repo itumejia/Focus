@@ -35,7 +35,7 @@ class ZigZagViewController: UIViewController {
                 levelLabel.text = "Nivel " + String(game.level)
             }
             else{
-                levelLabel.text = "Perdiste"
+                performSegue(withIdentifier: "ZigzagToResults", sender: nil)
             }
         }
             
@@ -98,7 +98,7 @@ class ZigZagViewController: UIViewController {
                     game.coinsCollected += 1
                 }
                 if game.isDeadend(currentTile: game.lastTouchedTile){
-                    levelLabel.text = "Perdiste"
+                    performSegue(withIdentifier: "ZigzagToResults", sender: nil)
                 }
             }
             
@@ -177,9 +177,11 @@ class ZigZagViewController: UIViewController {
         startingTile.backgroundColor = endingTile.backgroundColor
     }
     
-
-    
-
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if let resultsScreen = segue.destination as? ResultsViewController {
+                resultsScreen.gamePlayed = 5
+                resultsScreen.score = game.level
+            }
+    }
 
 }

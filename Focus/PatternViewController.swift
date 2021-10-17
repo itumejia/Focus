@@ -24,7 +24,7 @@ class PatternViewController: UIViewController {
             loadImages()
         }
         else{
-            level.text = "Perdiste"
+            performSegue(withIdentifier: "PatternsToResult", sender: nil)
         }
     }
     
@@ -168,6 +168,13 @@ class PatternViewController: UIViewController {
     func restart(){
         let shapeSlot = [0,1,2,3,4,5,6]
         let shapeOptions = [0,1,2,3]
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if let resultsScreen = segue.destination as? ResultsViewController {
+                resultsScreen.gamePlayed = 2
+                resultsScreen.score = game.level
+            }
     }
 
 }
