@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="be2-qm-gZY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="be2-qm-gZY">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -572,7 +572,7 @@
                                 </connections>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Historias Divertidas" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="bAc-rO-tgM">
-                                <rect key="frame" x="178.5" y="708" width="57" height="29"/>
+                                <rect key="frame" x="178.5" y="708" width="57" height="31.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -955,43 +955,64 @@
                                     <constraint firstItem="6Hf-m5-5lz" firstAttribute="centerX" secondItem="vkE-yu-Bwy" secondAttribute="centerX" id="nyf-TG-F1C"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Simon Dice" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Tq-Zr-t26">
-                                <rect key="frame" x="132" y="108" width="150" height="25"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Simon Dice" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Tq-Zr-t26">
+                                <rect key="frame" x="80" y="76" width="262" height="58"/>
+                                <color key="tintColor" red="0.98030656579999997" green="0.98044699430000004" blue="0.98027580979999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="3PB-T1-mSs"/>
+                                    <constraint firstAttribute="width" constant="183" id="3PB-T1-mSs"/>
                                     <constraint firstAttribute="height" constant="25" id="KcR-HF-Z84"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="21"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="33"/>
+                                <color key="textColor" red="0.98030656579999997" green="0.98044699430000004" blue="0.98027580979999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" red="0.98030656579999997" green="0.98044699430000004" blue="0.98027580979999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Puntos: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wJg-6f-Cc9">
-                                <rect key="frame" x="164" y="166" width="87" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Puntos: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wJg-6f-Cc9">
+                                <rect key="frame" x="135" y="713" width="144" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="A1T-4C-K9i"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="29"/>
+                                <color key="textColor" red="0.98030656579999997" green="0.98044699430000004" blue="0.98027580979999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rbe-Nb-cuJ">
-                                <rect key="frame" x="127" y="716" width="155" height="61"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
-                                <state key="normal" title="Empezar"/>
+                                <rect key="frame" x="89" y="783" width="237" height="39"/>
+                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="36"/>
+                                <state key="normal" title="Jugar">
+                                    <color key="titleColor" red="0.21210968490000001" green="0.50674635170000004" blue="0.72100371119999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.21210968490000001" green="0.50674635170000004" blue="0.72100371119999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="startGame:" destination="SQH-5Y-UqV" eventType="touchUpInside" id="TzL-W4-9Bt"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="¡Sigue el patrón de los cuadritos!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1P-FT-yWc">
+                                <rect key="frame" x="70" y="170" width="283" height="61"/>
+                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="20"/>
+                                <color key="textColor" red="0.98030656579999997" green="0.98044699430000004" blue="0.98027580979999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="N3Z-GO-pzu"/>
                         <color key="backgroundColor" red="0.91764705882352937" green="0.70588235294117641" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="vkE-yu-Bwy" firstAttribute="leading" secondItem="N3Z-GO-pzu" secondAttribute="leading" constant="28" id="12X-Ea-ThH"/>
                             <constraint firstItem="9Tq-Zr-t26" firstAttribute="top" secondItem="N3Z-GO-pzu" secondAttribute="top" constant="64" id="2fq-eZ-eHo"/>
+                            <constraint firstItem="b1P-FT-yWc" firstAttribute="leading" secondItem="N3Z-GO-pzu" secondAttribute="leading" constant="70" id="5Rv-Xs-bQU"/>
                             <constraint firstItem="9Tq-Zr-t26" firstAttribute="centerX" secondItem="L5g-bE-0rf" secondAttribute="centerX" id="95k-lW-X93"/>
                             <constraint firstItem="9Tq-Zr-t26" firstAttribute="centerX" secondItem="rbe-Nb-cuJ" secondAttribute="centerX" id="9ov-q1-qFO"/>
+                            <constraint firstItem="rbe-Nb-cuJ" firstAttribute="top" secondItem="wJg-6f-Cc9" secondAttribute="bottom" constant="34" id="FKk-a5-8f5"/>
+                            <constraint firstItem="wJg-6f-Cc9" firstAttribute="top" secondItem="vkE-yu-Bwy" secondAttribute="bottom" constant="31.5" id="U82-Ei-E76"/>
+                            <constraint firstItem="b1P-FT-yWc" firstAttribute="centerX" secondItem="9Tq-Zr-t26" secondAttribute="centerX" id="UCb-4X-5Si"/>
                             <constraint firstItem="N3Z-GO-pzu" firstAttribute="bottom" secondItem="rbe-Nb-cuJ" secondAttribute="bottom" constant="44" id="W9Z-k7-eDI"/>
                             <constraint firstItem="vkE-yu-Bwy" firstAttribute="centerY" secondItem="L5g-bE-0rf" secondAttribute="centerY" id="XzJ-yY-1uI"/>
                             <constraint firstItem="vkE-yu-Bwy" firstAttribute="top" secondItem="9Tq-Zr-t26" secondAttribute="bottom" constant="81.5" id="YRh-td-u3A"/>
+                            <constraint firstItem="wJg-6f-Cc9" firstAttribute="centerX" secondItem="rbe-Nb-cuJ" secondAttribute="centerX" id="aVn-RH-Wqt"/>
                             <constraint firstItem="vkE-yu-Bwy" firstAttribute="trailing" secondItem="L5g-bE-0rf" secondAttribute="trailingMargin" id="bas-h8-VKA"/>
+                            <constraint firstItem="b1P-FT-yWc" firstAttribute="top" secondItem="9Tq-Zr-t26" secondAttribute="bottom" constant="8" id="l8d-si-TNu"/>
+                            <constraint firstItem="vkE-yu-Bwy" firstAttribute="top" secondItem="b1P-FT-yWc" secondAttribute="bottom" constant="10.5" id="r1P-pg-0cg"/>
+                            <constraint firstItem="rbe-Nb-cuJ" firstAttribute="leading" secondItem="N3Z-GO-pzu" secondAttribute="leading" constant="89" id="ucg-uY-8Li"/>
+                            <constraint firstItem="wJg-6f-Cc9" firstAttribute="leading" secondItem="N3Z-GO-pzu" secondAttribute="leading" constant="135" id="xET-R7-XQz"/>
                         </constraints>
                     </view>
                     <connections>
@@ -1055,7 +1076,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-762" y="944"/>
+            <point key="canvasLocation" x="-762.31884057971024" y="943.52678571428567"/>
         </scene>
         <!--CrazyNumbersView-->
         <scene sceneID="Oj9-RZ-zDJ">
@@ -1356,7 +1377,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="VJi-rP-acz" kind="presentation" identifier="ZigzagToResults" modalPresentationStyle="fullScreen" id="OMB-og-xKI"/>
                         <outlet property="endingTile" destination="whf-bY-Ofz" id="Nre-nF-tm2"/>
                         <outlet property="levelLabel" destination="Xi2-Ss-iCl" id="CZa-0T-iy0"/>
                         <outlet property="startingTile" destination="YG0-oV-Yag" id="bCV-F1-S8V"/>
@@ -1374,6 +1394,7 @@
                         <outletCollection property="normalTiles" destination="wm0-eb-Cqm" collectionClass="NSMutableArray" id="FDw-yM-GyE"/>
                         <outletCollection property="normalTiles" destination="gWJ-kW-fsV" collectionClass="NSMutableArray" id="qnU-lP-Ozg"/>
                         <outletCollection property="normalTiles" destination="zob-ci-Dlf" collectionClass="NSMutableArray" id="AGg-nr-fi4"/>
+                        <segue destination="VJi-rP-acz" kind="presentation" identifier="ZigzagToResults" modalPresentationStyle="fullScreen" id="OMB-og-xKI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dzy-9G-SdJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
