@@ -9,12 +9,11 @@ import UIKit
 
 class ReadingViewController: UIViewController {
     
-//    public var letras = "La princesa arma un rompecabezas"
     
     @IBOutlet weak var phrase: UILabel!
     
 
-    
+    //Phrases to play definition
     let phrases = [
         "La princesa arma un rompecabezas", //0
         "El Rayo McQueen corre en una carrera",
@@ -55,19 +54,21 @@ class ReadingViewController: UIViewController {
         "Marlin el pez naranja y Dory el pez azul nadan con las tortugas",
         "Remi da los ultimos toques a su famoso platillo Ratatouille con una cuchara"] //37
     
-    
+    //Selection of the phrase
     var randomNumber = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.randomNumber = Int.random(in: 0...phrases.count-1)
+        //Set the random phrase to the screen label
         phrase.text = phrases[randomNumber]
         
     }
-    //Asignaciones a la siguiente pantalla después de usar segue
+    //Assign values to the next screen after using segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.destination is Reading2ControllerView {
                 let vc = segue.destination as? Reading2ControllerView
+            //catch the phrase in the next view controller
             vc?.frase = phrase.text!
             }
     }
