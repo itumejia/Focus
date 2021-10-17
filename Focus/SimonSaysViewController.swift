@@ -9,6 +9,8 @@ import UIKit
 import AVFoundation
 
 class SimonSaysViewController:UIViewController {
+    
+    var game = SimonSaysGame()
 
     @IBOutlet weak var streakCount: UILabel!
     @IBOutlet weak var lbl9: UILabel!
@@ -20,10 +22,8 @@ class SimonSaysViewController:UIViewController {
     @IBOutlet weak var lbl3: UILabel!
     @IBOutlet weak var lbl2: UILabel!
     @IBOutlet weak var lbl1: UILabel!
-    var userTurn = false
-        var array = [Int]()
-        var count = 0
-
+    
+        
         func flashAndPlaySound(number: Int) {
             switch(number) {
             case 0: UIView.animate(withDuration: 1, delay: 0, animations:
@@ -95,7 +95,7 @@ class SimonSaysViewController:UIViewController {
 
         func playAll() -> Void {
             var delay = 0
-            for number in array {
+            for number in game.array {
             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(delay), execute: {
                 self.flashAndPlaySound(number: number)
             })
@@ -104,11 +104,11 @@ class SimonSaysViewController:UIViewController {
         }
 
     @objc func getNext() -> Void {
-            userTurn = false
+            game.userTurn = false
             let next = Int(arc4random_uniform(9))
-            array.append(next)
+            game.array.append(next)
             playAll()
-            userTurn = true
+            game.userTurn = true
         }
     
     override func viewDidLoad() {
@@ -118,7 +118,7 @@ class SimonSaysViewController:UIViewController {
     
     
     @IBAction func handleTap2(_ sender: UITapGestureRecognizer) {
-        if userTurn && count < array.count {
+        if game.userTurn && game.score < game.array.count {
                     var number = 0
              let label = sender.view as! UILabel
                     if label == lbl1 {
@@ -143,15 +143,15 @@ class SimonSaysViewController:UIViewController {
 
             print(number)
                         flashAndPlaySound(number: number)
-                        if number != array[count] {
+            if number != game.array[game.score] {
                             performSegue(withIdentifier: "SimonToResults", sender: nil)
-                            userTurn = false
+                            game.userTurn = false
                         }
                         else {
-                            count = count + 1
-                            streakCount.text = "Puntos: " + String(count)
-                            if count == array.count {
-                                count = 0
+                            game.nextScore()
+                            streakCount.text = "Puntos: " + String(game.score)
+                            if game.score == game.array.count {
+                                game.score = 0
                                 _ = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(getNext), userInfo: nil, repeats: false)
                             }
                         }
@@ -163,8 +163,7 @@ class SimonSaysViewController:UIViewController {
     
     @IBAction func startGame(_ sender: UIButton) {
         sender.isHidden = true
-        count = 0
-        array.removeAll()
+        game.array.removeAll()
         streakCount.text =  "Puntos: 0"
         getNext()
     }
@@ -172,7 +171,7 @@ class SimonSaysViewController:UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
             if let resultsScreen = segue.destination as? ResultsViewController {
                 resultsScreen.gamePlayed = 0
-                resultsScreen.score = array.count
+                resultsScreen.score = game.score
             }
         }
     
