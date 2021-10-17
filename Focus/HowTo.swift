@@ -9,6 +9,9 @@ import Foundation
 import UIKit
 
 class HowTo {
+    
+    //Names, colors, instructions, sounds and icons of the games instructions and results screen, ordered to get them from a given index
+    
     private let gameNames = ["Simón Dice", "Números Locos", "Patrones", "Impostor", "Historias Divertidas", "Zig Zag"]
     
     private let gameColors = [

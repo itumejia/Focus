@@ -18,22 +18,25 @@ class ResultsViewController: UIViewController {
     
     let model = Results()
     
+    //Values given in the segue
     var gamePlayed = 0
     var score = 0
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        currentScore.text = String(score)
+        currentScore.text = String(score) //Set the current score label
         
+        //Set up layout according to the game played
         gameName.text = model.getGameName(index: gamePlayed)
         backgroundView.backgroundColor = model.getGameColor(index: gamePlayed)
         playButton.backgroundColor = model.getGameColor(index: gamePlayed)
         gameIcon.image = model.getGameIcon(index: gamePlayed)
-        highscore.text = model.getHighscore(game: gamePlayed, score: score)
+        highscore.text = model.getHighscore(game: gamePlayed, score: score) //Get the highscore label
         
     }
 
+    //Action for play again button, dependening on the current game
     @IBAction func playAgain(_ sender: Any) {
         switch gamePlayed {
         case 0:

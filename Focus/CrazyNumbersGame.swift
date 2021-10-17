@@ -17,18 +17,10 @@ class CrazyNumbersGame {
     public let WIN_CODE = 2
     
     
-//    public func startLevel() {
-//        numbers = Array(0...99).shuffled()
-//    }
-    
     //Get array of random numbers to populate the board
     public func getRandomNumbers() -> Array<Int> {
         return Array(0...99).shuffled()
     }
-    
-//    public func getNumbers() -> Array<Int> {
-//        return numbers
-//    }
     
     //Check if the selected number is correct
     public func selectNumber(numberSelected: Int) -> Int {
@@ -52,12 +44,14 @@ class CrazyNumbersGame {
         numbers.sort()
     }
     
+    //Restart values for next level
     public func nextLevel() {
         level += 1
         numbers = []
         numbersCount = 0
     }
     
+    //Get current level
     public func getLevel() -> Int {
         return level
     }

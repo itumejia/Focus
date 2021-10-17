@@ -7,7 +7,10 @@
 
 import Foundation
 
+//Uses HowTo class to get the layout info
 class Results: HowTo {
+    
+    //Get the string with the highscore by using the Progress class
     func getHighscore(game: Int, score: Int) -> String {
         switch game {
         case 0:
