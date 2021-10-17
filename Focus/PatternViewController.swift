@@ -40,22 +40,21 @@ class PatternViewController: UIViewController {
     
     func loadImages() {
         restart()
-        var shapeOptions2 = [0,1,2,3]
         missing = Int.random(in: 0...(shapeSlot.count-1))
         let randomPattern = Int.random(in: 0...(randomPatterns.count-1))
-        //let randomImage1 = Int.random(in: 0...(shapeOptions2.count-1))
-        var randomImage1 = Int.random(in: 0...(shapeOptions2.count-1))
-        shapeOptions2.remove(at: randomImage1)
-        //let randomImage2 = Int.random(in: 0...(shapeOptions2.count-1))
-        var randomImage2 = Int.random(in: 0...(shapeOptions2.count-1))
-        shapeOptions2.remove(at: randomImage2)
-        //let randomImage3 = Int.random(in: 0...(shapeOptions2.count-1))
-        var randomImage3 = Int.random(in: 0...(shapeOptions2.count-1))
-        shapeOptions2.remove(at: randomImage3)
-        //let randomImage4 = Int.random(in: 0...(shapeOptions2.count-1))
-        var randomImage4 = Int.random(in: 0...(shapeOptions2.count-1))
+        var randomImage1 = 0
+        var randomImage2 = 0
+        var randomImage3 = 0
+        var randomImage4 = 0
         
-        print(randomPattern)
+        while (randomImage1 == randomImage2 ||  randomImage1 ==  randomImage3 || randomImage1 == randomImage4 || randomImage2 == randomImage3 || randomImage3 == randomImage4 )
+        {
+            randomImage1 = Int(arc4random_uniform(4))
+            randomImage2 = Int(arc4random_uniform(4))
+            randomImage3 = Int(arc4random_uniform(4))
+            randomImage4 = Int(arc4random_uniform(4))
+        }
+        
             if randomPattern == 0 { //1,2,1,2,1
                 shapes[0].setImage(UIImage(named: "Shape\(shapeOptions[randomImage1])"), for: .normal)
                 shapes[0].tag = randomImage1
@@ -71,9 +70,10 @@ class PatternViewController: UIViewController {
                 shapes[5].tag = randomImage2
                 shapes[6].setImage(UIImage(named: "Shape\(shapeOptions[randomImage1])"), for: .normal)
                 shapes[6].tag = randomImage1
-                print("pattern: \(randomPattern) ")
+
 
             } else if randomPattern == 1 { //1,1,1,1,1,1,1
+
                 shapes[0].setImage(UIImage(named: "Shape\(shapeOptions[randomImage1])"), for: .normal)
                 shapes[0].tag = randomImage1
                 shapes[1].setImage(UIImage(named: "Shape\(shapeOptions[randomImage2])"), for: .normal)
@@ -88,7 +88,6 @@ class PatternViewController: UIViewController {
                 shapes[5].tag = randomImage2
                 shapes[6].setImage(UIImage(named: "Shape\(shapeOptions[randomImage1])"), for: .normal)
                 shapes[6].tag = randomImage1
-                print("pattern: \(randomPattern), \(randomImage1), \(randomImage2),  \(randomImage3)")
                 
             } else if randomPattern == 2 { //2,1,2,1,~2
                 shapes[0].setImage(UIImage(named: "Shape\(shapeOptions[randomImage1])"), for: .normal)
@@ -105,9 +104,6 @@ class PatternViewController: UIViewController {
                 shapes[5].tag = randomImage2
                 shapes[6].setImage(UIImage(named: "Shape\(shapeOptions[randomImage1])"), for: .normal)
                 shapes[6].tag = randomImage1
-                print("pattern: \(randomPattern) ")
-                print("pattern: \(randomPattern), \(randomImage1), \(randomImage2),  \(randomImage3)")
-                
                 
             }  else if randomPattern == 3{ //2,2,2,~2
                 shapes[0].setImage(UIImage(named: "Shape\(shapeOptions[randomImage1])"), for: .normal)
@@ -124,8 +120,6 @@ class PatternViewController: UIViewController {
                 shapes[5].tag = randomImage1
                 shapes[6].setImage(UIImage(named: "Shape\(shapeOptions[randomImage2])"), for: .normal)
                 shapes[6].tag = randomImage2
-                print("pattern: \(randomPattern) ")
-                print("pattern: \(randomPattern), \(randomImage1), \(randomImage2),  \(randomImage3)")
                 
             } else if randomPattern == 4 { //1,1,1,1,1,1,1
                 shapes[0].setImage(UIImage(named: "Shape\(shapeOptions[randomImage1])"), for: .normal)
@@ -134,18 +128,16 @@ class PatternViewController: UIViewController {
                 shapes[1].tag = randomImage2
                 shapes[2].setImage(UIImage(named: "Shape\(shapeOptions[randomImage3])"), for: .normal)
                 shapes[2].tag = randomImage3
-                shapes[3].setImage(UIImage(named: "Shape\(shapeOptions[randomImage4])"), for: .normal)
-                shapes[3].tag = randomImage3
-                shapes[4].setImage(UIImage(named: "Shape\(shapeOptions[randomImage1])"), for: .normal)
-                shapes[4].tag = randomImage1
-                shapes[5].setImage(UIImage(named: "Shape\(shapeOptions[randomImage2])"), for: .normal)
-                shapes[5].tag = randomImage2
-                shapes[6].setImage(UIImage(named: "Shape\(shapeOptions[randomImage3])"), for: .normal)
-                shapes[6].tag = randomImage3
-                print("pattern: \(randomPattern) ")
-                print("pattern: \(randomPattern), \(randomImage1), \(randomImage2),  \(randomImage3)")
+                shapes[3].setImage(UIImage(named: "Shape\(shapeOptions[randomImage1])"), for: .normal)
+                shapes[3].tag = randomImage1
+                shapes[4].setImage(UIImage(named: "Shape\(shapeOptions[randomImage2])"), for: .normal)
+                shapes[4].tag = randomImage2
+                shapes[5].setImage(UIImage(named: "Shape\(shapeOptions[randomImage3])"), for: .normal)
+                shapes[5].tag = randomImage3
+                shapes[6].setImage(UIImage(named: "Shape\(shapeOptions[randomImage1])"), for: .normal)
+                shapes[6].tag = randomImage1
                 
-            } else if randomPattern == 5 { //.2,1,2,.2
+            } else if randomPattern == 5 { //2,1,+1,1,2
                 shapes[0].setImage(UIImage(named: "Shape\(shapeOptions[randomImage1])"), for: .normal)
                 shapes[0].tag = randomImage1
                 shapes[1].setImage(UIImage(named: "Shape\(shapeOptions[randomImage1])"), for: .normal)
@@ -154,17 +146,16 @@ class PatternViewController: UIViewController {
                 shapes[2].tag = randomImage2
                 shapes[3].setImage(UIImage(named: "Shape\(shapeOptions[randomImage3])"), for: .normal)
                 shapes[3].tag = randomImage3
-                shapes[4].setImage(UIImage(named: "Shape\(shapeOptions[randomImage3])"), for: .normal)
-                shapes[4].tag = randomImage3
+                shapes[4].setImage(UIImage(named: "Shape\(shapeOptions[randomImage2])"), for: .normal)
+                shapes[4].tag = randomImage2
                 shapes[5].setImage(UIImage(named: "Shape\(shapeOptions[randomImage1])"), for: .normal)
                 shapes[5].tag = randomImage1
                 shapes[6].setImage(UIImage(named: "Shape\(shapeOptions[randomImage1])"), for: .normal)
                 shapes[6].tag = randomImage1
-                print("pattern: \(randomPattern) ")
-                print("pattern: \(randomPattern), \(randomImage1), \(randomImage2),  \(randomImage3)")
+
             }
+        
             find = shapes[missing].tag
-            print("tag: \(find)")
             shapes[missing].setImage(UIImage(named: "Shape4"), for: .normal)
         
         //Opciones de respuesta (siempre son las mismas)
