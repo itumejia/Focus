@@ -49,8 +49,8 @@ class ReadingViewController: UIViewController {
         "Jack Jack se come una galleta", //30
         "Walle y Eva observan una planta",
         "Walle y Eva observan un foco",
-        "Chimuelo y Hipo se abrazan",
-        "Chimuelo y hipo vuelan sobre una montaña",
+        "Chimuelo e Hipo se abrazan",
+        "Chimuelo e Hipo vuelan sobre una montaña",
         "El pequeño león Simba baila con Timón y Pumba", //35
         "Marlin el pez naranja y Dory el pez azul nadan con las tortugas",
         "Remi da los ultimos toques a su famoso platillo Ratatouille con una cuchara"] //37
@@ -60,7 +60,7 @@ class ReadingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.randomNumber = Int.random(in: 33...phrases.count-1)
+        self.randomNumber = Int.random(in: 0...phrases.count-1)
         phrase.text = phrases[randomNumber]
         
     }
