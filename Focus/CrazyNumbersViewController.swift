@@ -9,11 +9,11 @@ import UIKit
 
 class CrazyNumbersViewController: UIViewController {
 
-    
+
     @IBOutlet weak var numbersContainer: UIView!
     let board = CrazyNumbersBoard()
     let game = CrazyNumbersGame()
-    
+
     @IBOutlet weak var labelLevel: UILabel!
     var randomNumbers: Array<Int> = []
     var boardLimitX: CGFloat = 0
@@ -21,12 +21,12 @@ class CrazyNumbersViewController: UIViewController {
     var currentX: CGFloat = 0
     var currentY: CGFloat = 0
     var nextLevelY: CGFloat = 0
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         newLevel()
     }
-    
+
     func newLevel() {
         randomNumbers = game.getRandomNumbers() //Get list of random numbers to populate the board
         board.randomNumbersCount = 0
@@ -58,13 +58,13 @@ class CrazyNumbersViewController: UIViewController {
             board.addDifficulty()
             return
         }
-        
+
     }
-    
+
     func populateBoard() {
         boardLimitX = numbersContainer.frame.width;
         boardLimitY = numbersContainer.frame.height;
-        
+
         while currentY < boardLimitY {
             while currentX < boardLimitX {
                 addButton()
@@ -74,20 +74,20 @@ class CrazyNumbersViewController: UIViewController {
             print("Termino fila")
         }
         game.sortNumbers() //sort the final list of numbers
-        
+
     }
-    
+
     func addButton() {
         //El tamaño del numero dependera directamente de la height del label
-        
+
         //Dimensiones tentativas del nuevo numero
         let text = board.getRandomNumber(randomNumbers: randomNumbers)
         let height = board.getRandomHeight()
         let width = board.getWidthFromHeightAndText(height: height, text: text)
-        
+
         let nextX = currentX + width
         let nextY = currentY + height
-        
+
         //Se revisa que el numero no rebase los limites del tablero
         if nextX < boardLimitX && nextY < boardLimitY {
             let number = UILabel(frame: CGRect(x: currentX, y: currentY, width: width, height: height))
@@ -97,12 +97,12 @@ class CrazyNumbersViewController: UIViewController {
             number.numberOfLines = 0
             number.minimumScaleFactor = 0.1
             number.font = UIFont.boldSystemFont(ofSize: 400) //Font size maximo del numero (se ajusta a la height)
-            
+
             //Add gesture
             let tap = UITapGestureRecognizer(target: self, action: #selector(CrazyNumbersViewController.tapNumber))
             number.isUserInteractionEnabled = true
             number.addGestureRecognizer(tap)
-            
+
             //Add label to the screen and add the number to the final list
             numbersContainer.addSubview(number)
             game.addNumberToNumbers(number: Int(text)!)
@@ -113,7 +113,7 @@ class CrazyNumbersViewController: UIViewController {
         currentX = nextX
         updateCurrentY(newHeight: nextY)
     }
-    
+
     func updateCurrentY(newHeight: CGFloat) {
         nextLevelY = max(newHeight, nextLevelY)
     }
