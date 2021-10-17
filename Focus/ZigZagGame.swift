@@ -2,23 +2,34 @@
 //  ZigZagGame.swift
 //  Focus
 //
-//  Created by user197888 on 10/11/21.
+//  Created by davidzaratel on 10/11/21.
 //
 
 import Foundation
 
 
 class ZigZagGame{
+    //Se crean los atributos de la clase
+    //Nivel del juego
     var level = 1
+    //Variable que determina si el juego ha iniciado
     var gameStarted = false
+    //Variable que determina si el tiempo de espera de las monedas ha terminado
     var finishedWaitTime = false
+    //El siguiente arreglo cuenta con los tags de las casillas normales
     var tilesArray = [0,1,2,3,4,5,6,7,8,9,10,11,12,13]
+    //El siguiente arreglo contendra los tags de las casillas con monedas
     var coinTiles = [Int] ()
+    //El siguiente arreglo contendra 1s y 0s que indicarian si las casillas han sido presionadas, el indice de cada posicion correspondera al tag de cada casilla
     var touchedTiles = [1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+    //Se guarda la ultima casilla presionada
     var lastTouchedTile = -2
+    //Variable que indica cuantas monedas han sido recolectadas
     var coinsCollected = 0
+    //Variable que indica si la ultima casilla ha sido presionada
     var endingTileTouched = false
     
+    //Se restauran los valores iniciales de los atributos
     func restoreValues(){
         tilesArray = [0,1,2,3,4,5,6,7,8,9,10,11,12,13]
         coinTiles = [Int] ()
@@ -30,22 +41,27 @@ class ZigZagGame{
         endingTileTouched = false
     }
     
+    //Se inicia el juego
     func startGame(){
         gameStarted = true
     }
     
+    //Se actualiza el nivel del juego
     func nextLevel(){
         level = level + 1
     }
     
+    //El tiempo de espera de las monedas termina
     func finishWait(){
         finishedWaitTime = true
     }
     
+    //Se actualiza el valor de la ultima casilla presionada
     func touchLastTile(){
         endingTileTouched = true
     }
     
+    //Se determina si la casilla actual todavia cuenta con casillas adyacentes disponibles para avanzar, de lo contrario es un callejon sin salida
     func isDeadend(currentTile: Int)->Bool{
 
         if currentTile == 0 && (touchedTiles[1] == 1 || touchedTiles[3] == 1 ) {
