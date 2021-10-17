@@ -23,15 +23,21 @@ class SimonSaysViewController:UIViewController {
     var userTurn = false
         var array = [Int]()
         var count = 0
+        var audioPlayer = AVAudioPlayer()
+        let greenSound = Bundle.main.path(forResource: "green", ofType: "mp3")
+        let blueSound = Bundle.main.path(forResource: "blue", ofType: "mp3")
+        let purpleSound = Bundle.main.path(forResource: "purple", ofType: "mp3")
+        let pinkSound = Bundle.main.path(forResource: "pink", ofType: "mp3")
 
         func flashAndPlaySound(number: Int) {
+            var url: URL!
             switch(number) {
             case 0: UIView.animate(withDuration: 1, delay: 0, animations:
                 { () -> Void in
                         self.lbl1.alpha = 0.5
                         self.lbl1.alpha = 1
                 })
-         
+                url = URL(fileURLWithPath: greenSound!)
                 break
             case 1:
                 UIView.animate(withDuration: 1, delay: 0, animations:
@@ -42,55 +48,64 @@ class SimonSaysViewController:UIViewController {
 
                         
                     })
-               
+                url = URL(fileURLWithPath: blueSound!)
                 break
             case 2: UIView.animate(withDuration: 2, delay: 1, animations: {
                 self.lbl3.alpha = 0.5
                 self.lbl3.alpha = 1
            }, completion: nil)
+                url = URL(fileURLWithPath: purpleSound!)
                 break
             case 3: UIView.animate(withDuration: 1, delay: 0, animations:
                 { () -> Void in
                     self.lbl4.alpha = 0.5
                     self.lbl4.alpha = 1
                 })
-               
+                url = URL(fileURLWithPath: purpleSound!)
                 break
             case 4: UIView.animate(withDuration: 1, delay: 0, animations:
                 { () -> Void in
                         self.lbl5.alpha = 0.5
                         self.lbl5.alpha = 1
                 })
+                url = URL(fileURLWithPath: purpleSound!)
                 break
             case 5: UIView.animate(withDuration: 1, delay: 0, animations:
                 { () -> Void in
                         self.lbl6.alpha = 0.5
                         self.lbl6.alpha = 1
                 })
+                url = URL(fileURLWithPath: purpleSound!)
                 break
             case 6: UIView.animate(withDuration: 1, delay: 0, animations:
                 { () -> Void in
                         self.lbl7.alpha = 0.5
                         self.lbl7.alpha = 1
                 })
-              
+                url = URL(fileURLWithPath: purpleSound!)
                 break
             case 7: UIView.animate(withDuration: 1, delay: 0, animations:
                 { () -> Void in
                         self.lbl8.alpha = 0.5
                         self.lbl8.alpha = 1
                 })
-             
+                url = URL(fileURLWithPath: purpleSound!)
                 break
             default: UIView.animate(withDuration: 1, delay: 0, animations:
                 { () -> Void in
                         self.lbl9.alpha = 0.5
                         self.lbl9.alpha = 1
                 })
+                url = URL(fileURLWithPath: pinkSound!)
                 break
 
             }
-            
+            do {
+                audioPlayer = try AVAudioPlayer(contentsOf: url)
+                audioPlayer.play()
+            } catch {
+                print("Error while playing sound")
+            }
         }
 
         func playAll() -> Void {
@@ -161,8 +176,7 @@ class SimonSaysViewController:UIViewController {
     }
     
     
-    @IBAction func startGame(_ sender: UIButton) {
-        sender.isHidden = true
+    @IBAction func startGame(_ sender: Any) {
         count = 0
         array.removeAll()
         streakCount.text =  "Puntos: 0"
