@@ -174,7 +174,7 @@ class SimonSaysViewController:UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
             if let resultsScreen = segue.destination as? ResultsViewController {
                 resultsScreen.gamePlayed = 0
-                resultsScreen.score = game.score
+                resultsScreen.score = game.array.count
             }
         }
     
