@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1218B912270A7F530061BBAF /* ImpostorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1218B911270A7F530061BBAF /* ImpostorViewController.swift */; };
 		125E40B9270A57B9008A1C1E /* ImpostorGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125E40B8270A57B9008A1C1E /* ImpostorGame.swift */; };
+		8A22807E271C10BE00E8F157 /* PatternsGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A22807D271C10BD00E8F157 /* PatternsGame.swift */; };
 		8A847B9B26EBF566005D7A2E /* ReadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A847B9A26EBF566005D7A2E /* ReadingViewController.swift */; };
 		8A847B9D26EBF5A5005D7A2E /* ReadingGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A847B9C26EBF5A5005D7A2E /* ReadingGame.swift */; };
 		8AF44A21271558BD00D6C117 /* PatternViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF44A20271558BD00D6C117 /* PatternViewController.swift */; };
@@ -32,6 +33,7 @@
 /* Begin PBXFileReference section */
 		1218B911270A7F530061BBAF /* ImpostorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpostorViewController.swift; sourceTree = "<group>"; };
 		125E40B8270A57B9008A1C1E /* ImpostorGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpostorGame.swift; sourceTree = "<group>"; };
+		8A22807D271C10BD00E8F157 /* PatternsGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternsGame.swift; sourceTree = "<group>"; };
 		8A847B9A26EBF566005D7A2E /* ReadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingViewController.swift; sourceTree = "<group>"; };
 		8A847B9C26EBF5A5005D7A2E /* ReadingGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingGame.swift; sourceTree = "<group>"; };
 		8AF44A20271558BD00D6C117 /* PatternViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				9D2D800D2713943E001B7DC5 /* HowToViewController.swift */,
 				9D2D800F271396F0001B7DC5 /* HowTo.swift */,
 				8AF44A20271558BD00D6C117 /* PatternViewController.swift */,
+				8A22807D271C10BD00E8F157 /* PatternsGame.swift */,
 			);
 			path = Focus;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 				9D21994826D695C600B38018 /* SceneDelegate.swift in Sources */,
 				8A847B9B26EBF566005D7A2E /* ReadingViewController.swift in Sources */,
 				8AF44A21271558BD00D6C117 /* PatternViewController.swift in Sources */,
+				8A22807E271C10BE00E8F157 /* PatternsGame.swift in Sources */,
 				9D2AA6BA2705499E007E6895 /* CrazyNumbersBoard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

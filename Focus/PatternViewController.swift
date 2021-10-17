@@ -9,23 +9,22 @@ import Foundation
 import UIKit
 
 class PatternViewController: UIViewController {
-    var game = ImpostorGame()
-    var find: UIImage?
+    var game = PatternsGame()
+    var find = 0
     var missing = 0
     var shapeSlot = [0,1,2,3,4,5,6]
     var shapeOptions = [0,1,2,3]
-    var randomPatterns = [[1,2,1,2,1],[2,3,2]]
+    var randomPatterns = [0,1,2,3,4,5]
     
     @IBAction func selectShape(_ sender: UIButton) {
         
-        if sender.tag == missing {
+        if sender.tag == find {
             game.nextLevel()
             level.text = "Nivel " + String(game.level)
             loadImages()
         }
         else{
             level.text = "Perdiste"
-            loadImages()
         }
     }
     
@@ -41,46 +40,133 @@ class PatternViewController: UIViewController {
     
     func loadImages() {
         restart()
+        var shapeOptions2 = [0,1,2,3]
         missing = Int.random(in: 0...(shapeSlot.count-1))
-            // plantImages.missing(at: randomImage)
-        var position = 0
-        var i = 0
         let randomPattern = Int.random(in: 0...(randomPatterns.count-1))
-        let randomImage1 = Int.random(in: 0...(shapeOptions.count-1))
-        shapeOptions.remove(at: randomImage1)
-        let randomImage2 = Int.random(in: 0...(shapeOptions.count-1))
-        let firstArray = randomPatterns[randomPattern]
+        //let randomImage1 = Int.random(in: 0...(shapeOptions2.count-1))
+        var randomImage1 = Int.random(in: 0...(shapeOptions2.count-1))
+        shapeOptions2.remove(at: randomImage1)
+        //let randomImage2 = Int.random(in: 0...(shapeOptions2.count-1))
+        var randomImage2 = Int.random(in: 0...(shapeOptions2.count-1))
+        shapeOptions2.remove(at: randomImage2)
+        //let randomImage3 = Int.random(in: 0...(shapeOptions2.count-1))
+        var randomImage3 = Int.random(in: 0...(shapeOptions2.count-1))
+        shapeOptions2.remove(at: randomImage3)
+        //let randomImage4 = Int.random(in: 0...(shapeOptions2.count-1))
+        var randomImage4 = Int.random(in: 0...(shapeOptions2.count-1))
+        
         print(randomPattern)
-        print(firstArray)
-        while position <= shapeSlot.count-1{
-            print("position\(position)")
-            print(firstArray)
-            if firstArray[i] == 1{
-                shapes[position].setImage(UIImage(named: "Shape\(shapeOptions[randomImage1])"), for: .normal)
-                position += 1
-                i += 1
-              //print()
-//                if position > shapeSlot.count-1{
-//                    break
-//                } else {
-//                    position += 1
-//                }
-//            } else {
-////               for j in 1...firstArray[position]{
-////                    shapes[position].setImage(UIImage(named: "Shape\(shapeOptions[randomImage2])"), for: .normal)
-//                   position += 1
-//                   // print("hay \(j) dos o tres")
-//               }
-//            }
-        }
-            else{
-                for _ in 1...firstArray[i]{
-                shapes[position].setImage(UIImage(named: "Shape\(shapeOptions[randomImage2])"), for: .normal)
-                position += 1
-                }
-                i += 1
+            if randomPattern == 0 { //1,2,1,2,1
+                shapes[0].setImage(UIImage(named: "Shape\(shapeOptions[randomImage1])"), for: .normal)
+                shapes[0].tag = randomImage1
+                shapes[1].setImage(UIImage(named: "Shape\(shapeOptions[randomImage2])"), for: .normal)
+                shapes[1].tag = randomImage2
+                shapes[2].setImage(UIImage(named: "Shape\(shapeOptions[randomImage2])"), for: .normal)
+                shapes[2].tag = randomImage2
+                shapes[3].setImage(UIImage(named: "Shape\(shapeOptions[randomImage1])"), for: .normal)
+                shapes[3].tag = randomImage1
+                shapes[4].setImage(UIImage(named: "Shape\(shapeOptions[randomImage2])"), for: .normal)
+                shapes[4].tag = randomImage2
+                shapes[5].setImage(UIImage(named: "Shape\(shapeOptions[randomImage2])"), for: .normal)
+                shapes[5].tag = randomImage2
+                shapes[6].setImage(UIImage(named: "Shape\(shapeOptions[randomImage1])"), for: .normal)
+                shapes[6].tag = randomImage1
+                print("pattern: \(randomPattern) ")
+
+            } else if randomPattern == 1 { //1,1,1,1,1,1,1
+                shapes[0].setImage(UIImage(named: "Shape\(shapeOptions[randomImage1])"), for: .normal)
+                shapes[0].tag = randomImage1
+                shapes[1].setImage(UIImage(named: "Shape\(shapeOptions[randomImage2])"), for: .normal)
+                shapes[1].tag = randomImage2
+                shapes[2].setImage(UIImage(named: "Shape\(shapeOptions[randomImage1])"), for: .normal)
+                shapes[2].tag = randomImage1
+                shapes[3].setImage(UIImage(named: "Shape\(shapeOptions[randomImage2])"), for: .normal)
+                shapes[3].tag = randomImage2
+                shapes[4].setImage(UIImage(named: "Shape\(shapeOptions[randomImage1])"), for: .normal)
+                shapes[4].tag = randomImage1
+                shapes[5].setImage(UIImage(named: "Shape\(shapeOptions[randomImage2])"), for: .normal)
+                shapes[5].tag = randomImage2
+                shapes[6].setImage(UIImage(named: "Shape\(shapeOptions[randomImage1])"), for: .normal)
+                shapes[6].tag = randomImage1
+                print("pattern: \(randomPattern), \(randomImage1), \(randomImage2),  \(randomImage3)")
+                
+            } else if randomPattern == 2 { //2,1,2,1,~2
+                shapes[0].setImage(UIImage(named: "Shape\(shapeOptions[randomImage1])"), for: .normal)
+                shapes[0].tag = randomImage1
+                shapes[1].setImage(UIImage(named: "Shape\(shapeOptions[randomImage1])"), for: .normal)
+                shapes[1].tag = randomImage1
+                shapes[2].setImage(UIImage(named: "Shape\(shapeOptions[randomImage2])"), for: .normal)
+                shapes[2].tag = randomImage2
+                shapes[3].setImage(UIImage(named: "Shape\(shapeOptions[randomImage1])"), for: .normal)
+                shapes[3].tag = randomImage1
+                shapes[4].setImage(UIImage(named: "Shape\(shapeOptions[randomImage1])"), for: .normal)
+                shapes[4].tag = randomImage1
+                shapes[5].setImage(UIImage(named: "Shape\(shapeOptions[randomImage2])"), for: .normal)
+                shapes[5].tag = randomImage2
+                shapes[6].setImage(UIImage(named: "Shape\(shapeOptions[randomImage1])"), for: .normal)
+                shapes[6].tag = randomImage1
+                print("pattern: \(randomPattern) ")
+                print("pattern: \(randomPattern), \(randomImage1), \(randomImage2),  \(randomImage3)")
+                
+                
+            }  else if randomPattern == 3{ //2,2,2,~2
+                shapes[0].setImage(UIImage(named: "Shape\(shapeOptions[randomImage1])"), for: .normal)
+                shapes[0].tag = randomImage1
+                shapes[1].setImage(UIImage(named: "Shape\(shapeOptions[randomImage1])"), for: .normal)
+                shapes[1].tag = randomImage1
+                shapes[2].setImage(UIImage(named: "Shape\(shapeOptions[randomImage2])"), for: .normal)
+                shapes[2].tag = randomImage2
+                shapes[3].setImage(UIImage(named: "Shape\(shapeOptions[randomImage2])"), for: .normal)
+                shapes[3].tag = randomImage2
+                shapes[4].setImage(UIImage(named: "Shape\(shapeOptions[randomImage1])"), for: .normal)
+                shapes[4].tag = randomImage1
+                shapes[5].setImage(UIImage(named: "Shape\(shapeOptions[randomImage1])"), for: .normal)
+                shapes[5].tag = randomImage1
+                shapes[6].setImage(UIImage(named: "Shape\(shapeOptions[randomImage2])"), for: .normal)
+                shapes[6].tag = randomImage2
+                print("pattern: \(randomPattern) ")
+                print("pattern: \(randomPattern), \(randomImage1), \(randomImage2),  \(randomImage3)")
+                
+            } else if randomPattern == 4 { //1,1,1,1,1,1,1
+                shapes[0].setImage(UIImage(named: "Shape\(shapeOptions[randomImage1])"), for: .normal)
+                shapes[0].tag = randomImage1
+                shapes[1].setImage(UIImage(named: "Shape\(shapeOptions[randomImage2])"), for: .normal)
+                shapes[1].tag = randomImage2
+                shapes[2].setImage(UIImage(named: "Shape\(shapeOptions[randomImage3])"), for: .normal)
+                shapes[2].tag = randomImage3
+                shapes[3].setImage(UIImage(named: "Shape\(shapeOptions[randomImage4])"), for: .normal)
+                shapes[3].tag = randomImage3
+                shapes[4].setImage(UIImage(named: "Shape\(shapeOptions[randomImage1])"), for: .normal)
+                shapes[4].tag = randomImage1
+                shapes[5].setImage(UIImage(named: "Shape\(shapeOptions[randomImage2])"), for: .normal)
+                shapes[5].tag = randomImage2
+                shapes[6].setImage(UIImage(named: "Shape\(shapeOptions[randomImage3])"), for: .normal)
+                shapes[6].tag = randomImage3
+                print("pattern: \(randomPattern) ")
+                print("pattern: \(randomPattern), \(randomImage1), \(randomImage2),  \(randomImage3)")
+                
+            } else if randomPattern == 5 { //.2,1,2,.2
+                shapes[0].setImage(UIImage(named: "Shape\(shapeOptions[randomImage1])"), for: .normal)
+                shapes[0].tag = randomImage1
+                shapes[1].setImage(UIImage(named: "Shape\(shapeOptions[randomImage1])"), for: .normal)
+                shapes[1].tag = randomImage1
+                shapes[2].setImage(UIImage(named: "Shape\(shapeOptions[randomImage2])"), for: .normal)
+                shapes[2].tag = randomImage2
+                shapes[3].setImage(UIImage(named: "Shape\(shapeOptions[randomImage3])"), for: .normal)
+                shapes[3].tag = randomImage3
+                shapes[4].setImage(UIImage(named: "Shape\(shapeOptions[randomImage3])"), for: .normal)
+                shapes[4].tag = randomImage3
+                shapes[5].setImage(UIImage(named: "Shape\(shapeOptions[randomImage1])"), for: .normal)
+                shapes[5].tag = randomImage1
+                shapes[6].setImage(UIImage(named: "Shape\(shapeOptions[randomImage1])"), for: .normal)
+                shapes[6].tag = randomImage1
+                print("pattern: \(randomPattern) ")
+                print("pattern: \(randomPattern), \(randomImage1), \(randomImage2),  \(randomImage3)")
             }
-        }
+            find = shapes[missing].tag
+            print("tag: \(find)")
+            shapes[missing].setImage(UIImage(named: "Shape4"), for: .normal)
+        
         //Opciones de respuesta (siempre son las mismas)
         for k in 0...answer.count - 1 {
             shapeOptions = [0,1,2,3]
@@ -89,50 +175,9 @@ class PatternViewController: UIViewController {
     }
     
     func restart(){
-        
         let shapeSlot = [0,1,2,3,4,5,6]
         let shapeOptions = [0,1,2,3]
     }
 
-        
-
-        
 }
 
-//restart()
-//let missing = Int.random(in: 0...(shapeOptions.count-1))
-//    // plantImages.missing(at: randomImage)
-//var position = 0
-//let randomPattern = 1 //Int.random(in: 0...(randomPatterns.count-1))
-//let randomImage1 = Int.random(in: 0...(shapeOptions.count-1))
-//shapeOptions.missing(at: randomImage1)
-//let randomImage2 = Int.random(in: 0...(shapeOptions.count-1))
-//if randomPattern == 1 {
-//    let firstArray = randomPatterns[0]  // ["W", "X", "Y", "Z"]
-//    for i in 0...firstArray.count-1{
-//        print(firstArray[i])
-//        if firstArray[i] == 1{
-//            shapes[position].setImage(UIImage(named: "Shape\(shapeOptions[randomImage1])"), for: .normal)
-//            position += 1
-//        } else{
-//            for _ in 0...firstArray[i]-1{
-//            shapes[position].setImage(UIImage(named: "Shape\(shapeOptions[randomImage2])"), for: .normal)
-//            position += 1
-//            }
-//        }
-//
-//    }
-//
-//    shapes[position].setImage(UIImage(named: "Shape\(shapeOptions[randomImage2])"), for: .normal)
-//}
-//
-////Opciones de respuesta (siempre son las mismas)
-//for i in 0...answer.count - 1 {
-//    answer[i].setImage(UIImage(named: "Shape\(shapeOptions[i])"), for: .normal)
-//}
-//}
-//
-//func restart(){
-//var shapeSlot = [0,1,2,3,4,5,6]
-//var shapeOptions = [0,1,2,3]
-//}

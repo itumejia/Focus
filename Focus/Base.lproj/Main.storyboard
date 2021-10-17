@@ -1317,7 +1317,7 @@
                                 <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Qué figura falta en la secuencia?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Fd-z7-OaG">
-                                <rect key="frame" x="80" y="174.5" width="226" height="53"/>
+                                <rect key="frame" x="80" y="172.5" width="226" height="53"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="53" id="IPh-Xa-Dm7"/>
                                 </constraints>
@@ -1386,9 +1386,10 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Nivel 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GSK-Zc-2Wt">
-                                <rect key="frame" x="160" y="767" width="93" height="33"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nivel 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GSK-Zc-2Wt">
+                                <rect key="frame" x="142" y="767" width="130" height="33"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="xL1-Dn-JWa"/>
                                     <constraint firstAttribute="height" constant="33" id="yT2-0k-GPj"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="27"/>
@@ -1461,7 +1462,6 @@
                             <constraint firstItem="5Fd-z7-OaG" firstAttribute="top" secondItem="oHf-d6-ZwW" secondAttribute="bottom" constant="15" id="1cA-zr-dhG"/>
                             <constraint firstItem="YbJ-No-EY5" firstAttribute="centerX" secondItem="V3P-X6-xO4" secondAttribute="centerX" id="8YN-WU-hSh"/>
                             <constraint firstItem="oHf-d6-ZwW" firstAttribute="leading" secondItem="TDM-bT-GdU" secondAttribute="leading" constant="120" id="A4K-Ue-sUP"/>
-                            <constraint firstItem="GSK-Zc-2Wt" firstAttribute="leading" secondItem="TDM-bT-GdU" secondAttribute="leading" constant="160" id="BgN-Zx-BWt"/>
                             <constraint firstItem="5Fd-z7-OaG" firstAttribute="leading" secondItem="TDM-bT-GdU" secondAttribute="leading" constant="80" id="GTq-hv-5As"/>
                             <constraint firstItem="jdW-S3-LRY" firstAttribute="leading" secondItem="TDM-bT-GdU" secondAttribute="leading" constant="57" id="MVq-Yr-XpA"/>
                             <constraint firstItem="YbJ-No-EY5" firstAttribute="centerX" secondItem="N3E-zj-JxR" secondAttribute="centerX" id="WCl-dj-yN1"/>
@@ -1808,7 +1808,7 @@
         <image name="bulb-azul" width="40" height="40"/>
         <image name="crazynumbers" width="142" height="138"/>
         <image name="crown" width="512" height="512"/>
-        <image name="home_alt_outline" width="30" height="30"/>
+        <image name="home_alt_outline" width="28" height="28"/>
         <image name="impostor" width="512" height="512"/>
         <image name="lago" width="290" height="181"/>
         <image name="lecture" width="154" height="157"/>
