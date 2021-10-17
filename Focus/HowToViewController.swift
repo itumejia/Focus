@@ -16,13 +16,14 @@ class HowToViewController: UIViewController {
     @IBOutlet weak var gameIcon: UIImageView!
     @IBOutlet weak var instructionsLabel: UILabel!
     
-    var gameSelected = 0
+    var gameSelected = 0 //Value that will be given in the segue
     let model = HowTo()
     
     var audioPlayer = AVAudioPlayer()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        //Set up layout according to the game selected
         gameName.text = model.getGameName(index: gameSelected)
         backgroundView.backgroundColor = model.getGameColor(index: gameSelected)
         playButton.backgroundColor = model.getGameColor(index: gameSelected)
@@ -30,6 +31,7 @@ class HowToViewController: UIViewController {
         gameIcon.image = model.getGameIcon(index: gameSelected)
     }
 
+    //Play the sound from the instructions
     @IBAction func playInstructions(_ sender: Any) {
         do {
             audioPlayer = try AVAudioPlayer(contentsOf: model.getSound(index: gameSelected))
@@ -41,6 +43,7 @@ class HowToViewController: UIViewController {
         
     }
     
+    //Start the game according to the game selected
     @IBAction func play(_ sender: Any) {
         switch gameSelected {
         case 0:

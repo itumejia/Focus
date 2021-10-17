@@ -21,6 +21,7 @@ class ProgressViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Set up the labels with the current highscores of each game
         simonHighscore.text = String(Progress.progressInstance.getHighscore(game: Progress.SIMON_SAYS_KEY)) + " niveles"
         zigzagHighscore.text = String(Progress.progressInstance.getHighscore(game: Progress.ZIGZAG_KEY)) + " niveles"
         patternsHighscore.text = String(Progress.progressInstance.getHighscore(game: Progress.PATTERNS_KEY)) + " niveles"
