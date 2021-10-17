@@ -1334,7 +1334,7 @@
                                             <constraint firstAttribute="height" constant="49" id="2in-Sc-J3n"/>
                                             <constraint firstAttribute="width" constant="51" id="QEp-PL-P24"/>
                                         </constraints>
-                                        <state key="normal" image="Shape1"/>
+                                        <state key="normal" image="Shape4"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JMH-Gw-Its">
                                         <rect key="frame" x="56" y="0.0" width="51" height="49"/>
@@ -1342,7 +1342,7 @@
                                             <constraint firstAttribute="height" constant="49" id="EdU-Ey-OeP"/>
                                             <constraint firstAttribute="width" constant="51" id="kTE-Te-WO5"/>
                                         </constraints>
-                                        <state key="normal" image="Shape1"/>
+                                        <state key="normal" image="Shape4"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a6G-UZ-acy">
                                         <rect key="frame" x="112" y="0.0" width="51" height="49"/>
@@ -1350,7 +1350,7 @@
                                             <constraint firstAttribute="width" constant="51" id="cYm-0H-14D"/>
                                             <constraint firstAttribute="height" constant="49" id="pLD-PC-Ev6"/>
                                         </constraints>
-                                        <state key="normal" image="Shape0"/>
+                                        <state key="normal" image="Shape4"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQt-fy-oz7">
                                         <rect key="frame" x="168" y="0.0" width="51" height="49"/>
@@ -1358,7 +1358,7 @@
                                             <constraint firstAttribute="height" constant="49" id="2z2-UY-S4b"/>
                                             <constraint firstAttribute="width" constant="51" id="9ac-dd-wkS"/>
                                         </constraints>
-                                        <state key="normal" image="Shape0"/>
+                                        <state key="normal" image="Shape4"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N0V-J4-LAn">
                                         <rect key="frame" x="224" y="0.0" width="51" height="49"/>
@@ -1366,7 +1366,7 @@
                                             <constraint firstAttribute="height" constant="49" id="8u9-vn-jXK"/>
                                             <constraint firstAttribute="width" constant="51" id="Krb-op-y4M"/>
                                         </constraints>
-                                        <state key="normal" image="Shape0"/>
+                                        <state key="normal" image="Shape4"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q08-bK-CtJ">
                                         <rect key="frame" x="280" y="0.0" width="51" height="49"/>
@@ -1374,7 +1374,7 @@
                                             <constraint firstAttribute="width" constant="51" id="DKq-mY-lkO"/>
                                             <constraint firstAttribute="height" constant="49" id="oPc-1h-whS"/>
                                         </constraints>
-                                        <state key="normal" image="Shape0"/>
+                                        <state key="normal" image="Shape4"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hpA-Af-9yL">
                                         <rect key="frame" x="336" y="0.0" width="51" height="49"/>
@@ -1382,7 +1382,7 @@
                                             <constraint firstAttribute="height" constant="49" id="QeL-ne-P7j"/>
                                             <constraint firstAttribute="width" constant="51" id="hCD-xU-O4z"/>
                                         </constraints>
-                                        <state key="normal" image="Shape0"/>
+                                        <state key="normal" image="Shape4"/>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -1413,31 +1413,43 @@
                                             <constraint firstAttribute="width" constant="65" id="5dm-dl-GPJ"/>
                                             <constraint firstAttribute="height" constant="81" id="gaU-Af-boC"/>
                                         </constraints>
-                                        <state key="normal" image="Shape2"/>
+                                        <state key="normal" image="Shape0"/>
+                                        <connections>
+                                            <action selector="selectShape:" destination="qJg-AB-zlO" eventType="touchUpInside" id="w08-un-uI8"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zEA-bZ-UWY">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zEA-bZ-UWY">
                                         <rect key="frame" x="80" y="0.0" width="65" height="81"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="65" id="RMy-HC-ohJ"/>
                                             <constraint firstAttribute="height" constant="81" id="twZ-ou-NfI"/>
                                         </constraints>
-                                        <state key="normal" image="Shape2"/>
+                                        <state key="normal" image="Shape1"/>
+                                        <connections>
+                                            <action selector="selectShape:" destination="qJg-AB-zlO" eventType="touchUpInside" id="fZG-n2-m3I"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yfQ-Pb-STe">
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yfQ-Pb-STe">
                                         <rect key="frame" x="160" y="0.0" width="65" height="81"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="81" id="Y0l-kr-GkW"/>
                                             <constraint firstAttribute="width" constant="65" id="yVo-ez-mvr"/>
                                         </constraints>
                                         <state key="normal" image="Shape2"/>
+                                        <connections>
+                                            <action selector="selectShape:" destination="qJg-AB-zlO" eventType="touchUpInside" id="Bf2-t7-haa"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iga-6G-bLW">
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iga-6G-bLW">
                                         <rect key="frame" x="240" y="0.0" width="65" height="81"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="81" id="50i-PL-whh"/>
                                             <constraint firstAttribute="width" constant="65" id="MKM-zW-RhU"/>
                                         </constraints>
-                                        <state key="normal" image="Shape2"/>
+                                        <state key="normal" image="Shape3"/>
+                                        <connections>
+                                            <action selector="selectShape:" destination="qJg-AB-zlO" eventType="touchUpInside" id="a91-8K-eX4"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -1789,6 +1801,8 @@
         <image name="Shape0" width="65" height="57"/>
         <image name="Shape1" width="59" height="56"/>
         <image name="Shape2" width="59" height="56"/>
+        <image name="Shape3" width="65" height="57"/>
+        <image name="Shape4" width="38" height="35"/>
         <image name="bulb" width="100" height="100"/>
         <image name="bulb-1" width="30" height="30"/>
         <image name="bulb-azul" width="40" height="40"/>
