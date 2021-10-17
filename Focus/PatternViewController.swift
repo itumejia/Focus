@@ -154,7 +154,7 @@ class PatternViewController: UIViewController {
                 shapes[6].tag = randomImage1
 
             }
-        
+
             find = shapes[missing].tag
             shapes[missing].setImage(UIImage(named: "Shape4"), for: .normal)
         

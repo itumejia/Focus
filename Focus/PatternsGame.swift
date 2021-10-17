@@ -15,6 +15,4 @@ class PatternsGame{
     func nextLevel(){
         level = level + 1
     }
-    
-    
 }
