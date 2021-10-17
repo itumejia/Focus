@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="be2-qm-gZY">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -45,8 +46,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qNS-4h-78p">
                                 <rect key="frame" x="0.0" y="335" width="414" height="561"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instrucciones" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uz9-IF-q14">
-                                        <rect key="frame" x="132" y="42" width="150" height="30"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instrucciones" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uz9-IF-q14">
+                                        <rect key="frame" x="62" y="42" width="290" height="30"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -107,7 +108,7 @@
                                     <constraint firstItem="jvx-Xy-SSS" firstAttribute="top" secondItem="pT3-xl-4lf" secondAttribute="bottom" constant="35" id="0g7-tv-f1G"/>
                                     <constraint firstItem="jvx-Xy-SSS" firstAttribute="height" secondItem="qNS-4h-78p" secondAttribute="height" multiplier="0.109626" id="55V-en-MIW"/>
                                     <constraint firstItem="iST-Ye-eH9" firstAttribute="height" secondItem="qNS-4h-78p" secondAttribute="height" multiplier="0.0677362" id="GXj-KD-qyB"/>
-                                    <constraint firstItem="uz9-IF-q14" firstAttribute="width" secondItem="qNS-4h-78p" secondAttribute="width" multiplier="0.362319" id="MIq-Tz-ct8"/>
+                                    <constraint firstItem="uz9-IF-q14" firstAttribute="width" secondItem="qNS-4h-78p" secondAttribute="width" multiplier="0.7" id="MIq-Tz-ct8"/>
                                     <constraint firstItem="pT3-xl-4lf" firstAttribute="centerX" secondItem="qNS-4h-78p" secondAttribute="centerX" id="OOb-Le-dcQ"/>
                                     <constraint firstItem="uz9-IF-q14" firstAttribute="top" secondItem="qNS-4h-78p" secondAttribute="top" constant="42" id="Uf2-i4-VR3"/>
                                     <constraint firstItem="pT3-xl-4lf" firstAttribute="height" secondItem="qNS-4h-78p" secondAttribute="height" multiplier="0.518717" id="Vt0-YV-ld7"/>

@@ -34,6 +34,7 @@ class HowToViewController: UIViewController {
         do {
             audioPlayer = try AVAudioPlayer(contentsOf: model.getSound(index: gameSelected))
             audioPlayer.play()
+            print("sound")
         } catch {
             print("Error while playing sound")
         }
