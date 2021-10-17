@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1218B912270A7F530061BBAF /* ImpostorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1218B911270A7F530061BBAF /* ImpostorViewController.swift */; };
 		125E40B9270A57B9008A1C1E /* ImpostorGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125E40B8270A57B9008A1C1E /* ImpostorGame.swift */; };
+		128594562714D631001F1EE3 /* ZigZagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128594552714D631001F1EE3 /* ZigZagViewController.swift */; };
+		128594592714D645001F1EE3 /* ZigZagGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128594582714D645001F1EE3 /* ZigZagGame.swift */; };
 		8A22807E271C10BE00E8F157 /* PatternsGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A22807D271C10BD00E8F157 /* PatternsGame.swift */; };
 		8AF44A21271558BD00D6C117 /* PatternViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF44A20271558BD00D6C117 /* PatternViewController.swift */; };
 		24E787992714CB93000879B1 /* SimonSaysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E787982714CB93000879B1 /* SimonSaysViewController.swift */; };
@@ -16,8 +18,6 @@
 		24E787A32715016E000879B1 /* pink.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 24E7879F2715016D000879B1 /* pink.mp3 */; };
 		24E787A42715016E000879B1 /* purple.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 24E787A02715016D000879B1 /* purple.mp3 */; };
 		24E787A52715016E000879B1 /* blue.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 24E787A12715016E000879B1 /* blue.mp3 */; };
-		128594562714D631001F1EE3 /* ZigZagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128594552714D631001F1EE3 /* ZigZagViewController.swift */; };
-		128594592714D645001F1EE3 /* ZigZagGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128594582714D645001F1EE3 /* ZigZagGame.swift */; };
 		8A847B9B26EBF566005D7A2E /* ReadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A847B9A26EBF566005D7A2E /* ReadingViewController.swift */; };
 		8AF44A1D2712921400D6C117 /* Reading2ControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF44A1C2712921400D6C117 /* Reading2ControllerView.swift */; };
 		9D21994626D695C600B38018 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D21994526D695C600B38018 /* AppDelegate.swift */; };
@@ -38,11 +38,14 @@
 		9DA1258926E81B1F00097DC5 /* CrazyNumbersGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA1258826E81B1F00097DC5 /* CrazyNumbersGame.swift */; };
 		9DCA0A4F27189820000B3D42 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCA0A4E27189820000B3D42 /* ResultsViewController.swift */; };
 		9DCA0A512718A2D6000B3D42 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCA0A502718A2D6000B3D42 /* Results.swift */; };
+		9DDAAF41271BCDBA002185E0 /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDAAF40271BCDBA002185E0 /* ProgressViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1218B911270A7F530061BBAF /* ImpostorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpostorViewController.swift; sourceTree = "<group>"; };
 		125E40B8270A57B9008A1C1E /* ImpostorGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpostorGame.swift; sourceTree = "<group>"; };
+		128594552714D631001F1EE3 /* ZigZagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZigZagViewController.swift; sourceTree = "<group>"; };
+		128594582714D645001F1EE3 /* ZigZagGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZigZagGame.swift; sourceTree = "<group>"; };
 		8A22807D271C10BD00E8F157 /* PatternsGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternsGame.swift; sourceTree = "<group>"; };
 		8AF44A20271558BD00D6C117 /* PatternViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternViewController.swift; sourceTree = "<group>"; };
 		24E787982714CB93000879B1 /* SimonSaysViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimonSaysViewController.swift; sourceTree = "<group>"; };
@@ -50,8 +53,6 @@
 		24E7879F2715016D000879B1 /* pink.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pink.mp3; sourceTree = "<group>"; };
 		24E787A02715016D000879B1 /* purple.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = purple.mp3; sourceTree = "<group>"; };
 		24E787A12715016E000879B1 /* blue.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = blue.mp3; sourceTree = "<group>"; };
-		128594552714D631001F1EE3 /* ZigZagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZigZagViewController.swift; sourceTree = "<group>"; };
-		128594582714D645001F1EE3 /* ZigZagGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZigZagGame.swift; sourceTree = "<group>"; };
 		8A847B9A26EBF566005D7A2E /* ReadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingViewController.swift; sourceTree = "<group>"; };
 		8AF44A1C2712921400D6C117 /* Reading2ControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reading2ControllerView.swift; sourceTree = "<group>"; };
 		9D21994226D695C600B38018 /* Focus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Focus.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +75,7 @@
 		9DA1258826E81B1F00097DC5 /* CrazyNumbersGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrazyNumbersGame.swift; sourceTree = "<group>"; };
 		9DCA0A4E27189820000B3D42 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		9DCA0A502718A2D6000B3D42 /* Results.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
+		9DDAAF40271BCDBA002185E0 /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 				9D308E512718C89D00FC94F7 /* Progress.swift */,
 				128594552714D631001F1EE3 /* ZigZagViewController.swift */,
 				128594582714D645001F1EE3 /* ZigZagGame.swift */,
+				9DDAAF40271BCDBA002185E0 /* ProgressViewController.swift */,
 			);
 			path = Focus;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 				9DCA0A512718A2D6000B3D42 /* Results.swift in Sources */,
 				128594592714D645001F1EE3 /* ZigZagGame.swift in Sources */,
 				9DA1258726E81AD400097DC5 /* CrazyNumbersViewController.swift in Sources */,
+				9DDAAF41271BCDBA002185E0 /* ProgressViewController.swift in Sources */,
 				9D2D8010271396F0001B7DC5 /* HowTo.swift in Sources */,
 				9D21994826D695C600B38018 /* SceneDelegate.swift in Sources */,
 				8A847B9B26EBF566005D7A2E /* ReadingViewController.swift in Sources */,

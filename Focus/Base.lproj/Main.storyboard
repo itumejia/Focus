@@ -165,7 +165,7 @@
         <!--Progreso-->
         <scene sceneID="3jB-ym-jpl">
             <objects>
-                <viewController id="kGs-Fu-tDU" sceneMemberID="viewController">
+                <viewController id="kGs-Fu-tDU" customClass="ProgressViewController" customModule="Focus" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="j2S-Ih-6J3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -410,6 +410,14 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Progreso" image="line_chart_up" id="nZa-jF-evY"/>
+                    <connections>
+                        <outlet property="impostorHighscore" destination="FfR-rQ-pNq" id="C3O-TS-3e9"/>
+                        <outlet property="numbersHighscore" destination="RTS-Cz-RaP" id="xns-Rr-lgZ"/>
+                        <outlet property="patternsHighscore" destination="5Sr-O0-mbN" id="HAf-bj-k3Z"/>
+                        <outlet property="readingHighscore" destination="M6w-3H-cEh" id="h8D-RN-HT6"/>
+                        <outlet property="simonHighscore" destination="f19-LV-diY" id="6ZL-5Q-ygw"/>
+                        <outlet property="zigzagHighscore" destination="le1-f8-wG0" id="qlh-Zn-HLH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ssn-lE-Obs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1356,7 +1364,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="VJi-rP-acz" kind="presentation" identifier="ZigzagToResults" modalPresentationStyle="fullScreen" id="OMB-og-xKI"/>
                         <outlet property="endingTile" destination="whf-bY-Ofz" id="Nre-nF-tm2"/>
                         <outlet property="levelLabel" destination="Xi2-Ss-iCl" id="CZa-0T-iy0"/>
                         <outlet property="startingTile" destination="YG0-oV-Yag" id="bCV-F1-S8V"/>
@@ -1374,6 +1381,7 @@
                         <outletCollection property="normalTiles" destination="wm0-eb-Cqm" collectionClass="NSMutableArray" id="FDw-yM-GyE"/>
                         <outletCollection property="normalTiles" destination="gWJ-kW-fsV" collectionClass="NSMutableArray" id="qnU-lP-Ozg"/>
                         <outletCollection property="normalTiles" destination="zob-ci-Dlf" collectionClass="NSMutableArray" id="AGg-nr-fi4"/>
+                        <segue destination="VJi-rP-acz" kind="presentation" identifier="ZigzagToResults" modalPresentationStyle="fullScreen" id="OMB-og-xKI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dzy-9G-SdJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -2177,7 +2185,7 @@
         <image name="bulb-azul" width="40" height="40"/>
         <image name="crazynumbers" width="142" height="138"/>
         <image name="crown" width="512" height="512"/>
-        <image name="home_alt_outline" width="30" height="30"/>
+        <image name="home_alt_outline" width="28" height="28"/>
         <image name="impostor" width="512" height="512"/>
         <image name="lecture" width="154" height="157"/>
         <image name="line_chart_up" width="24" height="24"/>
