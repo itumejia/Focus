@@ -20,7 +20,7 @@ class HowTo {
         UIColor(red: (59/255.0), green: (61/255.0), blue: (82/255.0), alpha: 1),
     ]
     
-    private let gameInstructions = ["Repite el patrón de las casillas que vayan iluminando para poder acumular puntos. ", "Toca los números que aparezcan en orden de menor a mayor valor.", "Selecciona la figura faltante para completar el patrón.", "Selecciona la plantita que no esté repetida en la pantalla.", "Analiza y recuerda la frase que aparezca en pantalla para elegir la imagen que corresponda.", "Toca cada casilla para poder llegar del punto A al punto B pasando por todas las monedas. Para iniciar el juego da click en la casilla con la letra A"]
+    private let gameInstructions = ["Repite el patrón de las casillas que vayan iluminando para poder acumular puntos. ", "Toca los números que aparezcan en pantalla, en orden de menor a mayor valor.", "Selecciona la figura faltante para completar el patrón.", "Selecciona la plantita que no esté repetida en la pantalla.", "Analiza e interpreta la frase que aparezca en pantalla para elegir la imagen que corresponda.", "Toca cada casilla para poder llegar del punto A al punto B pasando por todas las monedas. Para iniciar el juego, espera a que desaparezcan las monedas y da click en la casilla con la letra A"]
     
     private let gameIcons = [
         UIImage(named: "simonsays"),
