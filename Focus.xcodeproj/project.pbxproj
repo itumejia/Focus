@@ -11,6 +11,7 @@
 		125E40B9270A57B9008A1C1E /* ImpostorGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125E40B8270A57B9008A1C1E /* ImpostorGame.swift */; };
 		128594562714D631001F1EE3 /* ZigZagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128594552714D631001F1EE3 /* ZigZagViewController.swift */; };
 		128594592714D645001F1EE3 /* ZigZagGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128594582714D645001F1EE3 /* ZigZagGame.swift */; };
+		24D76993271CD0F9005BF265 /* SimonSaysGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D76992271CD0F9005BF265 /* SimonSaysGame.swift */; };
 		24E787992714CB93000879B1 /* SimonSaysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E787982714CB93000879B1 /* SimonSaysViewController.swift */; };
 		24E787A22715016E000879B1 /* green.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 24E7879E2715016D000879B1 /* green.mp3 */; };
 		24E787A32715016E000879B1 /* pink.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 24E7879F2715016D000879B1 /* pink.mp3 */; };
@@ -52,6 +53,7 @@
 		125E40B8270A57B9008A1C1E /* ImpostorGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpostorGame.swift; sourceTree = "<group>"; };
 		128594552714D631001F1EE3 /* ZigZagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZigZagViewController.swift; sourceTree = "<group>"; };
 		128594582714D645001F1EE3 /* ZigZagGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZigZagGame.swift; sourceTree = "<group>"; };
+		24D76992271CD0F9005BF265 /* SimonSaysGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimonSaysGame.swift; sourceTree = "<group>"; };
 		24E787982714CB93000879B1 /* SimonSaysViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimonSaysViewController.swift; sourceTree = "<group>"; };
 		24E7879E2715016D000879B1 /* green.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = green.mp3; sourceTree = "<group>"; };
 		24E7879F2715016D000879B1 /* pink.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pink.mp3; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				128594552714D631001F1EE3 /* ZigZagViewController.swift */,
 				128594582714D645001F1EE3 /* ZigZagGame.swift */,
 				9DDAAF40271BCDBA002185E0 /* ProgressViewController.swift */,
+				24D76992271CD0F9005BF265 /* SimonSaysGame.swift */,
 			);
 			path = Focus;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				24E787992714CB93000879B1 /* SimonSaysViewController.swift in Sources */,
 				9D2D800A27139157001B7DC5 /* MainMenuViewController.swift in Sources */,
 				128594562714D631001F1EE3 /* ZigZagViewController.swift in Sources */,
+				24D76993271CD0F9005BF265 /* SimonSaysGame.swift in Sources */,
 				9D21994A26D695C600B38018 /* ViewController.swift in Sources */,
 				9DA1258926E81B1F00097DC5 /* CrazyNumbersGame.swift in Sources */,
 				9D2D800E2713943E001B7DC5 /* HowToViewController.swift in Sources */,
