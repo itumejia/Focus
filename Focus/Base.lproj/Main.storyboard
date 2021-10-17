@@ -201,7 +201,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="37" translatesAutoresizingMaskIntoConstraints="NO" id="kSP-XH-Hkr">
-                                <rect key="frame" x="40" y="204" width="78.5" height="593"/>
+                                <rect key="frame" x="40" y="203.5" width="78.5" height="593"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lda-m2-wL6">
                                         <rect key="frame" x="0.0" y="0.0" width="78.5" height="68"/>
@@ -1005,6 +1005,7 @@
                         <outlet property="lbl8" destination="QkG-Hf-n2p" id="cfn-Xo-iNh"/>
                         <outlet property="lbl9" destination="eog-gr-OyZ" id="r8u-i0-W79"/>
                         <outlet property="streakCount" destination="wJg-6f-Cc9" id="clp-si-IEX"/>
+                        <segue destination="VJi-rP-acz" kind="presentation" identifier="SimonToResults" modalPresentationStyle="fullScreen" id="SdN-zD-phu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0HT-wO-bY9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1106,6 +1107,7 @@
                     <connections>
                         <outlet property="labelLevel" destination="Zyw-Tq-KeV" id="Hmy-C6-dgX"/>
                         <outlet property="numbersContainer" destination="2TC-bV-wMs" id="SWK-K8-EZV"/>
+                        <segue destination="VJi-rP-acz" kind="presentation" identifier="NumbersToResults" modalPresentationStyle="fullScreen" id="fDB-yl-EHd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eoc-Li-Hkb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1199,7 +1201,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XAs-hy-Jpi">
                                         <rect key="frame" x="87" y="0.0" width="82" height="82"/>
-                                        <color key="backgroundColor" red="0.3437087834" green="0.35172796249999999" blue="0.47096866370000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.34509803921568627" green="0.3529411764705882" blue="0.47058823529411764" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="82" id="7qF-rK-zmC"/>
                                             <constraint firstAttribute="width" constant="82" id="nCI-cv-tO7"/>
@@ -1335,6 +1337,9 @@
                             <constraint firstItem="Xi2-Ss-iCl" firstAttribute="top" secondItem="Iom-bh-lFr" secondAttribute="top" constant="688" id="vGk-NT-xxq"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="VJi-rP-acz" kind="presentation" identifier="ZigzagToResults" modalPresentationStyle="fullScreen" id="OMB-og-xKI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dzy-9G-SdJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1535,6 +1540,7 @@
                         <outletCollection property="plants" destination="2su-sP-jEw" collectionClass="NSMutableArray" id="4je-ZP-DEU"/>
                         <outletCollection property="plants" destination="1rk-wA-thu" collectionClass="NSMutableArray" id="XNq-h6-a6i"/>
                         <outletCollection property="plants" destination="fBW-m5-x68" collectionClass="NSMutableArray" id="8kw-CC-OYS"/>
+                        <segue destination="VJi-rP-acz" kind="presentation" identifier="ImpostorToResults" modalPresentationStyle="fullScreen" id="4WD-jt-P16"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZsW-lz-Qg9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1633,6 +1639,9 @@
                         <viewLayoutGuide key="safeArea" id="TDM-bT-GdU"/>
                         <color key="backgroundColor" red="0.31875684859999998" green="0.71047633889999995" blue="0.5312141776" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <segue destination="VJi-rP-acz" kind="presentation" identifier="PatternsToResult" modalPresentationStyle="fullScreen" id="P9w-M4-0pa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VTG-cZ-r0q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1771,6 +1780,7 @@
                         <outlet property="img1" destination="smc-PH-pOL" id="E0J-W1-GmF"/>
                         <outlet property="img2" destination="pO7-sc-jHb" id="KtW-Rb-t0b"/>
                         <outlet property="nivel" destination="j9n-Es-Mtt" id="pDT-H9-tMg"/>
+                        <segue destination="VJi-rP-acz" kind="presentation" identifier="ReadingToResults" modalPresentationStyle="fullScreen" id="kJH-xd-4BF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="172-ia-lwb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1836,13 +1846,13 @@
         <!--ResultadosView-->
         <scene sceneID="Sto-Qo-iCO">
             <objects>
-                <viewController id="VJi-rP-acz" userLabel="ResultadosView" customClass="HowToViewController" customModule="Focus" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="VJi-rP-acz" userLabel="ResultadosView" customClass="ResultsViewController" customModule="Focus" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" opaque="NO" contentMode="scaleToFill" id="CF9-R3-xfT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zig Zag" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="cV9-jV-KyB">
-                                <rect key="frame" x="160" y="251.5" width="94" height="32.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zig Zag" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="cV9-jV-KyB">
+                                <rect key="frame" x="41.5" y="251.5" width="331" height="32.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="27"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1871,6 +1881,9 @@
                                                 <integer key="value" value="15"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="playAgain:" destination="VJi-rP-acz" eventType="touchUpInside" id="Mfj-Mc-KNm"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1951,6 +1964,13 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_alt_outline" translatesAutoresizingMaskIntoConstraints="NO" id="U7C-In-ZKo">
+                                <rect key="frame" x="30" y="59" width="51" height="47"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="9Gu-94-sty" appends="YES" id="Ku1-Fc-xWo"/>
+                                </connections>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sNt-pE-aHz"/>
                         <color key="backgroundColor" red="0.231372565" green="0.23921570180000001" blue="0.33725491169999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1958,6 +1978,8 @@
                             <constraint firstItem="yi1-A5-BOF" firstAttribute="width" secondItem="CF9-R3-xfT" secondAttribute="width" id="2E1-r9-N0r"/>
                             <constraint firstItem="fXN-D7-rDE" firstAttribute="centerX" secondItem="CF9-R3-xfT" secondAttribute="centerX" id="5hk-6i-AVm"/>
                             <constraint firstItem="Ojk-F5-exK" firstAttribute="height" secondItem="yi1-A5-BOF" secondAttribute="height" multiplier="0.35" id="6ee-sb-9Ib"/>
+                            <constraint firstItem="U7C-In-ZKo" firstAttribute="leading" secondItem="sNt-pE-aHz" secondAttribute="leading" constant="30" id="Iu3-mm-go6"/>
+                            <constraint firstItem="U7C-In-ZKo" firstAttribute="top" secondItem="sNt-pE-aHz" secondAttribute="top" constant="15" id="NcD-O1-pDB"/>
                             <constraint firstItem="fXN-D7-rDE" firstAttribute="height" secondItem="CF9-R3-xfT" secondAttribute="height" multiplier="0.17" id="Sas-PO-SuU"/>
                             <constraint firstItem="yi1-A5-BOF" firstAttribute="top" secondItem="cV9-jV-KyB" secondAttribute="bottom" constant="35" id="Zwt-dc-Z88"/>
                             <constraint firstItem="Ojk-F5-exK" firstAttribute="centerX" secondItem="CF9-R3-xfT" secondAttribute="centerX" id="aL0-n0-a8g"/>
@@ -1968,18 +1990,47 @@
                             <constraint firstItem="cV9-jV-KyB" firstAttribute="centerX" secondItem="CF9-R3-xfT" secondAttribute="centerX" id="lc9-Rd-FxC"/>
                             <constraint firstItem="7ox-RH-bFn" firstAttribute="top" secondItem="Ojk-F5-exK" secondAttribute="bottom" constant="60" id="ndF-ha-z14"/>
                             <constraint firstItem="fXN-D7-rDE" firstAttribute="top" secondItem="sNt-pE-aHz" secondAttribute="top" constant="35" id="nl6-Ye-aYj"/>
-                            <constraint firstItem="cV9-jV-KyB" firstAttribute="width" secondItem="CF9-R3-xfT" secondAttribute="width" multiplier="0.227053" id="nxn-cv-opd"/>
+                            <constraint firstItem="cV9-jV-KyB" firstAttribute="width" secondItem="CF9-R3-xfT" secondAttribute="width" multiplier="0.8" id="nxn-cv-opd"/>
+                            <constraint firstItem="U7C-In-ZKo" firstAttribute="width" secondItem="CF9-R3-xfT" secondAttribute="width" multiplier="0.123188" id="sUb-DK-etx"/>
                             <constraint firstItem="yi1-A5-BOF" firstAttribute="height" secondItem="CF9-R3-xfT" secondAttribute="height" multiplier="0.7" id="tX1-cu-hlm"/>
+                            <constraint firstItem="U7C-In-ZKo" firstAttribute="height" secondItem="CF9-R3-xfT" secondAttribute="height" multiplier="0.0524554" id="vAp-AN-AyF"/>
                             <constraint firstItem="Ojk-F5-exK" firstAttribute="top" secondItem="9ix-HQ-eQd" secondAttribute="bottom" constant="45" id="zU1-rd-rUr"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="backgroundView" destination="CF9-R3-xfT" id="qDF-Pg-fad"/>
+                        <outlet property="currentScore" destination="6Bb-cP-ug6" id="EFe-Zq-mQ7"/>
+                        <outlet property="gameIcon" destination="fXN-D7-rDE" id="bem-ZV-cNd"/>
+                        <outlet property="gameName" destination="cV9-jV-KyB" id="MT9-Ht-xAc"/>
+                        <outlet property="highscore" destination="Kmh-XI-5yT" id="X27-db-qiP"/>
+                        <outlet property="playButton" destination="7ox-RH-bFn" id="pHY-O6-hbX"/>
+                        <segue destination="MM3-E2-fjK" kind="presentation" identifier="ResultsToNumbers" modalPresentationStyle="fullScreen" id="B7D-r0-HCK"/>
+                        <segue destination="SQH-5Y-UqV" kind="presentation" identifier="ResultsToSimon" modalPresentationStyle="fullScreen" id="iFJ-W7-ggy"/>
+                        <segue destination="TVU-zR-Z76" kind="presentation" identifier="ResultsToZigzag" modalPresentationStyle="fullScreen" id="hZ4-TY-omu"/>
+                        <segue destination="Oxe-Cj-A6A" kind="presentation" identifier="ResultsToImpostor" modalPresentationStyle="fullScreen" id="PVe-pd-ctm"/>
+                        <segue destination="qJg-AB-zlO" kind="presentation" identifier="ResultsToPatterns" modalPresentationStyle="fullScreen" id="RnA-jU-Tk6"/>
+                        <segue destination="Rht-1V-pGY" kind="presentation" identifier="ResultsToReading" modalPresentationStyle="fullScreen" id="AMi-mX-kgG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZTr-qx-nF2" sceneMemberID="firstResponder"/>
+                <exit id="FzU-gw-FiQ" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="9Gu-94-sty">
+                    <connections>
+                        <segue destination="FzU-gw-FiQ" kind="unwind" unwindAction="unwindToFirstViewController:" id="xPw-h0-hxQ"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2179.7101449275365" y="-646.20535714285711"/>
+            <point key="canvasLocation" x="732" y="1876"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="SdN-zD-phu"/>
+        <segue reference="AMi-mX-kgG"/>
+        <segue reference="RnA-jU-Tk6"/>
+        <segue reference="PVe-pd-ctm"/>
+        <segue reference="hZ4-TY-omu"/>
+        <segue reference="B7D-r0-HCK"/>
+        <segue reference="iFJ-W7-ggy"/>
         <segue reference="icJ-Hw-KMk"/>
     </inferredMetricsTieBreakers>
     <resources>
@@ -1993,7 +2044,7 @@
         <image name="bulb-azul" width="40" height="40"/>
         <image name="crazynumbers" width="142" height="138"/>
         <image name="crown" width="512" height="512"/>
-        <image name="home_alt_outline" width="28" height="28"/>
+        <image name="home_alt_outline" width="30" height="30"/>
         <image name="impostor" width="512" height="512"/>
         <image name="lecture" width="154" height="157"/>
         <image name="line_chart_up" width="24" height="24"/>
