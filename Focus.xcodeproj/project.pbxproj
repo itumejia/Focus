@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		128594562714D631001F1EE3 /* ZigZagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128594552714D631001F1EE3 /* ZigZagViewController.swift */; };
-		128594592714D645001F1EE3 /* ZigZagGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128594582714D645001F1EE3 /* ZigZagGame.swift */; };
 		8A847B9B26EBF566005D7A2E /* ReadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A847B9A26EBF566005D7A2E /* ReadingViewController.swift */; };
 		8A847B9D26EBF5A5005D7A2E /* ReadingGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A847B9C26EBF5A5005D7A2E /* ReadingGame.swift */; };
 		9D21994626D695C600B38018 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D21994526D695C600B38018 /* AppDelegate.swift */; };
@@ -25,8 +23,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		128594552714D631001F1EE3 /* ZigZagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZigZagViewController.swift; sourceTree = "<group>"; };
-		128594582714D645001F1EE3 /* ZigZagGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZigZagGame.swift; sourceTree = "<group>"; };
 		8A847B9A26EBF566005D7A2E /* ReadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingViewController.swift; sourceTree = "<group>"; };
 		8A847B9C26EBF5A5005D7A2E /* ReadingGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingGame.swift; sourceTree = "<group>"; };
 		9D21994226D695C600B38018 /* Focus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Focus.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,8 +82,6 @@
 				9D21995326D695C700B38018 /* Info.plist */,
 				9DA1258626E81AD400097DC5 /* CrazyNumbersViewController.swift */,
 				9DA1258826E81B1F00097DC5 /* CrazyNumbersGame.swift */,
-				128594552714D631001F1EE3 /* ZigZagViewController.swift */,
-				128594582714D645001F1EE3 /* ZigZagGame.swift */,
 			);
 			path = Focus;
 			sourceTree = "<group>";
@@ -175,12 +169,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				128594562714D631001F1EE3 /* ZigZagViewController.swift in Sources */,
 				9D21994A26D695C600B38018 /* ViewController.swift in Sources */,
 				9DA1258926E81B1F00097DC5 /* CrazyNumbersGame.swift in Sources */,
 				8A847B9D26EBF5A5005D7A2E /* ReadingGame.swift in Sources */,
 				9D21994626D695C600B38018 /* AppDelegate.swift in Sources */,
-				128594592714D645001F1EE3 /* ZigZagGame.swift in Sources */,
 				9DA1258726E81AD400097DC5 /* CrazyNumbersViewController.swift in Sources */,
 				9D21994826D695C600B38018 /* SceneDelegate.swift in Sources */,
 				8A847B9B26EBF566005D7A2E /* ReadingViewController.swift in Sources */,
@@ -260,7 +252,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -315,7 +307,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
