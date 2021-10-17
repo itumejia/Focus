@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="be2-qm-gZY">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
@@ -1002,9 +1001,10 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rbe-Nb-cuJ">
                                 <rect key="frame" x="89" y="783" width="237" height="39"/>
+                                <color key="backgroundColor" red="0.81357254168080806" green="0.68222229288871639" blue="0.46099195951394162" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="36"/>
                                 <state key="normal" title="Jugar">
-                                    <color key="titleColor" red="0.21210968490000001" green="0.50674635170000004" blue="0.72100371119999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" red="0.21210968490000001" green="0.50674635170000004" blue="0.72100371119999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -2259,7 +2259,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="kJH-xd-4BF"/>
+        <segue reference="SdN-zD-phu"/>
         <segue reference="xAI-wf-d3h"/>
         <segue reference="v1b-ZQ-AuR"/>
         <segue reference="KHh-bs-0u1"/>

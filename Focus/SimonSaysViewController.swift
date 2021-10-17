@@ -105,7 +105,7 @@ class SimonSaysViewController:UIViewController {
 
     @objc func getNext() -> Void {
             userTurn = false
-            let next = Int(arc4random_uniform(4))
+            let next = Int(arc4random_uniform(9))
             array.append(next)
             playAll()
             userTurn = true
