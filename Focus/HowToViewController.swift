@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class HowToViewController: UIViewController {
     
@@ -17,6 +18,8 @@ class HowToViewController: UIViewController {
     
     var gameSelected = 0
     let model = HowTo()
+    
+    var audioPlayer = AVAudioPlayer()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +30,16 @@ class HowToViewController: UIViewController {
         gameIcon.image = model.getGameIcon(index: gameSelected)
     }
 
+    @IBAction func playInstructions(_ sender: Any) {
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: model.getSound(index: gameSelected))
+            audioPlayer.play()
+        } catch {
+            print("Error while playing sound")
+        }
+        
+    }
+    
     @IBAction func play(_ sender: Any) {
         switch gameSelected {
         case 0:

@@ -77,9 +77,18 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="volume_up" translatesAutoresizingMaskIntoConstraints="NO" id="iST-Ye-eH9">
+                                                <rect key="frame" x="269" y="249" width="39" height="38"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="zhf-DR-HoV" appends="YES" id="14o-h3-huM"/>
+                                                </connections>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" red="0.9529411793" green="0.9529411793" blue="0.9529411793" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="iST-Ye-eH9" secondAttribute="trailing" constant="14" id="MHL-dB-r0a"/>
+                                            <constraint firstAttribute="bottom" secondItem="iST-Ye-eH9" secondAttribute="bottom" constant="4" id="SHs-TK-cd7"/>
                                             <constraint firstItem="cNb-8a-iFE" firstAttribute="height" secondItem="pT3-xl-4lf" secondAttribute="height" multiplier="0.75" id="bQf-kx-HdA"/>
                                             <constraint firstItem="cNb-8a-iFE" firstAttribute="width" secondItem="pT3-xl-4lf" secondAttribute="width" multiplier="0.8" id="dca-FM-vtf"/>
                                             <constraint firstItem="cNb-8a-iFE" firstAttribute="centerX" secondItem="pT3-xl-4lf" secondAttribute="centerX" id="fbL-ox-K2O"/>
@@ -97,6 +106,7 @@
                                 <constraints>
                                     <constraint firstItem="jvx-Xy-SSS" firstAttribute="top" secondItem="pT3-xl-4lf" secondAttribute="bottom" constant="35" id="0g7-tv-f1G"/>
                                     <constraint firstItem="jvx-Xy-SSS" firstAttribute="height" secondItem="qNS-4h-78p" secondAttribute="height" multiplier="0.109626" id="55V-en-MIW"/>
+                                    <constraint firstItem="iST-Ye-eH9" firstAttribute="height" secondItem="qNS-4h-78p" secondAttribute="height" multiplier="0.0677362" id="GXj-KD-qyB"/>
                                     <constraint firstItem="uz9-IF-q14" firstAttribute="width" secondItem="qNS-4h-78p" secondAttribute="width" multiplier="0.362319" id="MIq-Tz-ct8"/>
                                     <constraint firstItem="pT3-xl-4lf" firstAttribute="centerX" secondItem="qNS-4h-78p" secondAttribute="centerX" id="OOb-Le-dcQ"/>
                                     <constraint firstItem="uz9-IF-q14" firstAttribute="top" secondItem="qNS-4h-78p" secondAttribute="top" constant="42" id="Uf2-i4-VR3"/>
@@ -105,6 +115,7 @@
                                     <constraint firstItem="jvx-Xy-SSS" firstAttribute="width" secondItem="qNS-4h-78p" secondAttribute="width" multiplier="0.65942" id="cJ4-ec-iYU"/>
                                     <constraint firstItem="jvx-Xy-SSS" firstAttribute="centerX" secondItem="qNS-4h-78p" secondAttribute="centerX" id="dF1-t4-zvD"/>
                                     <constraint firstItem="pT3-xl-4lf" firstAttribute="width" secondItem="qNS-4h-78p" secondAttribute="width" multiplier="0.777778" id="erK-yP-VZe"/>
+                                    <constraint firstItem="iST-Ye-eH9" firstAttribute="width" secondItem="qNS-4h-78p" secondAttribute="width" multiplier="0.0942029" id="eyN-WA-i59"/>
                                     <constraint firstItem="uz9-IF-q14" firstAttribute="height" secondItem="qNS-4h-78p" secondAttribute="height" multiplier="0.0534759" id="lfV-RQ-xHD"/>
                                     <constraint firstItem="pT3-xl-4lf" firstAttribute="top" secondItem="uz9-IF-q14" secondAttribute="bottom" constant="35" id="uLx-3r-cMm"/>
                                 </constraints>
@@ -159,8 +170,13 @@
                         <segue destination="GSp-ib-Q7D" kind="unwind" unwindAction="unwindToFirstViewController:" id="7J6-gr-oUN"/>
                     </connections>
                 </tapGestureRecognizer>
+                <tapGestureRecognizer id="zhf-DR-HoV">
+                    <connections>
+                        <action selector="playInstructions:" destination="BYZ-38-t0r" id="3lO-gj-Tup"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-452" y="55"/>
+            <point key="canvasLocation" x="-452.17391304347831" y="54.910714285714285"/>
         </scene>
         <!--Progreso-->
         <scene sceneID="3jB-ym-jpl">
@@ -2317,6 +2333,7 @@
         <image name="play_circle_filled" width="135" height="135"/>
         <image name="secuencia" width="151" height="144"/>
         <image name="simonsays" width="114" height="114"/>
+        <image name="volume_up" width="26" height="29"/>
         <image name="zigzag" width="512" height="512"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

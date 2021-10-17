@@ -39,6 +39,12 @@
 		9DCA0A4F27189820000B3D42 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCA0A4E27189820000B3D42 /* ResultsViewController.swift */; };
 		9DCA0A512718A2D6000B3D42 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCA0A502718A2D6000B3D42 /* Results.swift */; };
 		9DDAAF41271BCDBA002185E0 /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDAAF40271BCDBA002185E0 /* ProgressViewController.swift */; };
+		9DDAAF49271C9D60002185E0 /* LecturaInstructions.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 9DDAAF43271C9D60002185E0 /* LecturaInstructions.m4a */; };
+		9DDAAF4A271C9D60002185E0 /* PatternsInstructions.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 9DDAAF44271C9D60002185E0 /* PatternsInstructions.m4a */; };
+		9DDAAF4B271C9D60002185E0 /* Números locos.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 9DDAAF45271C9D60002185E0 /* Números locos.m4a */; };
+		9DDAAF4C271C9D60002185E0 /* SimonSaysInstructions.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 9DDAAF46271C9D60002185E0 /* SimonSaysInstructions.m4a */; };
+		9DDAAF4D271C9D60002185E0 /* Zig zag.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 9DDAAF47271C9D60002185E0 /* Zig zag.m4a */; };
+		9DDAAF4E271C9D60002185E0 /* Impostor.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 9DDAAF48271C9D60002185E0 /* Impostor.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +82,12 @@
 		9DCA0A4E27189820000B3D42 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		9DCA0A502718A2D6000B3D42 /* Results.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
 		9DDAAF40271BCDBA002185E0 /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
+		9DDAAF43271C9D60002185E0 /* LecturaInstructions.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = LecturaInstructions.m4a; sourceTree = "<group>"; };
+		9DDAAF44271C9D60002185E0 /* PatternsInstructions.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = PatternsInstructions.m4a; sourceTree = "<group>"; };
+		9DDAAF45271C9D60002185E0 /* Números locos.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Números locos.m4a"; sourceTree = "<group>"; };
+		9DDAAF46271C9D60002185E0 /* SimonSaysInstructions.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimonSaysInstructions.m4a; sourceTree = "<group>"; };
+		9DDAAF47271C9D60002185E0 /* Zig zag.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Zig zag.m4a"; sourceTree = "<group>"; };
+		9DDAAF48271C9D60002185E0 /* Impostor.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Impostor.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +131,7 @@
 		9D21994426D695C600B38018 /* Focus */ = {
 			isa = PBXGroup;
 			children = (
+				9DDAAF42271C9CF1002185E0 /* soundsInstructions */,
 				24E7879D2715013A000879B1 /* soundsSimonSays */,
 				9D624CBA26EAC39700845C40 /* fonts */,
 				9D21994526D695C600B38018 /* AppDelegate.swift */,
@@ -159,6 +172,19 @@
 				9D624CBD26EAC4B300845C40 /* inter */,
 			);
 			path = fonts;
+			sourceTree = "<group>";
+		};
+		9DDAAF42271C9CF1002185E0 /* soundsInstructions */ = {
+			isa = PBXGroup;
+			children = (
+				9DDAAF48271C9D60002185E0 /* Impostor.m4a */,
+				9DDAAF43271C9D60002185E0 /* LecturaInstructions.m4a */,
+				9DDAAF45271C9D60002185E0 /* Números locos.m4a */,
+				9DDAAF44271C9D60002185E0 /* PatternsInstructions.m4a */,
+				9DDAAF46271C9D60002185E0 /* SimonSaysInstructions.m4a */,
+				9DDAAF47271C9D60002185E0 /* Zig zag.m4a */,
+			);
+			path = soundsInstructions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,12 +246,18 @@
 			files = (
 				24E787A32715016E000879B1 /* pink.mp3 in Resources */,
 				9D21995226D695C700B38018 /* LaunchScreen.storyboard in Resources */,
+				9DDAAF4C271C9D60002185E0 /* SimonSaysInstructions.m4a in Resources */,
+				9DDAAF4A271C9D60002185E0 /* PatternsInstructions.m4a in Resources */,
+				9DDAAF49271C9D60002185E0 /* LecturaInstructions.m4a in Resources */,
 				9D21994F26D695C700B38018 /* Assets.xcassets in Resources */,
 				9D624CC026EAC61100845C40 /* montserrat in Resources */,
 				9D624CC426EAC82700845C40 /* Pacifico-Regular.ttf in Resources */,
 				24E787A42715016E000879B1 /* purple.mp3 in Resources */,
+				9DDAAF4E271C9D60002185E0 /* Impostor.m4a in Resources */,
 				24E787A52715016E000879B1 /* blue.mp3 in Resources */,
 				24E787A22715016E000879B1 /* green.mp3 in Resources */,
+				9DDAAF4B271C9D60002185E0 /* Números locos.m4a in Resources */,
+				9DDAAF4D271C9D60002185E0 /* Zig zag.m4a in Resources */,
 				9D21994D26D695C600B38018 /* Main.storyboard in Resources */,
 				9D624CBE26EAC4B300845C40 /* inter in Resources */,
 			);
