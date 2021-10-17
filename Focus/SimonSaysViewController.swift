@@ -12,6 +12,7 @@ class SimonSaysViewController:UIViewController {
     
     var game = SimonSaysGame()
 
+    // importamos el contador de puntos y los 9 labels.
     @IBOutlet weak var streakCount: UILabel!
     @IBOutlet weak var lbl9: UILabel!
     @IBOutlet weak var lbl8: UILabel!
@@ -22,8 +23,8 @@ class SimonSaysViewController:UIViewController {
     @IBOutlet weak var lbl3: UILabel!
     @IBOutlet weak var lbl2: UILabel!
     @IBOutlet weak var lbl1: UILabel!
-    
-        
+
+    // funcion que parpadea el label que corresponde con animaciones    
         func flashAndPlaySound(number: Int) {
             switch(number) {
             case 0: UIView.animate(withDuration: 1, delay: 0, animations:
@@ -93,6 +94,7 @@ class SimonSaysViewController:UIViewController {
             
         }
 
+        // funcion para setear los delays entre cada parpadeo
         func playAll() -> Void {
             var delay = 0
             for number in game.array {
@@ -103,10 +105,11 @@ class SimonSaysViewController:UIViewController {
             }
         }
 
+    // funcion que obtiene el siguiente label a parpadear con un random entre 1 y 9
     @objc func getNext() -> Void {
             game.userTurn = false
             let next = Int(arc4random_uniform(9))
-            game.array.append(next)
+            game.array.append(next) // agregamos el label que acaba de parpadear a un arreglo de parpadeos
             playAll()
             game.userTurn = true
         }
@@ -116,7 +119,7 @@ class SimonSaysViewController:UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    
+    // funcion que manejara en cual label dio click y asigna un numero para checar si es el label correcto
     @IBAction func handleTap2(_ sender: UITapGestureRecognizer) {
         if game.userTurn && game.score < game.array.count {
                     var number = 0
@@ -143,11 +146,11 @@ class SimonSaysViewController:UIViewController {
 
             print(number)
                         flashAndPlaySound(number: number)
-            if number != game.array[game.score] {
+            if number != game.array[game.score] { // si el usuario pierde se le manda a la pantalla de scores
                             performSegue(withIdentifier: "SimonToResults", sender: nil)
                             game.userTurn = false
                         }
-                        else {
+                        else { // si no, se le agrega un punto
                             game.nextScore()
                             streakCount.text = "Puntos: " + String(game.score)
                             if game.score == game.array.count {
@@ -160,14 +163,14 @@ class SimonSaysViewController:UIViewController {
         }
     }
     
-    
+    // funcion que inicia el juego con los valores iniciales
     @IBAction func startGame(_ sender: UIButton) {
         sender.isHidden = true
         game.array.removeAll()
         streakCount.text =  "Puntos: 0"
         getNext()
     }
-    
+     // funcion que pasa los datos a la view de resultados
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
             if let resultsScreen = segue.destination as? ResultsViewController {
                 resultsScreen.gamePlayed = 0
