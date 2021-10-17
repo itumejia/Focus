@@ -29,6 +29,7 @@ class CrazyNumbersViewController: UIViewController {
 
     func newLevel() {
         randomNumbers = game.getRandomNumbers() //Get list of random numbers to populate the board
+        board.randomNumbersCount = 0
         populateBoard()
         boardLimitX = 0
         boardLimitY = 0
@@ -46,8 +47,7 @@ class CrazyNumbersViewController: UIViewController {
             return
         }
         if resultTap == game.LOSE_CODE {
-            //TODO: Llevar a pantalla de resultados
-            print("perdiste")
+            performSegue(withIdentifier: "NumbersToResults", sender: nil)
             return
         }
         if resultTap == game.WIN_CODE {
@@ -56,7 +56,6 @@ class CrazyNumbersViewController: UIViewController {
             labelLevel.text = "Nivel " + String(game.getLevel())
             newLevel()
             board.addDifficulty()
-            print("ganaste")
             return
         }
 
@@ -118,5 +117,14 @@ class CrazyNumbersViewController: UIViewController {
     func updateCurrentY(newHeight: CGFloat) {
         nextLevelY = max(newHeight, nextLevelY)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let resultsScreen = segue.destination as? ResultsViewController {
+            resultsScreen.gamePlayed = 1
+            resultsScreen.score = game.getLevel()
+        }
+    }
 
 }
+
+

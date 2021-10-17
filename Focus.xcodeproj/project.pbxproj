@@ -10,9 +10,16 @@
 		1218B912270A7F530061BBAF /* ImpostorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1218B911270A7F530061BBAF /* ImpostorViewController.swift */; };
 		125E40B9270A57B9008A1C1E /* ImpostorGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125E40B8270A57B9008A1C1E /* ImpostorGame.swift */; };
 		8A22807E271C10BE00E8F157 /* PatternsGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A22807D271C10BD00E8F157 /* PatternsGame.swift */; };
-		8A847B9B26EBF566005D7A2E /* ReadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A847B9A26EBF566005D7A2E /* ReadingViewController.swift */; };
-		8A847B9D26EBF5A5005D7A2E /* ReadingGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A847B9C26EBF5A5005D7A2E /* ReadingGame.swift */; };
 		8AF44A21271558BD00D6C117 /* PatternViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF44A20271558BD00D6C117 /* PatternViewController.swift */; };
+		24E787992714CB93000879B1 /* SimonSaysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E787982714CB93000879B1 /* SimonSaysViewController.swift */; };
+		24E787A22715016E000879B1 /* green.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 24E7879E2715016D000879B1 /* green.mp3 */; };
+		24E787A32715016E000879B1 /* pink.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 24E7879F2715016D000879B1 /* pink.mp3 */; };
+		24E787A42715016E000879B1 /* purple.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 24E787A02715016D000879B1 /* purple.mp3 */; };
+		24E787A52715016E000879B1 /* blue.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 24E787A12715016E000879B1 /* blue.mp3 */; };
+		128594562714D631001F1EE3 /* ZigZagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128594552714D631001F1EE3 /* ZigZagViewController.swift */; };
+		128594592714D645001F1EE3 /* ZigZagGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128594582714D645001F1EE3 /* ZigZagGame.swift */; };
+		8A847B9B26EBF566005D7A2E /* ReadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A847B9A26EBF566005D7A2E /* ReadingViewController.swift */; };
+		8AF44A1D2712921400D6C117 /* Reading2ControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF44A1C2712921400D6C117 /* Reading2ControllerView.swift */; };
 		9D21994626D695C600B38018 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D21994526D695C600B38018 /* AppDelegate.swift */; };
 		9D21994826D695C600B38018 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D21994726D695C600B38018 /* SceneDelegate.swift */; };
 		9D21994A26D695C600B38018 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D21994926D695C600B38018 /* ViewController.swift */; };
@@ -23,20 +30,30 @@
 		9D2D800A27139157001B7DC5 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2D800927139157001B7DC5 /* MainMenuViewController.swift */; };
 		9D2D800E2713943E001B7DC5 /* HowToViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2D800D2713943E001B7DC5 /* HowToViewController.swift */; };
 		9D2D8010271396F0001B7DC5 /* HowTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2D800F271396F0001B7DC5 /* HowTo.swift */; };
+		9D308E522718C89D00FC94F7 /* Progress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D308E512718C89D00FC94F7 /* Progress.swift */; };
 		9D624CBE26EAC4B300845C40 /* inter in Resources */ = {isa = PBXBuildFile; fileRef = 9D624CBD26EAC4B300845C40 /* inter */; };
 		9D624CC026EAC61100845C40 /* montserrat in Resources */ = {isa = PBXBuildFile; fileRef = 9D624CBF26EAC61100845C40 /* montserrat */; };
 		9D624CC426EAC82700845C40 /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9D624CC326EAC82700845C40 /* Pacifico-Regular.ttf */; };
 		9DA1258726E81AD400097DC5 /* CrazyNumbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA1258626E81AD400097DC5 /* CrazyNumbersViewController.swift */; };
 		9DA1258926E81B1F00097DC5 /* CrazyNumbersGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA1258826E81B1F00097DC5 /* CrazyNumbersGame.swift */; };
+		9DCA0A4F27189820000B3D42 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCA0A4E27189820000B3D42 /* ResultsViewController.swift */; };
+		9DCA0A512718A2D6000B3D42 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCA0A502718A2D6000B3D42 /* Results.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1218B911270A7F530061BBAF /* ImpostorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpostorViewController.swift; sourceTree = "<group>"; };
 		125E40B8270A57B9008A1C1E /* ImpostorGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpostorGame.swift; sourceTree = "<group>"; };
 		8A22807D271C10BD00E8F157 /* PatternsGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternsGame.swift; sourceTree = "<group>"; };
-		8A847B9A26EBF566005D7A2E /* ReadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingViewController.swift; sourceTree = "<group>"; };
-		8A847B9C26EBF5A5005D7A2E /* ReadingGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingGame.swift; sourceTree = "<group>"; };
 		8AF44A20271558BD00D6C117 /* PatternViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternViewController.swift; sourceTree = "<group>"; };
+		24E787982714CB93000879B1 /* SimonSaysViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimonSaysViewController.swift; sourceTree = "<group>"; };
+		24E7879E2715016D000879B1 /* green.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = green.mp3; sourceTree = "<group>"; };
+		24E7879F2715016D000879B1 /* pink.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pink.mp3; sourceTree = "<group>"; };
+		24E787A02715016D000879B1 /* purple.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = purple.mp3; sourceTree = "<group>"; };
+		24E787A12715016E000879B1 /* blue.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = blue.mp3; sourceTree = "<group>"; };
+		128594552714D631001F1EE3 /* ZigZagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZigZagViewController.swift; sourceTree = "<group>"; };
+		128594582714D645001F1EE3 /* ZigZagGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZigZagGame.swift; sourceTree = "<group>"; };
+		8A847B9A26EBF566005D7A2E /* ReadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingViewController.swift; sourceTree = "<group>"; };
+		8AF44A1C2712921400D6C117 /* Reading2ControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reading2ControllerView.swift; sourceTree = "<group>"; };
 		9D21994226D695C600B38018 /* Focus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Focus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D21994526D695C600B38018 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D21994726D695C600B38018 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,11 +66,14 @@
 		9D2D800927139157001B7DC5 /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
 		9D2D800D2713943E001B7DC5 /* HowToViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToViewController.swift; sourceTree = "<group>"; };
 		9D2D800F271396F0001B7DC5 /* HowTo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowTo.swift; sourceTree = "<group>"; };
+		9D308E512718C89D00FC94F7 /* Progress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Progress.swift; sourceTree = "<group>"; };
 		9D624CBD26EAC4B300845C40 /* inter */ = {isa = PBXFileReference; lastKnownFileType = folder; path = inter; sourceTree = "<group>"; };
 		9D624CBF26EAC61100845C40 /* montserrat */ = {isa = PBXFileReference; lastKnownFileType = folder; path = montserrat; sourceTree = "<group>"; };
 		9D624CC326EAC82700845C40 /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pacifico-Regular.ttf"; sourceTree = "<group>"; };
 		9DA1258626E81AD400097DC5 /* CrazyNumbersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrazyNumbersViewController.swift; sourceTree = "<group>"; };
 		9DA1258826E81B1F00097DC5 /* CrazyNumbersGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrazyNumbersGame.swift; sourceTree = "<group>"; };
+		9DCA0A4E27189820000B3D42 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		9DCA0A502718A2D6000B3D42 /* Results.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +87,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24E7879D2715013A000879B1 /* soundsSimonSays */ = {
+			isa = PBXGroup;
+			children = (
+				24E787A12715016E000879B1 /* blue.mp3 */,
+				24E7879E2715016D000879B1 /* green.mp3 */,
+				24E7879F2715016D000879B1 /* pink.mp3 */,
+				24E787A02715016D000879B1 /* purple.mp3 */,
+			);
+			path = soundsSimonSays;
+			sourceTree = "<group>";
+		};
 		9D21993926D695C600B38018 = {
 			isa = PBXGroup;
 			children = (
@@ -86,18 +117,20 @@
 		9D21994426D695C600B38018 /* Focus */ = {
 			isa = PBXGroup;
 			children = (
+				24E7879D2715013A000879B1 /* soundsSimonSays */,
 				9D624CBA26EAC39700845C40 /* fonts */,
 				9D21994526D695C600B38018 /* AppDelegate.swift */,
 				9D21994726D695C600B38018 /* SceneDelegate.swift */,
 				9D21994926D695C600B38018 /* ViewController.swift */,
 				9D21994B26D695C600B38018 /* Main.storyboard */,
 				8A847B9A26EBF566005D7A2E /* ReadingViewController.swift */,
-				8A847B9C26EBF5A5005D7A2E /* ReadingGame.swift */,
+				8AF44A1C2712921400D6C117 /* Reading2ControllerView.swift */,
 				9D21994E26D695C700B38018 /* Assets.xcassets */,
 				9D21995026D695C700B38018 /* LaunchScreen.storyboard */,
 				9D21995326D695C700B38018 /* Info.plist */,
 				9DA1258626E81AD400097DC5 /* CrazyNumbersViewController.swift */,
 				9DA1258826E81B1F00097DC5 /* CrazyNumbersGame.swift */,
+				24E787982714CB93000879B1 /* SimonSaysViewController.swift */,
 				125E40B8270A57B9008A1C1E /* ImpostorGame.swift */,
 				1218B911270A7F530061BBAF /* ImpostorViewController.swift */,
 				9D2AA6B92705499E007E6895 /* CrazyNumbersBoard.swift */,
@@ -106,6 +139,11 @@
 				9D2D800F271396F0001B7DC5 /* HowTo.swift */,
 				8AF44A20271558BD00D6C117 /* PatternViewController.swift */,
 				8A22807D271C10BD00E8F157 /* PatternsGame.swift */,
+				9DCA0A4E27189820000B3D42 /* ResultsViewController.swift */,
+				9DCA0A502718A2D6000B3D42 /* Results.swift */,
+				9D308E512718C89D00FC94F7 /* Progress.swift */,
+				128594552714D631001F1EE3 /* ZigZagViewController.swift */,
+				128594582714D645001F1EE3 /* ZigZagGame.swift */,
 			);
 			path = Focus;
 			sourceTree = "<group>";
@@ -177,10 +215,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24E787A32715016E000879B1 /* pink.mp3 in Resources */,
 				9D21995226D695C700B38018 /* LaunchScreen.storyboard in Resources */,
 				9D21994F26D695C700B38018 /* Assets.xcassets in Resources */,
 				9D624CC026EAC61100845C40 /* montserrat in Resources */,
 				9D624CC426EAC82700845C40 /* Pacifico-Regular.ttf in Resources */,
+				24E787A42715016E000879B1 /* purple.mp3 in Resources */,
+				24E787A52715016E000879B1 /* blue.mp3 in Resources */,
+				24E787A22715016E000879B1 /* green.mp3 in Resources */,
 				9D21994D26D695C600B38018 /* Main.storyboard in Resources */,
 				9D624CBE26EAC4B300845C40 /* inter in Resources */,
 			);
@@ -193,14 +235,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24E787992714CB93000879B1 /* SimonSaysViewController.swift in Sources */,
 				9D2D800A27139157001B7DC5 /* MainMenuViewController.swift in Sources */,
+				128594562714D631001F1EE3 /* ZigZagViewController.swift in Sources */,
 				9D21994A26D695C600B38018 /* ViewController.swift in Sources */,
 				9DA1258926E81B1F00097DC5 /* CrazyNumbersGame.swift in Sources */,
 				9D2D800E2713943E001B7DC5 /* HowToViewController.swift in Sources */,
-				8A847B9D26EBF5A5005D7A2E /* ReadingGame.swift in Sources */,
+				8AF44A1D2712921400D6C117 /* Reading2ControllerView.swift in Sources */,
 				9D21994626D695C600B38018 /* AppDelegate.swift in Sources */,
 				1218B912270A7F530061BBAF /* ImpostorViewController.swift in Sources */,
+				9D308E522718C89D00FC94F7 /* Progress.swift in Sources */,
+				9DCA0A4F27189820000B3D42 /* ResultsViewController.swift in Sources */,
 				125E40B9270A57B9008A1C1E /* ImpostorGame.swift in Sources */,
+				9DCA0A512718A2D6000B3D42 /* Results.swift in Sources */,
+				128594592714D645001F1EE3 /* ZigZagGame.swift in Sources */,
 				9DA1258726E81AD400097DC5 /* CrazyNumbersViewController.swift in Sources */,
 				9D2D8010271396F0001B7DC5 /* HowTo.swift in Sources */,
 				9D21994826D695C600B38018 /* SceneDelegate.swift in Sources */,
@@ -356,6 +404,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Focus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -374,6 +423,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Focus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

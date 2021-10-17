@@ -22,7 +22,7 @@ class ImpostorViewController: UIViewController {
             loadImages()
         }
         else{
-            levelTxt.text = "Perdiste"
+            performSegue(withIdentifier: "ImpostorToResults", sender: nil)
         }
     }
     
@@ -61,6 +61,11 @@ class ImpostorViewController: UIViewController {
         plantImages = [1,2,3,4,5,6,7]
     }
 
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if let resultsScreen = segue.destination as? ResultsViewController {
+                resultsScreen.gamePlayed = 3
+                resultsScreen.score = game.level
+            }
+        }
 
 }

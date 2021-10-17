@@ -12,8 +12,8 @@ class CrazyNumbersBoard {
     
     var randomNumbersCount = 0
     var lastColor = -1
-    var minTextSize:CGFloat = 80.0
-    var maxTextSize:CGFloat = 200.0
+    var minTextSize: CGFloat = 80.0
+    var maxTextSize: CGFloat = 200.0
     
     let colors = [
         UIColor(red: (59/255.0), green: (61/255.0), blue: (84/255.0), alpha: 1),
