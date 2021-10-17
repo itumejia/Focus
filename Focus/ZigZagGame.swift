@@ -46,4 +46,51 @@ class ZigZagGame{
         endingTileTouched = true
     }
     
+    func isDeadend(currentTile: Int)->Bool{
+
+        if currentTile == 0 && (touchedTiles[1] == 1 || touchedTiles[3] == 1 ) {
+            return false
+        }
+        else if currentTile == 1 && (touchedTiles[0] == 1  || touchedTiles[2] == 1  || touchedTiles[4] == 1 ) {
+            return false
+        }
+        else if currentTile == 2 && (!endingTileTouched || touchedTiles[1] == 1 || touchedTiles[5] == 1) {
+            return false
+        }
+        else if currentTile == 3 && (touchedTiles[0] == 1 || touchedTiles[4] == 1 || touchedTiles[7] == 1) {
+            return false
+        }
+        else if currentTile == 4 && (touchedTiles[1] == 1 || touchedTiles[3] == 1 || touchedTiles[5] == 1 || touchedTiles[8] == 1) {
+            return false
+        }
+        else if currentTile == 5 && (touchedTiles[2] == 1 || touchedTiles[4] == 1 || touchedTiles[6] == 1 || touchedTiles[9] == 1) {
+            return false
+        }
+        else if currentTile == 6 && (!endingTileTouched || touchedTiles[5] == 1 || touchedTiles[10] == 1) {
+            return false
+        }
+        else if currentTile == 7 && (touchedTiles[3] == 1 || touchedTiles[8] == 1) {
+            return false
+        }
+        else if currentTile == 8 && (touchedTiles[7] == 1 || touchedTiles[4] == 1 || touchedTiles[9] == 1 || touchedTiles[11] == 1) {
+            return false
+        }
+        else if currentTile == 9 && (touchedTiles[5] == 1 || touchedTiles[8] == 1 || touchedTiles[10] == 1 || touchedTiles[12] == 1) {
+            return false
+        }
+        else if currentTile == 10 && (touchedTiles[6] == 1 || touchedTiles[9] == 1 || touchedTiles[13] == 1) {
+            return false
+        }
+        else if currentTile == 11 && (touchedTiles[8] == 1 || touchedTiles[12] == 1) {
+            return false
+        }
+        else if currentTile == 12 && (touchedTiles[11] == 1 || touchedTiles[9] == 1 || touchedTiles[13] == 1) {
+            return false
+        }
+        else if currentTile == 13 && (touchedTiles[12] == 1 || touchedTiles[10] == 1) {
+            return false
+        }
+        return true
+    }
+    
 }

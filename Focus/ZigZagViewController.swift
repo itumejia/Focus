@@ -97,7 +97,7 @@ class ZigZagViewController: UIViewController {
                 if game.coinTiles.contains(sender.tag){
                     game.coinsCollected += 1
                 }
-                if isDeadend(currentTile: game.lastTouchedTile){
+                if game.isDeadend(currentTile: game.lastTouchedTile){
                     levelLabel.text = "Perdiste"
                 }
             }
@@ -120,52 +120,7 @@ class ZigZagViewController: UIViewController {
         return false
     }
     
-    func isDeadend(currentTile: Int)->Bool{
-
-        if currentTile == 0 && (game.touchedTiles[1] == 1 || game.touchedTiles[3] == 1 ) {
-            return false
-        }
-        else if currentTile == 1 && (game.touchedTiles[0] == 1  || game.touchedTiles[2] == 1  || game.touchedTiles[4] == 1 ) {
-            return false
-        }
-        else if currentTile == 2 && (!game.endingTileTouched || game.touchedTiles[1] == 1 || game.touchedTiles[5] == 1) {
-            return false
-        }
-        else if currentTile == 3 && (game.touchedTiles[0] == 1 || game.touchedTiles[4] == 1 || game.touchedTiles[7] == 1) {
-            return false
-        }
-        else if currentTile == 4 && (game.touchedTiles[1] == 1 || game.touchedTiles[3] == 1 || game.touchedTiles[5] == 1 || game.touchedTiles[8] == 1) {
-            return false
-        }
-        else if currentTile == 5 && (game.touchedTiles[2] == 1 || game.touchedTiles[4] == 1 || game.touchedTiles[6] == 1 || game.touchedTiles[9] == 1) {
-            return false
-        }
-        else if currentTile == 6 && (!game.endingTileTouched || game.touchedTiles[5] == 1 || game.touchedTiles[10] == 1) {
-            return false
-        }
-        else if currentTile == 7 && (game.touchedTiles[3] == 1 || game.touchedTiles[8] == 1) {
-            return false
-        }
-        else if currentTile == 8 && (game.touchedTiles[7] == 1 || game.touchedTiles[4] == 1 || game.touchedTiles[9] == 1 || game.touchedTiles[11] == 1) {
-            return false
-        }
-        else if currentTile == 9 && (game.touchedTiles[5] == 1 || game.touchedTiles[8] == 1 || game.touchedTiles[10] == 1 || game.touchedTiles[12] == 1) {
-            return false
-        }
-        else if currentTile == 10 && (game.touchedTiles[6] == 1 || game.touchedTiles[9] == 1 || game.touchedTiles[13] == 1) {
-            return false
-        }
-        else if currentTile == 11 && (game.touchedTiles[8] == 1 || game.touchedTiles[12] == 1) {
-            return false
-        }
-        else if currentTile == 12 && (game.touchedTiles[11] == 1 || game.touchedTiles[9] == 1 || game.touchedTiles[13] == 1) {
-            return false
-        }
-        else if currentTile == 13 && (game.touchedTiles[12] == 1 || game.touchedTiles[10] == 1) {
-            return false
-        }
-        return true
-    }
+    
     
     func dissapearCoins(){
         var time = 4.0
