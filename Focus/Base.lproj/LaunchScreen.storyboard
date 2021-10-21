@@ -37,8 +37,8 @@
                                     </imageView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Creditos:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Us4-ni-Zfm">
-                                <rect key="frame" x="162" y="634" width="66" height="19"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Creditos:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Us4-ni-Zfm">
+                                <rect key="frame" x="162" y="634" width="66" height="18.5"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
                                 <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                 <nil key="highlightedColor"/>
@@ -68,14 +68,14 @@ David Zárate López                      </string>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.066666666669999999" green="0.54117647059999996" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="ubA-OR-2gF" firstAttribute="top" secondItem="Us4-ni-Zfm" secondAttribute="bottom" constant="29" id="4aF-2O-NXZ"/>
-                            <constraint firstItem="ubA-OR-2gF" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin" id="4bX-Zy-FWi"/>
+                            <constraint firstItem="ubA-OR-2gF" firstAttribute="top" secondItem="Us4-ni-Zfm" secondAttribute="bottom" constant="29" id="3J5-dg-GdM"/>
+                            <constraint firstItem="9mv-qt-QN4" firstAttribute="top" secondItem="5hu-bR-rjw" secondAttribute="bottom" constant="58" id="A4c-DQ-W1y"/>
                             <constraint firstItem="5hu-bR-rjw" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="NZ0-Ng-BSi"/>
-                            <constraint firstItem="Us4-ni-Zfm" firstAttribute="leading" secondItem="ubA-OR-2gF" secondAttribute="leading" id="PLN-Et-OTV"/>
-                            <constraint firstItem="9mv-qt-QN4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="27" id="Zts-xC-yig"/>
-                            <constraint firstItem="Us4-ni-Zfm" firstAttribute="top" secondItem="5hu-bR-rjw" secondAttribute="bottom" constant="71" id="hKp-gR-upq"/>
+                            <constraint firstItem="Us4-ni-Zfm" firstAttribute="top" secondItem="5hu-bR-rjw" secondAttribute="bottom" constant="71" id="PIo-Xr-398"/>
+                            <constraint firstItem="9mv-qt-QN4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="27" id="QDV-xh-lud"/>
+                            <constraint firstItem="Us4-ni-Zfm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="162" id="f0h-tM-rCE"/>
+                            <constraint firstItem="ubA-OR-2gF" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin" id="imX-Dn-Il1"/>
                             <constraint firstItem="5hu-bR-rjw" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="jG5-bm-eIM"/>
-                            <constraint firstItem="9mv-qt-QN4" firstAttribute="top" secondItem="5hu-bR-rjw" secondAttribute="bottom" constant="58" id="oIq-un-tUq"/>
                         </constraints>
                     </view>
                 </viewController>
